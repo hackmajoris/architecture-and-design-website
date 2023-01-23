@@ -1,14 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat&family=Tenor+Sans&display=swap');
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     text-decoration: none;
-    box-sizing: border-box;
-}
-
-body {
+    color: #000;
     font-family: 'Montserrat', sans-serif;
-    background-color: #f9f9f9ed;
     text-align: justify;
 }
 
@@ -17,4 +14,153 @@ li {
 }
 
 
-/*___________________ home page ___________________*/
+/*___________________________ Home _______________________________*/
+
+.showcase {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.showcase nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 70px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.14));
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    margin-right: 30px;
+    font-size: 16px;
+}
+
+.contact {
+    text-transform: uppercase;
+    font-size: 18px;
+    transition: 0.5s;
+    letter-spacing: 0.08em;
+}
+
+.contact:hover {
+    font-weight: 700;
+}
+
+.contact:hover::after {
+    width: 100%;
+}
+
+nav ul li:after {
+    content: '';
+    height: 1.5px;
+    width: 0;
+    background: #000;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+.showcase video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.description {
+    position: absolute;
+    left: 70px;
+    bottom: 150px;
+    color: #fff;
+}
+
+.description h2 {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 55px;
+    font-family: 'Tenor Sans', sans-serif;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.description a {
+    display: inline-block;
+    font-size: 1.5em;
+    padding: 10px 30px;
+    margin-top: 35px;
+    letter-spacing: 2px;
+    background: #fff;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.description a:hover {
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.social {
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 70px;
+}
+
+.social li a {
+    display: inline-block;
+    filter: invert(1);
+    margin-right: 26px;
+    transform: scale(1.6);
+    transition: 0.5s;
+}
+
+.social li a:hover {
+    transform: scale(1.8) translateY(-4px);
+}
+
+.whatsapp a {
+    position: fixed;
+    bottom: 12px;
+    right: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+.whatsapp a:hover {
+    transform: scale(1.2);
+}
+
+
+/*___________________________ Despre _______________________________*/
