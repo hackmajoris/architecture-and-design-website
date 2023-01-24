@@ -16,38 +16,48 @@
 
     <!--___________________________________ Home _____________________________________-->
 
-    <section class="showcase" id="home">
-        <nav>
-            <a href="#home"><img src="./img/logo.svg" alt="logo" width="170px"></a>
+    <section class="home page" id="home">
+        <header>
+            <!--navbar desktop-->
+            <nav class="navbar">
+                <a href="#home"><img src="./img/logo.svg" alt="logo" width="160px"></a>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#despre">Despre</a></li>
+                    <li><a href="#portofoliu">Portofoliu</a></li>
+                    <li><a href="./intrebari.html">Întrebări</a></li>
+                </ul>
+                <a href="#contact" class="contact">Contact</a>
+            </nav>
+            <!--navbar mobile-->
+            <div class="nav-toggle">
+                <a href="#home"><img src="./img/logo.svg" alt="logo" width="150px"></a>
+                <span onclick="openNav()"><img src="./img/open.svg" width="60px"></span>
+            </div>
+        </header>
+        <!--sidenav mobile_toggle-->
+        <div id="mySidenav" class="sidenav">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#despre">Despre</a></li>
-                <li><a href="#portofoliu">Portofoliu</a></li>
-                <li><a href="./intrebari.html">Întrebări</a></li>
+                <li>
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="./img/close.svg" width="60px"></a>
+                </li>
+                <li> <a href="#home">Home</a> </li>
+                <li> <a href="#despre">Despre</a> </li>
+                <li> <a href="#portofoliu">Portofoliu</a> </li>
+                <li> <a href="./intrebari.html">Întrebări</a> </li>
+                <li> <a href=".contact.html">Contact</a> </li>
             </ul>
-            <a href="#contact" class="contact">Contact</a></div>
-        </nav>
-
+        </div>
+        <!--video-->
         <video src="./img/media/home video.mov" muted loop autoplay></video>
-        <div class="overlay"></div>
 
-        <div class="description">
-            <h2>Servicii de arhitectură <br> și design interior</h2>
-            <a href="#portofoliu">Portofoliu</a>
-        </div>
-        <ul class="social">
-            <li><a href="https://www.facebook.com/valentina.honceru" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/valentina-honceru-7b4740120/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-            <li><a href="https://ro.pinterest.com/honceru/" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a></li>
-            <li><a href="https://www.instagram.com/valehonceru/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-        </ul>
-        <div class="whatsapp">
-            <a href="https://wa.me/40749817422"><img src="./img/whatsapp btn.svg"></a>
-        </div>
+        <!--content-->
     </section>
 
     <!--___________________________________ Despre _____________________________________-->
 
 </body>
+
+</html>
 
 </html>
