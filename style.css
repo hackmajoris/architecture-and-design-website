@@ -9,10 +9,6 @@
     color: #000;
 }
 
-body {
-    background: rgb(15, 15, 15);
-}
-
 li {
     list-style-type: none;
 }
@@ -106,6 +102,7 @@ li {
     background: rgba(255, 255, 255, 0.136);
     backdrop-filter: blur(11.145px);
     transition: 0.5s;
+    z-index: 10;
 }
 
 .sidenav ul li {
@@ -147,20 +144,100 @@ video {
     z-index: -1;
 }
 
+.content {
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 190px 0 0 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-/*content*/
+
+/*description*/
+
+.description h2 {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 55px;
+    font-family: 'Tenor Sans', sans-serif;
+    color: #fff;
+}
+
+.description a {
+    display: inline-block;
+    margin-top: 30px;
+    font-size: 1.5em;
+    padding: 10px 30px;
+    letter-spacing: 2px;
+    background: #fff;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.description a:hover {
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+}
 
 
-/*________________ @media query (1024px) _______________*/
+/*social media*/
+
+.social {
+    position: absolute;
+    bottom: 30px;
+}
+
+.social ul {
+    display: flex;
+}
+
+.social ul li {
+    transform: scale(1.5);
+    filter: invert(1);
+    margin-right: 25px;
+    transition: 0.5s;
+}
+
+.social ul li:hover {
+    transform: scale(1.6) translateY(-4px);
+}
+
+
+/*whatsapp*/
+
+.whatsapp img {
+    width: 80px;
+}
+
+.whatsapp a {
+    position: fixed;
+    bottom: 10px;
+    right: 18px;
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+.whatsapp a:hover {
+    transform: scale(1.2);
+}
+
+
+/*________ @media query (1024px) _________*/
 
 
 /*navbar desktop*/
 
 @media (max-width: 1024px) {
     .navbar {
-        padding: 20px 40px;
+        padding: 20px 50px;
     }
 }
+
+
+/*________ @media query (9924px) _________*/
 
 @media (max-width: 992px) {
     .navbar {
@@ -169,10 +246,48 @@ video {
     .nav-toggle {
         visibility: visible;
     }
+    .content {
+        padding: 190px 0 0 50px;
+    }
+    /*whatsapp*/
+    .whatsapp a {
+        bottom: 0;
+        right: 8px;
+    }
 }
 
+
+/*________ @media query (768px) _________*/
+
 @media (max-width: 768px) {
-    .nav-toggle {
-        padding: 15px 25px;
+    .description h2 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+}
+
+
+/*________ @media query (600px) _________*/
+
+@media (max-width: 600px) {
+    .description h2 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
+
+
+/*________ @media query (480px) _________*/
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 15px 40px;
+    }
+    .content {
+        padding: 190px 0 0 40px;
+    }
+    .description h2 {
+        font-size: 30px;
+        line-height: 30px;
     }
 }
