@@ -14,10 +14,10 @@ li {
 }
 
 
-/*________________________ Home ________________________*/
+/*________________________ home ________________________*/
 
 
-/*navbar desktop*/
+/* navbar desktop */
 
 .navbar {
     position: absolute;
@@ -70,7 +70,7 @@ li {
 }
 
 
-/*navbar mobile*/
+/* navbar mobile */
 
 .nav-toggle {
     visibility: hidden;
@@ -87,7 +87,7 @@ li {
 }
 
 
-/*sidenav mobile*/
+/* sidenav mobile */
 
 .sidenav {
     position: absolute;
@@ -132,7 +132,7 @@ li {
 }
 
 
-/*video_home page*/
+/* video_home page */
 
 video {
     position: absolute;
@@ -155,7 +155,7 @@ video {
 }
 
 
-/*description*/
+/* description */
 
 .description h2 {
     font-size: 60px;
@@ -183,7 +183,7 @@ video {
 }
 
 
-/*social media*/
+/* social media */
 
 .social {
     position: absolute;
@@ -206,7 +206,7 @@ video {
 }
 
 
-/*whatsapp*/
+/* whatsapp */
 
 .whatsapp img {
     width: 80px;
@@ -225,10 +225,68 @@ video {
 }
 
 
+/*________________________ footer ________________________*/
+
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 120px;
+    line-height: 25px;
+    letter-spacing: 0.06em;
+}
+
+.footer a,
+h2,
+p {
+    color: #fff;
+    transition: 0.5s;
+}
+
+.footer a:hover {
+    color: rgba(255, 255, 255, 0.555);
+}
+
+.footer-heading {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-heading h2 {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+
+/* footer-1 */
+
+.footer-1 img {
+    filter: invert(1);
+    margin-bottom: 20px;
+}
+
+
+/* footer-3 */
+
+.footer-icons {
+    display: flex;
+}
+
+.footer-3 ul li {
+    transform: scale(1.3);
+    margin-right: 20px;
+    filter: invert(1);
+}
+
+
 /*________ @media query (1024px) _________*/
 
 
-/*navbar desktop*/
+/* navbar desktop */
 
 @media (max-width: 1024px) {
     .navbar {
