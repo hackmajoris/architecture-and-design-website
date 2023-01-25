@@ -224,6 +224,39 @@ video {
 }
 
 
+/*________________________ contact ________________________*/
+
+.txt p {
+    color: #000;
+}
+
+
+/* contact form */
+
+.form-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    background: #C4C4C4;
+}
+
+.field {
+    width: 50%;
+    padding: 8px 15px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin-top: 15px;
+    transition: 0.5s;
+}
+
+.field:focus {
+    border: 1px solid rgba(0, 0, 0, 0.329);
+    background: #C4C4C4;
+}
+
+
 /*________________________ footer ________________________*/
 
 .footer-container {
@@ -360,7 +393,12 @@ p {
         padding: 190px 0 0 30px;
     }
     .description h2 {
-        font-size: 30px;
+        font-size: 32px;
         line-height: 30px;
+    }
+    .description a {
+        margin-top: 25px;
+        padding: 10px 25px;
+        font-size: 1.1em;
     }
 }
