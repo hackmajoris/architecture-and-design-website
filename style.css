@@ -30,7 +30,6 @@ li {
     align-items: center;
     justify-content: space-between;
     padding: 20px 70px;
-    opacity: 0.9;
 }
 
 .navbar ul {
@@ -86,7 +85,6 @@ li {
     align-items: center;
     justify-content: space-between;
     padding: 15px 40px;
-    opacity: 0.9;
 }
 
 
@@ -104,7 +102,6 @@ li {
     justify-content: center;
     background: rgba(255, 255, 255, 0.136);
     backdrop-filter: blur(11.145px);
-    transition: 0.5s;
 }
 
 .sidenav ul li {
@@ -237,13 +234,14 @@ video {
     position: absolute;
     width: 100%;
     height: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     background-color: #000;
-    font-size: 12px;
-    padding: 20px 100px;
-    line-height: 22px;
-    z-index: -10;
+    font-size: 14px;
+    text-align: left;
+    padding: 30px 120px;
+    line-height: 23px;
 }
 
 .footer a,
@@ -272,7 +270,7 @@ p {
 
 .footer-1 img {
     filter: invert(1);
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 
@@ -290,9 +288,6 @@ p {
 
 
 /*________ @media query (1024px) _________*/
-
-
-/* navbar desktop */
 
 @media (max-width: 1024px) {
     .navbar {
@@ -313,24 +308,9 @@ p {
     .content {
         padding: 190px 0 0 50px;
     }
-    /*whatsapp*/
     .whatsapp a {
         bottom: 0;
         right: 8px;
-    }
-    /* footer */
-    .footer {
-        justify-content: center;
-        grid-template-columns: repeat(1, 1fr);
-        padding: 50px 0 8px 0;
-        text-align: center;
-    }
-    .footer-icons {
-        margin: auto;
-    }
-    .footer-2,
-    .footer-3 {
-        margin-top: 25px;
     }
 }
 
@@ -341,6 +321,21 @@ p {
     .description h2 {
         font-size: 50px;
         line-height: 50px;
+    }
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 0 15px 0;
+    }
+    .footer h2 {
+        font-size: 15px;
+    }
+    .footer-icons {
+        margin: auto;
+    }
+    .footer-2,
+    .footer-3 {
+        margin-top: 20px;
     }
 }
 
@@ -358,11 +353,11 @@ p {
 /*________ @media query (480px) _________*/
 
 @media (max-width: 480px) {
-    .navbar {
-        padding: 15px 40px;
+    .nav-toggle {
+        padding: 15px 30px;
     }
     .content {
-        padding: 190px 0 0 40px;
+        padding: 190px 0 0 30px;
     }
     .description h2 {
         font-size: 30px;
