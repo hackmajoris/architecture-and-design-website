@@ -16,7 +16,7 @@
 
     <!--___________________________________ Home _____________________________________-->
 
-    <section class="home page" id="home">
+    <section class="home-page" id="home">
         <header>
             <!--navbar desktop-->
             <nav class="navbar">
@@ -77,8 +77,8 @@
     <section class="contact-section" id="contact">
         <h1>Contact</h1>
         <div class="media">
-            <img src="./img/desktop.svg" alt="">
-            <img src="./img/mobile.svg" alt="">
+            <img src="./img/desktop.svg" alt="" width="500px">
+            <img src="./img/mobile.svg" alt="" width="150px">
         </div>
         <!--date de contact-->
         <div class="txt">
@@ -101,7 +101,7 @@
             </ul>
         </div>
 
-        <div class="form-section">
+        <div class="form-container">
             <!--newsletter-->
             <div class="newsletter">
                 <form action="">
@@ -114,17 +114,21 @@
                     </div>
                 </form>
             </div>
-            <!--submit-->
+            <!--contact form-->
             <div class="submit-form">
                 <form action="">
-                    <input type="text" class="field" placeholder="Nume">
-                    <input type="email" class="field" placeholder="Email">
-                    <input type="text" class="field" placeholder="Telefon">
-                    <textarea class="field" placeholder="Mesaj" style="height: 90px;"></textarea>
-                    <!--checkbox-->
-                    <button type="submit" name="">Trimite</button>
-                    <input type="checkbox" id="checkbox" checked>
-                    <label for="checkbox">Am citit și sunt de acord cu <b>Politica de Confidențialitate</b> a site-ului.</label>
+                    <div class="field">
+                        <input type="text" placeholder="Nume">
+                        <input type="email" placeholder="Email">
+                        <input type="text" placeholder="Telefon">
+                        <textarea name="subject" placeholder="Mesaj" style="height: 100px;"></textarea>
+                    </div>
+                    <div class="sendbtn">
+                        <button type="submit">Trimite</button>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox"> Am citit și sunt de acord cu <a href="#"><b>Politica de Confidențialitate</b> </a> site-ului.</label>
+                    </div>
                 </form>
             </div>
         </div>
@@ -161,12 +165,12 @@
                     </ul>
                     <p>Copyright &copy VHON, 2023</p>
                     <a href="https://lilianaplaton.github.io/Portfolio-website/" target="_blank">Dezvoltat de Liliana Platon</a>
-
                 </div>
-
             </div>
         </div>
     </footer>
+
+
 </body>
 
 </html>
