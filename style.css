@@ -231,7 +231,7 @@ video {
 /*________________________ contact ________________________*/
 
 
-/*--media/img--*/
+/*--desktop video mockup'img--*/
 
 .personalinfo {
     position: relative;
@@ -242,14 +242,12 @@ video {
 }
 
 .personalinfo video {
-    display: none;
     position: relative;
     width: 550px;
     height: auto;
 }
 
 .personalinfo img {
-    display: none;
     position: absolute;
     width: 150px;
     top: 43%;
@@ -277,61 +275,11 @@ video {
     margin-top: 10px;
 }
 
-.txt {
-    display: none;
-}
-
 .txt p {
     color: #000;
     font-weight: normal;
     margin-bottom: 20px;
 }
-
-
-/*--date de contact mobile--*/
-
-.txtmobile {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-}
-
-.location {
-    text-align: right;
-}
-
-.location p {
-    color: #000;
-    font-weight: normal;
-}
-
-.location,
-.alba {
-    margin-top: 25px;
-}
-
-.txtmobile .line {
-    width: 1.5px;
-    height: 120px;
-    background-color: rgba(0, 0, 0, 0.658);
-    margin-top: 20px;
-}
-
-.tel-email,
-.location,
-h3 {
-    color: rgba(0, 0, 0, 0.507);
-    font-weight: normal;
-    margin-top: 10px;
-}
-
-.tel-email p {
-    color: #000;
-}
-
-
-/*--social media--*/
 
 .social-media {
     display: flex;
@@ -386,17 +334,17 @@ h3 {
 /* contact form */
 
 .form-container {
-    position: relative;
     display: flex;
-    justify-content: space-around;
-    padding: 50px 0;
-    margin: 80px 80px 80px 100px;
-    background: #c4c4c44f;
+    justify-content: center;
+    align-items: center;
+    margin: 80px;
+    padding: 50px 80px;
+    gap: 150px;
+    background-color: #c4c4c44f;
 }
 
 .field {
-    display: flex;
-    width: 500px;
+    width: 100%;
     padding: 10px;
     outline: none;
     border: none;
@@ -420,7 +368,7 @@ textarea:focus {
 }
 
 .sendbtn button {
-    width: 500px;
+    width: 100%;
     background: #000;
     cursor: pointer;
     color: #fff;
@@ -457,11 +405,11 @@ textarea:focus {
     height: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: #000;
     font-size: 14px;
     text-align: left;
-    padding: 30px 140px;
+    padding: 30px 80px;
     line-height: 23px;
 }
 
@@ -514,14 +462,20 @@ p {
     .navbar {
         padding: 20px 50px;
     }
-    .form-container {
-        padding: 50px 30px;
+    /*--desktop video mockup'img--*/
+    .personalinfo {
+        gap: 100px;
     }
-    /* contact form */
-    .form-container {
-        gap: 80px;
-        padding: 50px 80px;
-        margin: 0;
+    .personalinfo video {
+        width: 400px;
+    }
+    .personalinfo img {
+        width: 120px;
+        top: 43%;
+        left: 48%;
+    }
+    .txt {
+        font-size: 14px;
     }
 }
 
@@ -542,24 +496,6 @@ p {
         bottom: 0;
         right: 8px;
     }
-    /* newsletter */
-    .newsletter {
-        margin: 30px 130px;
-    }
-    .newsletter p {
-        margin-bottom: 120px;
-    }
-    /* contact form */
-    .form-container {
-        flex-direction: column-reverse;
-        background: none;
-        align-items: center;
-    }
-    .submit-form {
-        padding: 50px 80px;
-        background: #c4c4c44f;
-        margin: 0;
-    }
 }
 
 
@@ -570,6 +506,7 @@ p {
         font-size: 50px;
         line-height: 50px;
     }
+    /*--desktop video mockup'img--*/
     .footer {
         flex-direction: column;
         text-align: center;
@@ -584,19 +521,6 @@ p {
     .footer-2,
     .footer-3 {
         margin-top: 20px;
-    }
-    /*--media/img--*/
-    .personalinfo {
-        flex-direction: column-reverse;
-        gap: 150px;
-    }
-    .personalinfo video {
-        width: 550px;
-    }
-    .personalinfo img {
-        width: 180px;
-        top: 65%;
-        left: 70%;
     }
 }
 
@@ -616,10 +540,6 @@ p {
         margin-bottom: 120px;
     }
     /* contact form */
-    .submit-form {
-        padding: 40px 60px;
-        margin: 40px 0 10px 0;
-    }
 }
 
 
@@ -641,19 +561,25 @@ p {
         padding: 10px 25px;
         font-size: 1.1em;
     }
-    /* newsletter */
-    .newsletter {
-        font-size: 16px;
-        margin: 30px 40px;
+    /*--desktop video mockup'img--*/
+    .personalinfo {
+        flex-direction: column-reverse;
+        gap: 0;
     }
-    .newsletter h3 {
-        font-size: 50px;
+    .personalinfo video {
+        width: 300px;
+    }
+    .personalinfo img {
+        width: 130px;
+        top: 43%;
+        left: 50%;
     }
     /* contact form */
-    .submit-form {
-        padding: 40px 40px;
-    }
-    .checkbox {
-        font-size: 9.5px;
+    .form-container {
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin: 0;
+        padding: 50px 80px;
+        gap: 0;
     }
 }
