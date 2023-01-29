@@ -30,6 +30,7 @@ li {
     align-items: center;
     justify-content: space-between;
     padding: 20px 70px;
+    z-index: 10;
 }
 
 .navbar ul {
@@ -58,7 +59,7 @@ li {
     width: 100%;
 }
 
-.contact {
+.navbar .contact {
     text-transform: uppercase;
     font-size: 20px;
     letter-spacing: 0.06em;
@@ -209,9 +210,6 @@ video {
     transform: scale(1.6) translateY(-4px);
 }
 
-
-/* whatsapp */
-
 .whatsapp img {
     width: 80px;
 }
@@ -234,25 +232,64 @@ video {
 
 /*--date de contact--*/
 
+.contact h1 {
+    font-family: 'Italiana';
+    text-align: center;
+    font-weight: 400;
+    font-size: 70px;
+    letter-spacing: 0.1em;
+    margin: 60px 0;
+}
+
+.personalinfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+
+.txt h3 {
+    color: rgba(0, 0, 0, 0.507);
+    font-weight: normal;
+    margin-bottom: 6px;
+}
+
 .txt p {
     color: #000;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+
+/*--social media--*/
+
+.social-media {
+    display: flex;
+    font-size: 20px;
+}
+
+.social-media a {
+    margin-right: 15px;
+    transition: 0.5s;
+}
+
+.media {
+    position: relative;
+    margin-left: -10%;
+}
+
+.img1 {
+    position: relative;
+}
+
+.img2 {
+    position: absolute;
+    top: 30%;
+    left: 80%;
 }
 
 
 /* newsletter */
-
-.newsletter h3 {
-    font-family: 'Italiana';
-    font-weight: 400;
-    font-size: 60px;
-    letter-spacing: 0.1em;
-}
-
-.newsletter p {
-    color: #000;
-    margin-top: 20px;
-    margin-bottom: 190px;
-}
 
 .newsfield {
     display: flex;
