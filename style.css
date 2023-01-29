@@ -145,11 +145,12 @@ video {
     z-index: -1;
 }
 
-.home-page {
+.home {
     position: relative;
 }
 
 .content {
+    position: relative;
     right: 0;
     width: 100%;
     min-height: 100vh;
@@ -230,34 +231,103 @@ video {
 /*________________________ contact ________________________*/
 
 
-/*--date de contact--*/
-
-.contact h1 {
-    font-family: 'Italiana';
-    text-align: center;
-    font-weight: 400;
-    font-size: 70px;
-    letter-spacing: 0.1em;
-    margin: 60px 0;
-}
+/*--media/img--*/
 
 .personalinfo {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 150px;
 }
 
+.personalinfo video {
+    display: none;
+    position: relative;
+    width: 550px;
+    height: auto;
+}
+
+.personalinfo img {
+    display: none;
+    position: absolute;
+    width: 150px;
+    top: 43%;
+    left: 50%;
+}
+
+
+/*--date de contact desktop--*/
+
+.contact-page {
+    position: relative;
+}
+
+.contact-page h1 {
+    font-family: 'Italiana';
+    text-align: center;
+    font-weight: 400;
+    font-size: 70px;
+    letter-spacing: 0.1em;
+}
+
 .txt h3 {
     color: rgba(0, 0, 0, 0.507);
     font-weight: normal;
-    margin-bottom: 6px;
+    margin-top: 10px;
+}
+
+.txt {
+    display: none;
 }
 
 .txt p {
     color: #000;
-    font-weight: 300;
+    font-weight: normal;
     margin-bottom: 20px;
+}
+
+
+/*--date de contact mobile--*/
+
+.txtmobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.location {
+    text-align: right;
+}
+
+.location p {
+    color: #000;
+    font-weight: normal;
+}
+
+.location,
+.alba {
+    margin-top: 25px;
+}
+
+.txtmobile .line {
+    width: 1.5px;
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.658);
+    margin-top: 20px;
+}
+
+.tel-email,
+.location,
+h3 {
+    color: rgba(0, 0, 0, 0.507);
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+.tel-email p {
+    color: #000;
 }
 
 
@@ -265,27 +335,13 @@ video {
 
 .social-media {
     display: flex;
-    font-size: 20px;
+    font-size: 18px;
+    margin-top: 8px;
 }
 
 .social-media a {
     margin-right: 15px;
     transition: 0.5s;
-}
-
-.media {
-    position: relative;
-    margin-left: -10%;
-}
-
-.img1 {
-    position: relative;
-}
-
-.img2 {
-    position: absolute;
-    top: 30%;
-    left: 80%;
 }
 
 
@@ -330,16 +386,17 @@ video {
 /* contact form */
 
 .form-container {
+    position: relative;
     display: flex;
-    justify-content: space-between;
-    gap: 150px;
-    padding: 50px 70px;
-    margin: 50px 80px 80px 100px;
+    justify-content: space-around;
+    padding: 50px 0;
+    margin: 80px 80px 80px 100px;
     background: #c4c4c44f;
 }
 
 .field {
-    width: 100%;
+    display: flex;
+    width: 500px;
     padding: 10px;
     outline: none;
     border: none;
@@ -363,7 +420,7 @@ textarea:focus {
 }
 
 .sendbtn button {
-    width: 100%;
+    width: 500px;
     background: #000;
     cursor: pointer;
     color: #fff;
@@ -404,7 +461,7 @@ textarea:focus {
     background-color: #000;
     font-size: 14px;
     text-align: left;
-    padding: 30px 120px;
+    padding: 30px 140px;
     line-height: 23px;
 }
 
@@ -496,13 +553,12 @@ p {
     .form-container {
         flex-direction: column-reverse;
         background: none;
-        padding: 30px 0;
-        gap: 10px;
+        align-items: center;
     }
     .submit-form {
         padding: 50px 80px;
-        margin: 50px 0 30px 0;
         background: #c4c4c44f;
+        margin: 0;
     }
 }
 
@@ -528,6 +584,19 @@ p {
     .footer-2,
     .footer-3 {
         margin-top: 20px;
+    }
+    /*--media/img--*/
+    .personalinfo {
+        flex-direction: column-reverse;
+        gap: 150px;
+    }
+    .personalinfo video {
+        width: 550px;
+    }
+    .personalinfo img {
+        width: 180px;
+        top: 65%;
+        left: 70%;
     }
 }
 
