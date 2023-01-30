@@ -104,6 +104,7 @@ li {
     justify-content: center;
     background: rgba(255, 255, 255, 0.136);
     backdrop-filter: blur(11.145px);
+    z-index: 15;
 }
 
 .sidenav ul li {
@@ -295,6 +296,19 @@ video {
 
 /* newsletter */
 
+.newsletter h3 {
+    font-family: 'Italiana';
+    font-weight: 400;
+    font-size: 60px;
+    letter-spacing: 0.1em;
+}
+
+.newsletter p {
+    color: #000;
+    margin-top: 15px;
+    margin-bottom: 140px;
+}
+
 .newsfield {
     display: flex;
     align-items: center;
@@ -324,6 +338,7 @@ video {
     cursor: pointer;
     opacity: 0.9;
     transition: 0.5s;
+    border: none;
 }
 
 .newsfield button:hover {
@@ -462,21 +477,6 @@ p {
     .navbar {
         padding: 20px 50px;
     }
-    /*--desktop video mockup'img--*/
-    .personalinfo {
-        gap: 100px;
-    }
-    .personalinfo video {
-        width: 400px;
-    }
-    .personalinfo img {
-        width: 120px;
-        top: 43%;
-        left: 48%;
-    }
-    .txt {
-        font-size: 14px;
-    }
 }
 
 
@@ -532,14 +532,6 @@ p {
         font-size: 40px;
         line-height: 40px;
     }
-    /* newsletter */
-    .newsletter {
-        margin: 30px 80px;
-    }
-    .newsletter p {
-        margin-bottom: 120px;
-    }
-    /* contact form */
 }
 
 
@@ -561,25 +553,59 @@ p {
         padding: 10px 25px;
         font-size: 1.1em;
     }
+    /*--contact page--*/
+    .contact-page h1 {
+        font-size: 45px;
+        padding: 30px;
+    }
+    .txt {
+        text-align: center;
+    }
+    .social-media ul li a {
+        align-items: center;
+    }
+    /*--newsletter--*/
+    .newsletter {
+        margin: 40px;
+    }
+    .newsletter h3 {
+        font-size: 40px;
+    }
+    .newsletter p {
+        margin-bottom: 100px;
+    }
+    .emailfield {
+        width: 130px;
+        margin: 0 10px;
+        padding: 5px;
+    }
     /*--desktop video mockup'img--*/
     .personalinfo {
         flex-direction: column-reverse;
         gap: 0;
     }
     .personalinfo video {
-        width: 300px;
+        width: 330px;
     }
     .personalinfo img {
-        width: 130px;
-        top: 43%;
-        left: 50%;
+        width: 100px;
+        top: 70%;
+        left: 73%;
     }
     /* contact form */
     .form-container {
         flex-direction: column-reverse;
         justify-content: center;
+        padding: 0;
         margin: 0;
-        padding: 50px 80px;
         gap: 0;
+        background: none;
+    }
+    .submit-form {
+        background-color: #c4c4c44f;
+        padding: 30px 40px;
+    }
+    .checkbox {
+        font-size: 9.5px;
     }
 }
