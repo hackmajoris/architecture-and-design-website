@@ -1,11 +1,9 @@
-//sidebar menu_toggle
-
+// Open and close sidebar
 function openNav() {
-    document.getElementById("mySidenav").style.width = "230px";
+    document.getElementById("mySidenav").style.width = "250px";
+
 }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-
 }
-//

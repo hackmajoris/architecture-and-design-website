@@ -14,7 +14,7 @@
 
 <body>
 
-    <!--___________________________________ Home _____________________________________-->
+    <!--___________________________________ home _____________________________________-->
 
     <section class="home" id="home">
         <header>
@@ -27,7 +27,7 @@
                     <li><a href="#portofoliu">Portofoliu</a></li>
                     <li><a href="./intrebari.html">Întrebări</a></li>
                 </ul>
-                <a href="#contact" class="contact">Contact</a>
+                <a href="#contact" class="nav-contact">Contact</a>
             </nav>
             <!--navbar mobile-->
             <div class="nav-toggle">
@@ -45,12 +45,11 @@
                 <li> <a href="#despre">Despre</a> </li>
                 <li> <a href="#portofoliu">Portofoliu</a> </li>
                 <li> <a href="./intrebari.html">Întrebări</a> </li>
-                <li> <a href=".contact.html">Contact</a> </li>
+                <li> <a href="#contact.html">Contact</a> </li>
             </ul>
         </div>
         <!--video-->
         <video src="./img/media/home video.mov" muted loop autoplay></video>
-        <!--content-->
         <div class="content">
             <div class="description">
                 <h2>Servicii de arhitectură <br> și design interior</h2>
@@ -70,70 +69,87 @@
         </div>
     </section>
 
-    <!--___________________________________ Despre _____________________________________-->
+    <!--___________________________________ despre _____________________________________-->
 
-    <!--___________________________________ Contact _____________________________________-->
-
-    <section class="contact-page" id="contact">
-        <h1>Contact</h1>
-        <div class="personalinfo">
-            <video src="./img/media/desktop.mp4" muted loop autoplay></video>
-            <img src="./img/mobile.svg" alt="">
-            <!--date de contact desktop-->
-            <div class="txt">
-                <h3>Telefon</h3>
-                <p>(+40) 749 817 422</p>
-                <h3>Email</h3>
-                <p>vhondesign@gmail.com</p>
-                <h3>Locații</h3>
-                <p><b>Cluj-Napoca</b><br>Str. Profesor Tudor Ciortea, nr.9</p>
-                <p><b>Alba-Iulia</b><br>Sebeș, loc. Petrești, jud. Alba</p>
-                <h3>Social media</h3>
-                <ul class="social-media">
-                    <li><a href="https://www.facebook.com/valentina.honceru" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/valentina-honceru-7b4740120/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                    <li><a href="https://ro.pinterest.com/honceru/" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a></li>
-                    <li><a href="https://www.instagram.com/valehonceru/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li><a href="mailto:vhondesign@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
-                </ul>
+    <section class="despre" id="despre">
+        <div class="despre-container">
+            <h1>Despre</h1>
+            <div class="services">
+                <div class="achitecture">
+                    <img src="./img/arhitectura.svg" alt="">
+                    <p>Oferim servicii de arhitectură pentru toate fazele: CU, DTAC, SF, DALI, PTh, pentru funcțiuni rezidențiale, culturale, învățământ și spații publice.</p>
+                </div>
+                <div class="design">
+                    <img src="./img/design interior.svg" alt="">
+                    <p>Concept și dezvoltarea proiectului tehnic pentru implementare, consultanță și asistență tehnică pe perioada implementării.</p>
+                </div>
             </div>
+            <hr>
+            <div class="about">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eligendi non, sit voluptatum nihil nemo, officiis maiores doloribus ducimus quas, totam esse consequuntur distinctio laudantium! Iste odit similique neque labore!</p>
+            </div>
+            <hr>
+            <img src="./img/avatar.svg" alt="avatar">
         </div>
-        <!--newsletter-->
-        <div class="form-container">
-            <div class="newsletter">
-                <form action="">
-                    <h3>Newsletter</h3>
-                    <p>Abonează-te pentru a primi cele mai recente noutăți.</p>
-                    <div class="newsfield">
-                        <div class="emailbox">
-                            <i class="fa-solid fa-envelope" style="font-size: 20px;"></i>
-                            <input type="email" class="emailfield" name="email" placeholder="Adresa ta de email">
-                        </div>
+    </section>
+    <!--_________________________________ portofoliu ___________________________________-->
+    <!--___________________________________ contact _____________________________________-->
+
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <h1>Contact</h1>
+            <div class="personalinfo">
+                <div class="media">
+                    <video src="./img/media/desktop.mp4" loop autoplay muted></video>
+                    <img src="./img/mobile.svg">
+                </div>
+                <div class="info">
+                    <h4>Telefon</h4>
+                    <p>(+40) 749 817 422</p>
+                    <h4>Email</h4>
+                    <p>vhondesign@gmail.com</p>
+                    <h4>Locații</h4>
+                    <p><b>Cluj-Napoca</b><br>Str. Profesor Tudor Ciortea, nr.9</p><br>
+                    <p><b>Alba-Iulia</b><br>Sebeș, loc. Petrești, jud. Alba</p>
+                    <h4>Social media</h4>
+                    <ul>
+                        <li><a href="https://www.facebook.com/valentina.honceru" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/valentina-honceru-7b4740120/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href="https://ro.pinterest.com/honceru/" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                        <li><a href="https://www.instagram.com/valehonceru/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="mailto:vhondesign@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="form-container">
+                <form action="#">
+                    <div class="newsletter">
+                        <h3>Newsletter</h3>
+                        <p>Abonează-te pentru a primi cele mai recente noutăți.</p>
+                        <i class="fa-solid fa-envelope"></i><input type="email" name="email" placeholder="Adresa ta de email" required>
                         <button type="submit">Abonare</button>
                     </div>
                 </form>
-            </div>
-            <!--contact form-->
-            <div class="submit-form">
-                <form action="">
-                    <div class="field-box">
-                        <input type="text" class="field" placeholder="Nume">
-                        <input type="email" class="field" placeholder="Email">
-                        <input type="text" class="field" placeholder="Telefon">
-                        <textarea class="field" placeholder="Mesaj" style="height: 100px;"></textarea>
-                    </div>
-                    <div class="sendbtn">
-                        <button type="submit">Trimite</button>
-                    </div>
-                    <div class="checkbox">
-                        <label><input type="checkbox"> Am citit și sunt de acord cu <a href="#"><b>Politica de Confidențialitate</b> </a> site-ului.</label>
-                    </div>
-                </form>
+                <div class="contact-form">
+                    <form action="#">
+                        <div class="field-box">
+                            <input class="field" type="text" name="name" placeholder="Nume" required>
+                            <input class="field" type="email" name="email" placeholder="Email" required>
+                            <input class="field" type="text" name="phone" placeholder="Telefon" required>
+                            <textarea class="field" name="message" placeholder="Mesaj" required></textarea>
+                        </div>
+                        <div class="sendbtn">
+                            <button type="submit">Trimite</button></div>
+                        <div class="checkbox">
+                            <label><input type="checkbox"> Am citit și sunt de acord cu <a href="#"> <b>Politica de confidențialitate</b> a site-ului.</a></label>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 
-    <!--___________________________________ Footer _____________________________________-->
+    <!--___________________________________ footer _____________________________________-->
 
     <footer>
         <div class="footer-container">
@@ -162,7 +178,7 @@
                         <li><a href="https://www.instagram.com/valehonceru/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
                         <li><a href="mailto:vhondesign@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
                     </ul>
-                    <p>Copyright &copy VHON, 2023</p>
+                    <a href="#">Copyright &copy VHON, 2023</a>
                     <a href="https://lilianaplaton.github.io/Portfolio-website/" target="_blank">Dezvoltat de Liliana Platon</a>
                 </div>
             </div>

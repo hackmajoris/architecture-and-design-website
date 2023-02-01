@@ -59,14 +59,14 @@ li {
     width: 100%;
 }
 
-.navbar .contact {
+.navbar .nav-contact {
     text-transform: uppercase;
     font-size: 20px;
     letter-spacing: 0.06em;
     transition: 0.5s;
 }
 
-.contact:hover {
+.nav-contact:hover {
     font-weight: 700;
 }
 
@@ -136,7 +136,7 @@ li {
 
 /* video_home page */
 
-video {
+.home video {
     position: absolute;
     top: 0;
     left: 0;
@@ -229,182 +229,78 @@ video {
 }
 
 
-/*________________________ contact ________________________*/
+/*________________________ despre ________________________*/
 
-
-/*--desktop video mockup'img--*/
-
-.personalinfo {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 150px;
+h1 {
+    font-family: 'Italiana';
+    font-weight: 400;
+    font-size: 70px;
+    text-align: center;
+    letter-spacing: 0.1em;
 }
 
-.personalinfo video {
+
+/*________________________ contact ________________________*/
+
+.contact-container {
     position: relative;
-    width: 550px;
+}
+
+
+/*--personal info--*/
+
+.personalinfo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    line-height: 22px;
+    gap: 130px;
+}
+
+.info h4 {
+    color: rgba(0, 0, 0, 0.473);
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.info ul {
+    display: flex;
+}
+
+.info ul li {
+    margin-right: 15px;
+    margin-top: 6px;
+}
+
+.media video {
+    position: relative;
+    width: 530px;
     height: auto;
 }
 
-.personalinfo img {
+.media img {
     position: absolute;
-    width: 150px;
-    top: 43%;
-    left: 50%;
+    width: 160px;
+    top: 33%;
+    left: 49%;
 }
 
 
-/*--date de contact desktop--*/
-
-.contact-page {
-    position: relative;
-}
-
-.contact-page h1 {
-    font-family: 'Italiana';
-    text-align: center;
-    font-weight: 400;
-    font-size: 70px;
-    letter-spacing: 0.1em;
-}
-
-.txt h3 {
-    color: rgba(0, 0, 0, 0.507);
-    font-weight: normal;
-    margin-top: 10px;
-}
-
-.txt p {
-    color: #000;
-    font-weight: normal;
-    margin-bottom: 20px;
-}
-
-.social-media {
-    display: flex;
-    font-size: 18px;
-    margin-top: 8px;
-}
-
-.social-media a {
-    margin-right: 15px;
-    transition: 0.5s;
-}
+/*--newsletter--*/
 
 
-/* newsletter */
-
-.newsletter h3 {
-    font-family: 'Italiana';
-    font-weight: 400;
-    font-size: 60px;
-    letter-spacing: 0.1em;
-}
-
-.newsletter p {
-    color: #000;
-    margin-top: 15px;
-    margin-bottom: 140px;
-}
-
-.newsfield {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.562);
-}
-
-.emailbox {
-    display: flex;
-    align-items: center;
-}
-
-.emailfield {
-    width: 200px;
-    margin: 0 10px;
-    padding: 5px;
-    outline: none;
-    border: none;
-    background: none;
-}
-
-.newsfield button {
-    padding: 6px 25px;
-    background: #000;
-    color: #fff;
-    letter-spacing: 0.12em;
-    cursor: pointer;
-    opacity: 0.9;
-    transition: 0.5s;
-    border: none;
-}
-
-.newsfield button:hover {
-    opacity: 1;
-}
-
-
-/* contact form */
+/*--form-container--*/
 
 .form-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 80px;
-    padding: 50px 80px;
-    gap: 150px;
-    background-color: #c4c4c44f;
-}
-
-.field {
-    width: 100%;
-    padding: 10px;
-    outline: none;
-    border: none;
-    font-size: 15px;
-    margin-top: 15px;
-    resize: vertical;
-    transition: 0.5s;
-}
-
-::placeholder {
-    color: #000;
-}
-
-input[type=text]:focus,
-input[type=email]:focus {
-    border: 1px solid rgba(0, 0, 0, 0.527);
-}
-
-textarea:focus {
-    border: 1px solid rgba(0, 0, 0, 0.527);
-}
-
-.sendbtn button {
-    width: 100%;
-    background: #000;
-    cursor: pointer;
-    color: #fff;
-    text-transform: uppercase;
-    padding: 8px;
-    letter-spacing: 0.2em;
-    font-size: 16px;
-    margin-top: 15px;
-    opacity: 0.9;
-    transition: 0.5s;
-}
-
-.sendbtn button:hover {
-    border-radius: 10px;
-    font-weight: bold;
-}
-
-.checkbox {
-    margin-top: 20px;
-    font-size: 12px;
-    text-align: left;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+    background: rgba(196, 196, 196, 0.377);
+    margin: 50px;
+    padding: 50px;
 }
 
 
@@ -415,7 +311,6 @@ textarea:focus {
 }
 
 .footer {
-    position: absolute;
     width: 100%;
     height: auto;
     display: flex;
@@ -429,8 +324,7 @@ textarea:focus {
 }
 
 .footer a,
-h2,
-p {
+h2 {
     color: #fff;
     transition: 0.5s;
 }
@@ -447,6 +341,7 @@ p {
 .footer-heading h2 {
     margin-bottom: 15px;
     font-size: 13px;
+    letter-spacing: 2px;
 }
 
 
@@ -471,7 +366,7 @@ p {
 }
 
 
-/*________ @media query (1024px) _________*/
+/*_________ @media query_1024px _________*/
 
 @media (max-width: 1024px) {
     .navbar {
@@ -480,7 +375,7 @@ p {
 }
 
 
-/*________ @media query (992px) _________*/
+/*_________ @media query_992px _________*/
 
 @media (max-width: 992px) {
     .navbar {
@@ -499,14 +394,14 @@ p {
 }
 
 
-/*________ @media query (768px) _________*/
+/*________ @media query_768px _________*/
 
 @media (max-width: 768px) {
     .description h2 {
         font-size: 50px;
         line-height: 50px;
     }
-    /*--desktop video mockup'img--*/
+    /*--footer--*/
     .footer {
         flex-direction: column;
         text-align: center;
@@ -520,12 +415,12 @@ p {
     }
     .footer-2,
     .footer-3 {
-        margin-top: 20px;
+        margin-top: 30px;
     }
 }
 
 
-/*________ @media query (600px) _________*/
+/*________ @media query_600px _________*/
 
 @media (max-width: 600px) {
     .description h2 {
@@ -535,7 +430,7 @@ p {
 }
 
 
-/*________ @media query (480px) _________*/
+/*________ @media query_480px _________*/
 
 @media (max-width: 480px) {
     .nav-toggle {
@@ -552,60 +447,5 @@ p {
         margin-top: 25px;
         padding: 10px 25px;
         font-size: 1.1em;
-    }
-    /*--contact page--*/
-    .contact-page h1 {
-        font-size: 45px;
-        padding: 30px;
-    }
-    .txt {
-        text-align: center;
-    }
-    .social-media ul li a {
-        align-items: center;
-    }
-    /*--newsletter--*/
-    .newsletter {
-        margin: 40px;
-    }
-    .newsletter h3 {
-        font-size: 40px;
-    }
-    .newsletter p {
-        margin-bottom: 100px;
-    }
-    .emailfield {
-        width: 130px;
-        margin: 0 10px;
-        padding: 5px;
-    }
-    /*--desktop video mockup'img--*/
-    .personalinfo {
-        flex-direction: column-reverse;
-        gap: 0;
-    }
-    .personalinfo video {
-        width: 330px;
-    }
-    .personalinfo img {
-        width: 100px;
-        top: 70%;
-        left: 73%;
-    }
-    /* contact form */
-    .form-container {
-        flex-direction: column-reverse;
-        justify-content: center;
-        padding: 0;
-        margin: 0;
-        gap: 0;
-        background: none;
-    }
-    .submit-form {
-        background-color: #c4c4c44f;
-        padding: 30px 40px;
-    }
-    .checkbox {
-        font-size: 9.5px;
     }
 }
