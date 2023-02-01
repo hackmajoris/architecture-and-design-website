@@ -6,6 +6,7 @@
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     color: #000;
+    text-align: justify;
 }
 
 li {
@@ -237,6 +238,61 @@ h1 {
     font-size: 70px;
     text-align: center;
     letter-spacing: 0.1em;
+    margin-top: 300px 0;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+
+/* services */
+
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.architecture p {
+    margin-top: -15px;
+    margin-left: 70px;
+    margin-bottom: 30px;
+    max-width: 280px;
+}
+
+.design p {
+    margin-top: -15px;
+    margin-left: 70px;
+    max-width: 280px;
+}
+
+.architecture img {
+    width: 150px;
+}
+
+.design img {
+    width: 180px;
+}
+
+
+/* about */
+
+hr {
+    margin: 25px 0;
+}
+
+.about {
+    margin: 60px;
+    line-height: 22px;
+    max-width: 30%;
+}
+
+.avatar {
+    width: 200px;
 }
 
 
