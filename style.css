@@ -238,7 +238,7 @@ h1 {
     font-size: 70px;
     text-align: center;
     letter-spacing: 0.1em;
-    margin-top: 300px 0;
+    margin: 30px 0;
 }
 
 .about-container {
@@ -246,10 +246,8 @@ h1 {
     align-items: center;
     justify-content: center;
     font-size: 15px;
+    margin: 100px;
 }
-
-
-/* services */
 
 .services {
     display: flex;
@@ -257,25 +255,53 @@ h1 {
     justify-content: center;
 }
 
+
+/* architecture */
+
+.architecture img {
+    width: 180px;
+}
+
 .architecture p {
     margin-top: -15px;
-    margin-left: 70px;
-    margin-bottom: 30px;
-    max-width: 280px;
+    margin-left: 80px;
+    margin-bottom: 60px;
+}
+
+.architecture ul {
+    display: flex;
+    font-size: 25px;
+    gap: 20px;
+}
+
+.architecture i {
+    font-size: 25px;
+    margin-top: 55px;
+    cursor: pointer;
+}
+
+
+/* design */
+
+.design img {
+    width: 230px;
 }
 
 .design p {
     margin-top: -15px;
-    margin-left: 70px;
-    max-width: 280px;
+    margin-left: 80px;
 }
 
-.architecture img {
-    width: 150px;
+.design ul {
+    display: flex;
+    font-size: 25px;
+    gap: 15px;
 }
 
-.design img {
-    width: 180px;
+.design i {
+    font-size: 25px;
+    margin-top: 50px;
+    cursor: pointer;
 }
 
 
@@ -286,7 +312,7 @@ hr {
 }
 
 .about {
-    margin: 60px;
+    margin: 80px;
     line-height: 22px;
     max-width: 30%;
 }
@@ -310,7 +336,7 @@ hr {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 22px;
     gap: 130px;
 }
