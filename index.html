@@ -99,7 +99,7 @@
                     <hr>
                 </p>
             </div>
-            <img src="./img/avatar.svg" alt="avatar" class="avatar">
+            <img src="./img/avatar.svg" loading="lazy" alt="avatar" class="avatar">
         </div>
     </section>
 
@@ -121,7 +121,7 @@
             <div class="personalinfo">
                 <div class="media">
                     <video src="./img/media/desktop.mp4" loop autoplay muted></video>
-                    <img src="./img/mobile.svg">
+                    <img src="./img/mobile.svg" alt="" loading="lazy">
                 </div>
                 <div class="info">
                     <h4>Telefon</h4>
@@ -144,12 +144,16 @@
             <!--newsletter-->
             <div class="form-container">
                 <form action="#">
+
                     <div class="newsletter">
                         <h3>Newsletter</h3>
                         <p>Abonează-te pentru a primi cele mai recente noutăți.</p>
-                        <i class="fa-solid fa-envelope"></i><input type="email" name="email" placeholder="Adresa ta de email" required>
-                        <button type="submit">Abonare</button>
+                        <div class="newsletter-field">
+                            <i class="fa-solid fa-envelope"></i><input type="email" name="email" placeholder="Adresa ta de email" required>
+                            <button type="submit">Abonare</button>
+                        </div>
                     </div>
+
                 </form>
                 <!--contact-form-->
                 <form action="#">
@@ -157,18 +161,19 @@
                         <div class="field-box">
                             <input class="field" type="text" name="name" placeholder="Nume" required>
                             <input class="field" type="email" name="email" placeholder="Email" required>
-                            <input class="field" type="text" name="phone" placeholder="Telefon" required>
+                            <input class="field" type="number" name="phone" placeholder="Telefon" required>
                             <textarea class="field" name="message" placeholder="Mesaj" required style="height: 100px;"></textarea>
                         </div>
                         <div class="sendbtn">
-                            <button type="submit">Trimite</button></div>
-                        <div class="checkbox">
-                            <label><input type="checkbox"> Am citit și sunt de acord cu <a href="#"> <b>Politica de confidențialitate</b> a site-ului.</a></label>
+                            <button type="submit">Trimite</button>
+                            <div class="checkbox">
+                                <input type="checkbox" id="check">
+                                <label for="check">Am citit și sunt de acord cu <a href="#"> <b>Politica de confidențialitate</b> a site-ului.</a></label>
+                            </div>
                         </div>
-                    </div>
                 </form>
+                </div>
             </div>
-        </div>
     </section>
 
     <!--___________________________________ footer _____________________________________-->

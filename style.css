@@ -94,7 +94,7 @@ li {
 /* sidenav mobile */
 
 .sidenav {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     width: 0;
@@ -383,8 +383,8 @@ hr {
 .media img {
     position: absolute;
     width: 160px;
-    top: 36%;
-    left: 49%;
+    top: 30%;
+    left: 47%;
 }
 
 
@@ -401,6 +401,49 @@ hr {
 
 
 /*--newsletter--*/
+
+.newsletter h3 {
+    font-family: 'Italiana';
+    font-weight: 400;
+    font-size: 60px;
+    letter-spacing: 0.1em;
+}
+
+.newsletter p {
+    width: 100%;
+    margin-bottom: 120px;
+}
+
+.newsletter-field {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #000;
+}
+
+.newsletter input[type=email] {
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-left: 4px;
+    padding: 10px;
+    background: none;
+}
+
+.newsletter button {
+    font-size: 14px;
+    text-align: center;
+    padding: 8px 30px;
+    background-color: #000;
+    color: #fff;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: 0.5s;
+}
+
+.newsletter button:hover {
+    opacity: 1;
+}
 
 
 /*--contact-form--*/
@@ -422,13 +465,25 @@ hr {
     color: rgba(0, 0, 0, 0.61);
 }
 
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
+textarea:focus {
+    border: 1px solid rgba(0, 0, 0, 0.534);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
 .sendbtn button {
     width: 100%;
     font-size: 16px;
     text-transform: uppercase;
     text-align: center;
-    letter-spacing: 0.15em;
-    border-radius: 15px;
+    cursor: pointer;
+    letter-spacing: 0.13em;
     padding: 8px;
     background-color: #000;
     margin-top: 8px;
@@ -439,7 +494,15 @@ hr {
 
 .sendbtn button:hover {
     opacity: 1;
-    font-weight: 700;
+    border-radius: 4px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 13px;
+    gap: 10px;
 }
 
 
