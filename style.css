@@ -6,10 +6,9 @@
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     color: #000;
-    text-align: justify;
 }
 
-li {
+ul li {
     list-style-type: none;
 }
 
@@ -317,6 +316,7 @@ hr {
 .about {
     margin: 0 40px;
     line-height: 22px;
+    text-align: justify;
 }
 
 .avatar {
@@ -329,6 +329,53 @@ hr {
 
 
 /*________________________ intrebari ________________________*/
+
+.intrebari {
+    position: relative;
+}
+
+.intrebari-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.intrebari-container h1 {
+    margin-top: 150px;
+    margin-bottom: 90px;
+}
+
+.qn {
+    margin: 0 100px 50px 100px;
+    align-items: baseline;
+    text-align: justify;
+    column-count: 2;
+    gap: 130px;
+}
+
+.qn h4 {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-top: 50px;
+    padding: 20px;
+    border-bottom: 0.5px solid #00000062;
+}
+
+.qn i {
+    font-size: 30px;
+}
+
+.qn ol {
+    display: none;
+}
+
+.qn p {
+    display: none;
+    margin-top: 10px;
+    color: #333333;
+}
 
 
 /*_________________________ contact _________________________*/
@@ -345,12 +392,8 @@ hr {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 22px;
-}
-
-.info {
-    margin: 0 0 0 30px;
 }
 
 .info h4 {
@@ -411,6 +454,9 @@ hr {
 
 .newsletter p {
     width: 100%;
+    font-size: 14px;
+    text-align: left;
+    margin-top: 10px;
     margin-bottom: 120px;
 }
 
@@ -427,6 +473,10 @@ hr {
     margin-left: 4px;
     padding: 10px;
     background: none;
+}
+
+.newsletter input[type=email]:focus {
+    border: none;
 }
 
 .newsletter button {
@@ -513,6 +563,8 @@ input::-webkit-inner-spin-button {
 }
 
 .footer {
+    position: relative;
+    margin-bottom: 0;
     width: 100%;
     height: auto;
     display: flex;
@@ -521,6 +573,7 @@ input::-webkit-inner-spin-button {
     background-color: #000;
     font-size: 14px;
     text-align: left;
+    bottom: 0;
     padding: 30px 80px;
     line-height: 23px;
 }
