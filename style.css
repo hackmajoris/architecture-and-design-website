@@ -725,4 +725,10 @@ h2 {
         padding: 10px 25px;
         font-size: 1.1em;
     }
+    .question {
+        font-size: 10px;
+    }
+    .question i {
+        font-size: 15px;
+    }
 }
