@@ -726,7 +726,8 @@ h2 {
         font-size: 1.1em;
     }
     .question {
-        font-size: 10px;
+        font-size: 9px;
+        text-align: left;
     }
     .question i {
         font-size: 15px;
