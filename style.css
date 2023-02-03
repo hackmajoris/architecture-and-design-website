@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat&family=Tenor+Sans&display=swap');
+@import url('https://kit.fontawesome.com/8e08c52e93.js');
 * {
     box-sizing: border-box;
     margin: 0;
@@ -24,7 +25,7 @@ ul li {
     top: 0;
     left: 0;
     background: #fff;
-    filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.185));
+    filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.1));
     width: 100%;
     display: flex;
     align-items: center;
@@ -80,7 +81,7 @@ ul li {
     top: 0;
     left: 0;
     background: #fff;
-    filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.1));
     width: 100%;
     display: flex;
     align-items: center;
@@ -103,7 +104,7 @@ ul li {
     align-items: center;
     justify-content: center;
     background: rgba(255, 255, 255, 0.136);
-    backdrop-filter: blur(11.145px);
+    backdrop-filter: blur(10px);
     z-index: 15;
 }
 
@@ -237,7 +238,7 @@ h1 {
     font-size: 70px;
     text-align: center;
     letter-spacing: 0.1em;
-    margin: 30px 0;
+    padding: 30px 0;
 }
 
 .about-container {
@@ -332,49 +333,70 @@ hr {
 
 .intrebari {
     position: relative;
+    border-left: 20px solid #000;
+    border-right: 20px solid #000;
 }
 
-.intrebari-container {
+.faq-container {
     position: relative;
-    width: 100%;
     min-height: 100vh;
 }
 
-.intrebari-container h1 {
-    margin-top: 150px;
-    margin-bottom: 90px;
+.faq-container h1 {
+    padding: 140px 0 70px 0;
 }
 
-.qn {
-    margin: 0 100px 50px 100px;
-    align-items: baseline;
-    text-align: justify;
-    column-count: 2;
-    gap: 130px;
-}
-
-.qn h4 {
+.faq {
     display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 200px;
+}
+
+.accordion {
+    width: 100%;
+    text-align: left;
+    border: none;
+    background: none;
     font-size: 18px;
-    margin-top: 50px;
-    padding: 20px;
-    border-bottom: 0.5px solid #00000062;
+    letter-spacing: 0.03em;
+    cursor: pointer;
+    border-bottom: 0.5px solid #0000006e;
+    outline: none;
+    transform: 0.5s;
 }
 
-.qn i {
-    font-size: 30px;
+.accordion:after {
+    content: url(./img/right.svg);
+    width: 20px;
+    float: right;
+    margin-right: 8px;
 }
 
-.qn ol {
-    display: none;
+.faq-active:after {
+    content: url(./img/down.svg);
+    width: 30px;
 }
 
-.qn p {
-    display: none;
-    margin-top: 10px;
-    color: #333333;
+.faq-txt {
+    width: 100%;
+    padding: 15px 0;
+    max-height: 0;
+    overflow: hidden;
+    text-align: justify;
+    margin: 15px;
+    transition: max-height 0.5s ease-out;
+}
+
+.faq-txt p {
+    margin-top: 15px;
+    color: #333333e7;
+}
+
+.faq-txt li {
+    margin-top: 15px;
+    color: #333333e7;
 }
 
 
@@ -564,7 +586,6 @@ input::-webkit-inner-spin-button {
 
 .footer {
     position: relative;
-    margin-bottom: 0;
     width: 100%;
     height: auto;
     display: flex;
@@ -573,7 +594,6 @@ input::-webkit-inner-spin-button {
     background-color: #000;
     font-size: 14px;
     text-align: left;
-    bottom: 0;
     padding: 30px 80px;
     line-height: 23px;
 }

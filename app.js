@@ -7,7 +7,3 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
-
-// Open and close architecture toggle
-
-// Open and close design toggle
