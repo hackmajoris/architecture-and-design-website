@@ -332,71 +332,73 @@ hr {
 /*________________________ intrebari ________________________*/
 
 .intrebari {
-    position: relative;
     border-left: 20px solid #000;
     border-right: 20px solid #000;
 }
 
 .faq-container {
-    position: relative;
+    width: 80%;
     min-height: 100vh;
-}
-
-.faq-container h1 {
-    padding: 140px 0 70px 0;
-}
-
-.faq {
+    margin: 0 auto;
+    padding-bottom: 8rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 50px 200px;
+    font-size: 14px;
 }
 
-.accordion {
-    width: 100%;
-    text-align: left;
-    border: none;
-    background: none;
-    font-size: 18px;
-    letter-spacing: 0.03em;
+.faq-container h1 {
+    margin-top: 7rem;
+    font-size: 60px;
+}
+
+.faq {
+    max-width: 900px;
     cursor: pointer;
-    border-bottom: 0.5px solid #0000006e;
-    outline: none;
-    transform: 0.5s;
+    margin-top: 5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #000000af;
+    text-align: justify;
 }
 
-.accordion:after {
-    content: url(./img/right.svg);
-    width: 20px;
-    float: right;
-    margin-right: 8px;
+.faq h3 {
+    letter-spacing: 0.05em;
 }
 
-.faq-active:after {
-    content: url(./img/down.svg);
-    width: 30px;
+.question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.faq-txt {
-    width: 100%;
-    padding: 15px 0;
+.question i {
+    font-size: 25px;
+}
+
+.answer {
     max-height: 0;
     overflow: hidden;
-    text-align: justify;
-    margin: 15px;
-    transition: max-height 0.5s ease-out;
+    transition: max-height 2s ease;
 }
 
-.faq-txt p {
-    margin-top: 15px;
-    color: #333333e7;
+.answer ol li {
+    padding-top: 1rem;
+    padding-left: 0.6rem;
+    margin-left: 18px;
+    color: #333333d8;
 }
 
-.faq-txt li {
-    margin-top: 15px;
-    color: #333333e7;
+.answer p {
+    padding-top: 1rem;
+    color: #333333d8;
+}
+
+.faq.active .answer {
+    max-height: 300px;
+}
+
+.faq.active i {
+    transform: rotate(90deg);
 }
 
 
