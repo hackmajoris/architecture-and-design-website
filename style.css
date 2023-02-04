@@ -585,6 +585,73 @@ input::-webkit-inner-spin-button {
 }
 
 
+/*___________________ politica cookies ___________________*/
+
+.politica-cookies {
+    border-left: 20px solid #000;
+    border-right: 20px solid #000;
+}
+
+.cookies-container h1 {
+    padding-top: 10rem;
+    font-size: 60px;
+}
+
+.cookies-container {
+    min-height: 100vh;
+    padding-bottom: 6rem;
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cookies {
+    max-width: 700px;
+    cursor: pointer;
+    margin-top: 3rem;
+    padding-right: 0.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #00000077;
+    text-align: justify;
+}
+
+.cookies li {
+    letter-spacing: 0.04em;
+    font-weight: 600;
+    text-align: left;
+    font-size: 18px;
+}
+
+.question-cookies {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.answer-cookies {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease;
+    font-size: 15px;
+}
+
+.answer-cookies p {
+    padding-top: 1rem;
+    color: #333333d8;
+    line-height: 22px;
+}
+
+.cookies.active .answer-cookies {
+    max-height: 800px;
+}
+
+.cookies.active i {
+    transform: rotate(90deg);
+}
+
+
 /*________________________ footer ________________________*/
 
 .footer-container {
@@ -746,15 +813,15 @@ h2 {
     }
     /*--faq--*/
     .faq-container {
-        margin: 0 40px;
-        padding-bottom: 5rem;
+        margin: 0 35px;
+        padding-bottom: 4rem;
     }
     .faq-container h1 {
         margin-top: 6rem;
         font-size: 45px;
     }
     .faq h3 {
-        font-size: 13px;
+        font-size: 14px;
         margin-right: 1rem;
         line-height: 16px;
     }
@@ -762,6 +829,26 @@ h2 {
         font-size: 18px;
     }
     .answer {
-        font-size: 12px;
+        font-size: 13px;
+    }
+    /*--cookies--*/
+    .cookies-container h1 {
+        padding-top: 10rem;
+        font-size: 35px;
+    }
+    .cookies-container {
+        margin: 0 40px;
+    }
+    .cookies li {
+        font-size: 14px;
+    }
+    .answer-cookies {
+        font-size: 13px;
+    }
+    .answer-cookies p {
+        line-height: 18px;
+    }
+    .cookies.active .answer-cookies {
+        max-height: 1000px;
     }
 }
