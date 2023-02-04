@@ -550,13 +550,15 @@
     /*___________________ politica cookies  |  politica de confidentialitate  |  termeni si conditii ___________________*/
     
     .politica-cookies,
-    .confidentialitate {
+    .confidentialitate,
+    .termeni-conditii {
         border-left: 20px solid #000;
         border-right: 20px solid #000;
     }
     
     .cookies-container,
-    .conf-container {
+    .conf-container,
+    .termeni-container {
         min-height: 100vh;
         margin: 0 50px;
         padding-bottom: 7rem;
@@ -571,14 +573,16 @@
         font-size: 60px;
     }
     
-    .conf-container h1 {
+    .conf-container h1,
+    .termeni-container h1 {
         margin-top: 7rem;
         font-size: 50px;
         margin-bottom: 30px;
     }
     
     .cookies,
-    .conf {
+    .conf,
+    .termeni {
         max-width: 700px;
         cursor: pointer;
         margin-top: 3rem;
@@ -589,7 +593,8 @@
     }
     
     .question-cookies,
-    .question-conf {
+    .question-conf,
+    .question-termeni {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -597,13 +602,14 @@
     }
     
     .question-cookies i,
-    .question-conf i {
+    .question-conf i,
+    .question-termeni i {
         font-size: 22px;
-        margin-left: 20px;
     }
     
     .answer-cookies,
-    .answer-conf {
+    .answer-conf,
+    .answer-termeni {
         max-height: 0;
         overflow: hidden;
         transition: max-height 1.5s ease;
@@ -611,18 +617,21 @@
     }
     
     .answer-cookies p,
-    .answer-conf p {
+    .answer-conf p,
+    .answer-termeni p {
         padding-top: 1rem;
         color: #333333d8;
     }
     
     .cookies.active .answer-cookies,
-    .conf.active .answer-conf {
+    .conf.active .answer-conf,
+    .termeni.active .answer-termeni {
         max-height: 2000px;
     }
     
     .cookies.active i,
-    .conf.acive i {
+    .conf.acive i,
+    .termeni.active i {
         transform: rotate(90deg);
     }
     /*________________________ footer ________________________*/
@@ -748,7 +757,8 @@
             line-height: 40px;
         }
         /*--politica de confidentialitate--*/
-        .conf-container h1 {
+        .conf-container h1,
+        .termeni-container h1 {
             font-size: 40px;
         }
     }
@@ -792,26 +802,31 @@
         }
         /*--cookies | politica de confidentialitate | termeni si conditii--*/
         .cookies-container h1,
-        .conf-container h1 {
+        .conf-container h1,
+        .termeni-container h1 {
             padding-top: 4rem;
             font-size: 32px;
         }
         .cookies-container,
-        .conf-container {
+        .conf-container,
+        .termeni-container {
             margin: 0 40px;
             padding-bottom: 4rem;
         }
         .question-cookies,
-        .question-conf {
+        .question-conf,
+        .question-termeni {
             font-size: 13px;
         }
         .question-cookies i,
-        .question-conf i {
+        .question-conf i,
+        .question-termeni i {
             font-size: 18px;
         }
         .answer-cookies p,
-        .answer-conf p {
-            font-size: 12px;
+        .answer-conf p,
+        .answer-termeni p {
+            font-size: 14px;
             line-height: 18px;
         }
     }
