@@ -399,7 +399,7 @@ hr {
 }
 
 .faq.active .answer {
-    max-height: 300px;
+    max-height: 1500px;
 }
 
 .faq.active i {
@@ -612,6 +612,7 @@ input::-webkit-inner-spin-button {
     cursor: pointer;
     margin-top: 3rem;
     padding-right: 0.5rem;
+    padding-left: 1.7rem;
     padding-bottom: 1rem;
     border-bottom: 1px solid #00000077;
     text-align: justify;
@@ -644,7 +645,7 @@ input::-webkit-inner-spin-button {
 }
 
 .cookies.active .answer-cookies {
-    max-height: 800px;
+    max-height: 1500px;
 }
 
 .cookies.active i {
@@ -786,10 +787,6 @@ h2 {
         font-size: 40px;
         line-height: 40px;
     }
-    /*--faq--*/
-    .faq.active .answer {
-        max-height: 500px;
-    }
 }
 
 
@@ -833,11 +830,12 @@ h2 {
     }
     /*--cookies--*/
     .cookies-container h1 {
-        padding-top: 10rem;
-        font-size: 35px;
+        padding-top: 9rem;
+        font-size: 32px;
     }
     .cookies-container {
         margin: 0 40px;
+        padding-bottom: 4rem;
     }
     .cookies li {
         font-size: 14px;
@@ -847,8 +845,5 @@ h2 {
     }
     .answer-cookies p {
         line-height: 18px;
-    }
-    .cookies.active .answer-cookies {
-        max-height: 1000px;
     }
 }
