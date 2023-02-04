@@ -238,15 +238,15 @@ h1 {
     font-size: 70px;
     text-align: center;
     letter-spacing: 0.1em;
-    padding: 30px 0;
+    padding: 40px 0;
 }
 
 .about-container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     font-size: 18px;
-    margin: 100px;
+    margin: 0 100px;
 }
 
 .services {
@@ -315,14 +315,14 @@ hr {
 }
 
 .about {
-    margin: 0 40px;
+    width: 35%;
+    margin: 50px 80px;
     line-height: 22px;
     text-align: justify;
 }
 
 .avatar {
-    margin: 30px;
-    width: 200px;
+    width: 180px;
 }
 
 
@@ -337,14 +337,13 @@ hr {
 }
 
 .faq-container {
-    width: 80%;
     min-height: 100vh;
-    margin: 0 auto;
-    padding-bottom: 8rem;
+    margin: 0 50px;
+    padding-bottom: 7rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 14px;
+    justify-content: center;
 }
 
 .faq-container h1 {
@@ -353,16 +352,21 @@ hr {
 }
 
 .faq {
-    max-width: 900px;
+    max-width: 700px;
     cursor: pointer;
-    margin-top: 5rem;
+    margin-top: 3rem;
+    padding-right: 0.5rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid #000000af;
+    border-bottom: 1px solid #00000077;
     text-align: justify;
 }
 
 .faq h3 {
-    letter-spacing: 0.05em;
+    letter-spacing: 0.04em;
+    font-weight: normal;
+    font-weight: 400;
+    text-align: left;
+    font-size: 17px;
 }
 
 .question {
@@ -372,13 +376,14 @@ hr {
 }
 
 .question i {
-    font-size: 25px;
+    font-size: 22px;
 }
 
 .answer {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 2s ease;
+    transition: max-height 1s ease;
+    font-size: 15px;
 }
 
 .answer ol li {
@@ -694,6 +699,16 @@ h2 {
     .footer-3 {
         margin-top: 30px;
     }
+    /*--faq--*/
+    .faq-container h1 {
+        font-size: 50px;
+    }
+    .faq h3 {
+        font-size: 15px;
+    }
+    .answer {
+        font-size: 14px;
+    }
 }
 
 
@@ -703,6 +718,10 @@ h2 {
     .description h2 {
         font-size: 40px;
         line-height: 40px;
+    }
+    /*--faq--*/
+    .faq.active .answer {
+        max-height: 500px;
     }
 }
 
@@ -725,11 +744,24 @@ h2 {
         padding: 10px 25px;
         font-size: 1.1em;
     }
-    .question {
-        font-size: 9px;
-        text-align: left;
+    /*--faq--*/
+    .faq-container {
+        margin: 0 40px;
+        padding-bottom: 5rem;
     }
-    .question i {
-        font-size: 15px;
+    .faq-container h1 {
+        margin-top: 6rem;
+        font-size: 45px;
+    }
+    .faq h3 {
+        font-size: 13px;
+        margin-right: 1rem;
+        line-height: 16px;
+    }
+    .faq i {
+        font-size: 18px;
+    }
+    .answer {
+        font-size: 12px;
     }
 }
