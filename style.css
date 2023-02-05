@@ -905,7 +905,31 @@ h2 {
         padding: 10px 25px;
         font-size: 1.1em;
     }
-    /*--faq--*/
+    /*--personal info--*/
+    h1 {
+        font-size: 50px;
+    }
+    .media video {
+        width: 320px;
+        margin: 0 0 40px 0;
+    }
+    .media img {
+        width: 100px;
+        top: 36%;
+        left: 74%;
+    }
+    /*--contact-form--*/
+    .contact-form {
+        padding: 40px 50px;
+    }
+    /*--newsletter--*/
+    .newsletter {
+        margin: 40px 30px;
+    }
+    .newsletter h3 {
+        font-size: 50px;
+    }
+    /*--faq-------------------------------________-*/
     .faq-container {
         margin: 0 35px;
         padding-bottom: 4rem;
