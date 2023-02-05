@@ -74,23 +74,28 @@
     <section class="despre" id="despre">
         <h1>Despre</h1>
         <div class="about-container">
-            <div class="services">
-                <div class="architecture">
-                    <ul>
-                        <li> <img src="./img/arhitectura.svg" alt=""></li>
-                        <li><i class="fa-solid fa-plus"></i></li>
-                    </ul>
-                    <p id="mySide">Oferim servicii de arhitectură pentru toate fazele: CU, DTAC, SF, DALI, PTh, pentru funcțiuni rezidențiale, culturale, învățământ și spații publice.</p>
+            <div class="architecture-design">
+                <!--architecture-->
+                <div class="services">
+                    <div class="question-services">
+                        <img src="./img/arhitectura.svg" alt="" class="arch"> <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="answer-services">
+                        <p>Oferim servicii de arhitectură pentru toate fazele: CU, DTAC, SF, DALI, PTh, pentru funcțiuni rezidențiale, culturale, învățământ și spații publice.</p>
+                    </div>
                 </div>
-                <div class="design">
-                    <ul>
-                        <li> <img src="./img/design.svg" alt=""></li>
-                        <li><i class="fa-solid fa-plus" onclick="openN()"></i></li>
-                        <a href="javascript:void(0);" class="close" onclick="closeN()"><i class="fa-solid fa-dash"></i></a>
-                    </ul>
-                    <p>Concept și dezvoltarea proiectului tehnic pentru implementare, consultanță și asistență tehnică pe perioada implementării.</p>
+                <!--design-->
+                <div class="services">
+                    <div class="question-services">
+                        <img src="./img/design.svg" alt="">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="answer-services">
+                        <p>Concept și dezvoltarea proiectului tehnic pentru implementare, consultanță și asistență tehnică pe perioada implementării.</p>
+                    </div>
                 </div>
             </div>
+            <!--about-->
             <div class="about">
                 <p>
                     <hr>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eligendi non, sit voluptatum nihil nemo, officiis maiores doloribus ducimus quas, totam esse consequuntur distinctio laudantium! Iste odit similique neque labore! Lorem
@@ -103,7 +108,20 @@
         </div>
     </section>
 
+    <!--JavaScript_services section (architecture and design)-->
+
+    <script>
+        // accordion for architecture and design section
+        const faqs = document.querySelectorAll(".services");
+        faqs.forEach(services => {
+            services.addEventListener("click", () => {
+                services.classList.toggle("active");
+            })
+        })
+    </script>
+
     <!--_________________________________ portofoliu ___________________________________-->
+
     <!--
     <section class="portfolio" id="portofoliu">
         <h1>Portofoliu</h1>
@@ -130,7 +148,7 @@
                     <p><b>Cluj-Napoca</b><br>Str. Profesor Tudor Ciortea, nr.9</p><br>
                     <p><b>Alba-Iulia</b><br>Sebeș, loc. Petrești, jud. Alba</p>
                     <h4>Social media</h4>
-                    <ul>
+                    <ul class="icons">
                         <li><a href="https://www.facebook.com/valentina.honceru" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
                         <li><a href="https://www.linkedin.com/in/valentina-honceru-7b4740120/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
                         <li><a href="https://ro.pinterest.com/honceru/" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a></li>
@@ -208,6 +226,7 @@
             </div>
         </div>
     </footer>
+
 </body>
 
 </html>

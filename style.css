@@ -232,103 +232,93 @@ ul li {
 
 /*________________________ despre ________________________*/
 
-.despre {
-    border-left: 20px solid #000;
-    border-right: 20px solid #000;
-}
-
 h1 {
     font-family: 'Italiana';
     font-weight: 400;
     font-size: 70px;
     text-align: center;
     letter-spacing: 0.1em;
-    padding: 40px 0;
+    margin: 60px;
 }
 
 .about-container {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
-    margin: 0 100px;
+}
+
+
+/* architecture-design */
+
+.architecture-design {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 70px;
 }
 
 .services {
+    max-width: 300px;
+    text-align: justify;
+}
+
+.question-services {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
 
-
-/* architecture */
-
-.architecture img {
-    width: 170px;
-    margin-bottom: 80px;
+.question-services i {
+    margin-top: 25px;
+    font-size: 27px;
 }
 
-.architecture p {
-    display: none;
-    margin-top: -15px;
-    margin-left: 80px;
-    margin-bottom: 60px;
+.question-services img {
+    width: 65%;
 }
 
-.architecture ul {
-    display: flex;
-    font-size: 25px;
-    gap: 20px;
+.question-services .arch {
+    width: 60%;
 }
 
-.architecture i {
-    font-size: 25px;
-    margin-top: 72px;
-    cursor: pointer;
+.answer-services {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease;
+    font-size: 16px;
 }
 
-
-/* design */
-
-.design img {
-    width: 200px;
+.answer-services p {
+    max-width: 280px;
+    margin-top: 1rem;
+    color: #333333f5;
 }
 
-.design p {
-    display: none;
-    margin-top: -15px;
-    margin-left: 80px;
+.services.active .answer-services {
+    max-height: 400px;
 }
 
-.design ul {
-    display: flex;
-    font-size: 25px;
-    gap: 15px;
-}
-
-.design i {
-    font-size: 25px;
-    margin-top: 64px;
-    cursor: pointer;
+.services.active i {
+    transform: rotate(90deg);
 }
 
 
 /* about */
 
 hr {
-    margin: 25px 0;
+    margin: 22px 0;
 }
 
 .about {
-    width: 35%;
-    margin: 50px 80px;
-    line-height: 22px;
+    width: 28%;
+    line-height: 20px;
     text-align: justify;
+    margin: 0 60px;
 }
 
 .avatar {
-    width: 180px;
+    width: 170px;
+    margin: 0 60px;
 }
 
 
@@ -370,7 +360,7 @@ hr {
 .faq h3 {
     letter-spacing: 0.04em;
     font-weight: normal;
-    font-weight: 400;
+    font-weight: 600;
     text-align: left;
     font-size: 17px;
 }
@@ -415,11 +405,6 @@ hr {
 
 /*_________________________ contact _________________________*/
 
-.contact {
-    border-left: 20px solid #000;
-    border-right: 20px solid #000;
-}
-
 .contact-container {
     position: relative;
 }
@@ -432,7 +417,6 @@ hr {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
     line-height: 22px;
 }
 
@@ -459,14 +443,14 @@ hr {
 
 .media video {
     position: relative;
-    width: 530px;
+    width: 500px;
     height: auto;
     margin: 0 150px 0 0;
 }
 
 .media img {
     position: absolute;
-    width: 160px;
+    width: 150px;
     top: 30%;
     left: 47%;
 }
@@ -479,7 +463,7 @@ hr {
     align-items: center;
     justify-content: center;
     background: rgba(196, 196, 196, 0.377);
-    margin: 0 60px;
+    margin: 60px;
     padding: 50px 80px;
 }
 
@@ -802,14 +786,20 @@ h2 {
     }
     /*--about--*/
     .about-container {
-        margin: 0 10px;
+        flex-wrap: wrap;
+    }
+    .architecture-design {
+        gap: 80px;
     }
     .about {
         order: 3;
         width: 80%;
-        margin: 0;
+        margin: 30px 60px;
     }
-    /*--faq--*/
+    .avatar {
+        margin: 0 40px;
+    }
+    /*--faq--------------------------------------*/
     .faq-container {
         margin: 0 80px;
     }
@@ -822,15 +812,16 @@ h2 {
     .answer {
         font-size: 14px;
     }
-    .contact-container {
-        position: relative;
-    }
-    /*--personal info-----------------------------*/
+    /*--personal info--*/
     .personalinfo {
         flex-direction: column-reverse;
     }
     .info {
         text-align: center;
+    }
+    .info .icons {
+        margin: auto;
+        width: fit-content;
     }
     .media video {
         width: 520px;
@@ -852,12 +843,13 @@ h2 {
         margin: 0;
         padding: 0;
     }
-    /*--contact-form--------------------------------------*/
+    /*--contact-form--*/
     .contact-form {
         margin: 0;
-        padding: 50px 130px;
+        padding: 50px 150px;
         background: rgba(196, 196, 196, 0.377);
     }
+    /*--legal--*/
     .cookies-container,
     .conf-container,
     .termeni-container {
@@ -878,6 +870,19 @@ h2 {
     .conf-container h1,
     .termeni-container h1 {
         font-size: 40px;
+    }
+    /*--about--*/
+    .architecture-design {
+        gap: 40px;
+        margin: 0 20px;
+    }
+    .about {
+        order: 3;
+        width: 80%;
+        margin: 30px 40px;
+    }
+    .avatar {
+        margin: 0 40px;
     }
 }
 
