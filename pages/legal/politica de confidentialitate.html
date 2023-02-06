@@ -5,57 +5,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
     <title>Arhitectura si design interior</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="./legal.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8e08c52e93.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="/main.js"></script>
 </head>
 
 <body>
 
-    <!--___________________________________ home _____________________________________-->
+    <!--_____________________________________ navbar ________________________________________-->
 
-    <section class="home" id="home">
-        <header>
-            <!--navbar desktop-->
-            <nav class="navbar">
-                <a href="#home"><img src="./img/logo.svg" alt="logo" width="160px"></a>
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="#despre">Despre</a></li>
-                    <li><a href="#portofoliu">Portofoliu</a></li>
-                    <li><a href="./intrebari.html">Întrebări</a></li>
-                </ul>
-                <a href="#contact" class="nav-contact">Contact</a>
-            </nav>
-            <!--navbar mobile-->
-            <div class="nav-toggle">
-                <a href="#home"><img src="./img/logo.svg" alt="logo" width="150px"></a>
-                <span onclick="openNav()"><img src="./img/open.svg" alt="" width="60px"></span>
-            </div>
-        </header>
-        <!--sidenav mobile|toggle-->
-        <div id="mySidenav" class="sidenav">
+    <header>
+        <!--navbar desktop-->
+        <nav class="navbar">
+            <a href="/index.html"><img src="/img/logo.svg" alt="logo" width="160px"></a>
             <ul>
-                <li>
-                    <a href="javascript:void(0);" class="closebtn" onclick="closeNav()"><img src="./img/close.svg" alt="" width="60px"></a>
-                </li>
-                <li> <a href="./index.html">Home</a> </li>
-                <li><a href="#despre">Despre</a></li>
-                <li> <a href="#portofoliu">Portofoliu</a> </li>
-                <li> <a href="./intrebari.html">Întrebări</a> </li>
-                <li> <a href="#contact">Contact</a> </li>
+                <li><a href="/index.html">Home</a></li>
             </ul>
+        </nav>
+        <!--navbar mobile-->
+        <div class="nav-toggle">
+            <a href="/index.html"><img src="/img/logo.svg" alt="logo" width="150px"></a>
+            <a href="/index.html">Home</a>
         </div>
+    </header>
 
-        <div class="whatsapp">
-            <a href="https://wa.me/40749817422" target="_blank"><img src="./img/whatsapp btn.svg"></a>
-        </div>
-        </div>
-    </section>
+    <!--whatsapp-->
+    <div class="whatsapp">
+        <a href="https://wa.me/40749817422" target="_blank"><img src="/img/whatsapp.svg"></a>
+    </div>
 
-    <!--_________________________________ intrebari ___________________________________-->
+    <!--__________________________ politica de confidentialitate __________________________-->
 
     <section class="confidentialitate" id="politica de confidentialitate">
         <div class="conf-container">
@@ -205,17 +187,17 @@
             <div class="footer">
                 <!--footer-1-->
                 <div class="footer-heading footer-1">
-                    <a href="./index.html"><img src="./img/logo.svg" alt="logo" width="120px"></a>
+                    <a href="/index.html"><img src="/img/logo.svg" alt="logo" width="120px"></a>
                     <a href="tel:40749817422">(+40) 749 817 422</a>
-                    <a href="./index.html" target="_self">www.vhondesign.ro</a>
+                    <a href="/index.html" target="_self">www.vhondesign.ro</a>
                     <a href="mailto:vhondesign@gmail.com">vhondesign@gmail.com</a>
                 </div>
                 <!--footer-2-->
                 <div class="footer-heading footer-2">
                     <h2>Legal</h2>
-                    <a href="./politica cookies.html">Politica cookies</a>
-                    <a href="./termeni si conditii.html">Termeni și condiții</a>
-                    <a href="./politica de confidentialitate.html">Politica de confidențialitate</a>
+                    <a href="/pages/legal/politica cookies.html">Politica cookies</a>
+                    <a href="/pages/legal/termeni si conditii.html">Termeni și condiții</a>
+                    <a href="/pages/legal/politica de confidentialitate.html">Politica de confidențialitate</a>
                 </div>
                 <!--footer-3-->
                 <div class="footer-heading footer-3">

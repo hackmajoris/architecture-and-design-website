@@ -325,93 +325,6 @@ hr {
 /*________________________ portofoliu ________________________*/
 
 
-/*________________________ intrebari ________________________*/
-
-.intrebari h1 {
-    font-family: 'Italiana';
-    font-weight: 400;
-    font-size: 70px;
-    text-align: center;
-    letter-spacing: 0.1em;
-    margin: 60px;
-}
-
-.intrebari {
-    border-left: 20px solid #000;
-    border-right: 20px solid #000;
-}
-
-.faq-container {
-    min-height: 100vh;
-    margin: 0 50px;
-    padding-bottom: 7rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.faq-container h1 {
-    margin-top: 7rem;
-    font-size: 60px;
-}
-
-.faq {
-    max-width: 700px;
-    cursor: pointer;
-    margin-top: 3rem;
-    padding-right: 0.5rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #00000077;
-    text-align: justify;
-}
-
-.faq h3 {
-    letter-spacing: 0.04em;
-    font-weight: normal;
-    font-weight: 600;
-    text-align: left;
-    font-size: 17px;
-}
-
-.question {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.question i {
-    font-size: 22px;
-}
-
-.answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 1s ease;
-    font-size: 15px;
-}
-
-.answer ol li {
-    padding-top: 1rem;
-    padding-left: 0.6rem;
-    margin-left: 18px;
-    color: #333333d8;
-}
-
-.answer p {
-    padding-top: 1rem;
-    color: #333333d8;
-}
-
-.faq.active .answer {
-    max-height: 1500px;
-}
-
-.faq.active i {
-    transform: rotate(90deg);
-}
-
-
 /*_________________________ contact _________________________*/
 
 .contact h1 {
@@ -599,95 +512,6 @@ input::-webkit-inner-spin-button {
 }
 
 
-/*___________________ politica cookies  |  politica de confidentialitate  |  termeni si conditii ___________________*/
-
-.politica-cookies,
-.confidentialitate,
-.termeni-conditii {
-    border-left: 20px solid #000;
-    border-right: 20px solid #000;
-}
-
-.cookies-container,
-.conf-container,
-.termeni-container {
-    min-height: 100vh;
-    margin: 0 50px;
-    padding-bottom: 7rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.cookies-container h1 {
-    margin-top: 7rem;
-    font-size: 60px;
-}
-
-.conf-container h1,
-.termeni-container h1 {
-    margin-top: 7rem;
-    font-size: 50px;
-    margin-bottom: 30px;
-}
-
-.cookies,
-.conf,
-.termeni {
-    max-width: 700px;
-    cursor: pointer;
-    margin-top: 3rem;
-    padding-right: 0.4rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid #00000077;
-    text-align: justify;
-}
-
-.question-cookies,
-.question-conf,
-.question-termeni {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-align: left;
-}
-
-.question-cookies i,
-.question-conf i,
-.question-termeni i {
-    font-size: 22px;
-}
-
-.answer-cookies,
-.answer-conf,
-.answer-termeni {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 1.5s ease;
-    font-size: 15px;
-}
-
-.answer-cookies p,
-.answer-conf p,
-.answer-termeni p {
-    padding-top: 1rem;
-    color: #333333d8;
-}
-
-.cookies.active .answer-cookies,
-.conf.active .answer-conf,
-.termeni.active .answer-termeni {
-    max-height: 2000px;
-}
-
-.cookies.active i,
-.conf.acive i,
-.termeni.active i {
-    transform: rotate(90deg);
-}
-
-
 /*________________________ footer ________________________*/
 
 .footer-container {
@@ -817,19 +641,6 @@ h2 {
     .avatar {
         margin: 0 40px;
     }
-    /*--faq--*/
-    .faq-container {
-        margin: 0 80px;
-    }
-    .faq-container h1 {
-        font-size: 60px;
-    }
-    .faq h3 {
-        font-size: 16px;
-    }
-    .answer {
-        font-size: 14px;
-    }
     /*--personal info--*/
     .personalinfo {
         flex-direction: column-reverse;
@@ -867,13 +678,6 @@ h2 {
         margin: 0;
         padding: 50px 150px;
         background: rgba(196, 196, 196, 0.377);
-    }
-    /*--legal--*/
-    .cookies-container,
-    .conf-container,
-    .termeni-container {
-        margin: 0 80px;
-        padding-bottom: 5rem;
     }
 }
 
@@ -924,54 +728,5 @@ h2 {
     }
     .newsletter h3 {
         font-size: 50px;
-    }
-    /*--faq-------------------------------________-*/
-    .faq-container {
-        margin: 0 35px;
-        padding-bottom: 4rem;
-    }
-    .faq-container h1 {
-        margin-top: 6rem;
-        font-size: 45px;
-    }
-    .faq h3 {
-        font-size: 14px;
-        margin-right: 1rem;
-        line-height: 16px;
-    }
-    .faq i {
-        font-size: 18px;
-    }
-    .answer {
-        font-size: 13px;
-    }
-    /*--cookies | politica de confidentialitate | termeni si conditii--*/
-    .cookies-container h1,
-    .conf-container h1,
-    .termeni-container h1 {
-        padding-top: 4rem;
-        font-size: 32px;
-    }
-    .cookies-container,
-    .conf-container,
-    .termeni-container {
-        margin: 0 40px;
-        padding-bottom: 4rem;
-    }
-    .question-cookies,
-    .question-conf,
-    .question-termeni {
-        font-size: 13px;
-    }
-    .question-cookies i,
-    .question-conf i,
-    .question-termeni i {
-        font-size: 18px;
-    }
-    .answer-cookies p,
-    .answer-conf p,
-    .answer-termeni p {
-        font-size: 14px;
-        line-height: 18px;
     }
 }

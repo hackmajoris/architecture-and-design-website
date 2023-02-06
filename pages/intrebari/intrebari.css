@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat&family=Tenor+Sans&display=swap');
+@import url('https://kit.fontawesome.com/8e08c52e93.js');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+
+/*_________ intrebari ________*/
+
+.intrebari {
+    border-left: 20px solid #000;
+    border-right: 20px solid #000;
+}
+
+.faq-container {
+    min-height: 100vh;
+    margin: 0 50px;
+    padding-bottom: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.faq-container h1 {
+    font-family: 'Italiana';
+    font-weight: 400;
+    font-size: 70px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin: 10rem 0 4rem 0;
+}
+
+.faq {
+    max-width: 700px;
+    cursor: pointer;
+    margin-top: 3rem;
+    padding-right: 0.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #00000077;
+    text-align: justify;
+}
+
+.faq h3 {
+    letter-spacing: 0.04em;
+    font-weight: normal;
+    font-weight: 600;
+    text-align: left;
+    font-size: 17px;
+}
+
+.question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.question i {
+    font-size: 22px;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease;
+    font-size: 15px;
+}
+
+.answer ol li {
+    padding-top: 1rem;
+    padding-left: 0.6rem;
+    margin-left: 18px;
+    color: #333333d8;
+}
+
+.answer p {
+    padding-top: 1rem;
+    color: #333333d8;
+}
+
+.faq.active .answer {
+    max-height: 1500px;
+}
+
+.faq.active i {
+    transform: rotate(90deg);
+}
+
+
+/* @media_768px */
+
+@media (max-width: 768px) {
+    /*--faq--*/
+    .faq-container {
+        margin: 0 80px;
+    }
+    .faq-container h1 {
+        font-size: 60px;
+    }
+    .faq h3 {
+        font-size: 16px;
+    }
+    .answer {
+        font-size: 14px;
+    }
+}
+
+
+/* @media_600px */
+
+@media (max-width: 600px) {
+    /*--faq--*/
+    .faq-container {
+        margin: 0 35px;
+        padding-bottom: 4rem;
+    }
+    .faq-container h1 {
+        margin: 8rem 0 1rem 0;
+        font-size: 45px;
+    }
+    .faq h3 {
+        font-size: 13px;
+        margin-right: 1rem;
+        line-height: 16px;
+    }
+    .faq i {
+        font-size: 18px;
+    }
+    .answer {
+        font-size: 13px;
+    }
+}
