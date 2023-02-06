@@ -238,7 +238,7 @@ ul li {
     font-size: 70px;
     text-align: center;
     letter-spacing: 0.1em;
-    margin: 60px;
+    margin: 50px 0 60px 0;
 }
 
 .about-container {
@@ -252,9 +252,8 @@ ul li {
 
 .architecture-design {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    gap: 70px;
+    gap: 50px;
 }
 
 .services {
@@ -291,7 +290,7 @@ ul li {
 .answer-services p {
     max-width: 280px;
     margin-top: 1rem;
-    color: #333333f5;
+    color: #000;
 }
 
 .services.active .answer-services {
@@ -333,7 +332,7 @@ hr {
     font-size: 70px;
     text-align: center;
     letter-spacing: 0.1em;
-    margin: 20px;
+    margin: 80px 0 10px 0;
 }
 
 .contact-container {
@@ -630,13 +629,10 @@ h2 {
     .about-container {
         flex-wrap: wrap;
     }
-    .architecture-design {
-        gap: 80px;
-    }
     .about {
         order: 3;
         width: 80%;
-        margin: 30px 60px;
+        margin: 30px 80px;
     }
     .avatar {
         margin: 0 40px;
@@ -659,8 +655,8 @@ h2 {
     }
     .media img {
         width: 160px;
-        top: 40%;
-        left: 70%;
+        top: 38%;
+        left: 72%;
     }
     /*--newsletter--*/
     .newsletter {
@@ -674,6 +670,9 @@ h2 {
         padding: 0;
     }
     /*--contact-form--*/
+    .contact h1 {
+        margin: 40px 0 50px 0;
+    }
     .contact-form {
         margin: 0;
         padding: 50px 150px;
