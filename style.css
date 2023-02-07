@@ -254,6 +254,7 @@ ul li {
     display: flex;
     flex-direction: column;
     gap: 50px;
+    margin-left: 50px;
 }
 
 .services {
@@ -574,11 +575,15 @@ h2 {
 }
 
 
-/*_________ @media query_1024px _________*/
+/*_________ @media query_1080px _________*/
 
-@media (max-width: 1024px) {
+@media (max-width: 1080px) {
     .navbar {
         padding: 20px 50px;
+    }
+    .about {
+        width: 40%;
+        margin: 30px 20px;
     }
 }
 
@@ -598,6 +603,62 @@ h2 {
     .whatsapp a {
         bottom: 0;
         right: 8px;
+    }
+    /*--about--*/
+    .about-container {
+        flex-wrap: wrap;
+    }
+    .architecture-design {
+        gap: 70px;
+    }
+    .about {
+        order: 3;
+        width: 80%;
+        margin: 40px 40px;
+    }
+    .avatar {
+        margin: 0 40px;
+    }
+    /*--personal info--*/
+    .personalinfo {
+        flex-direction: column-reverse;
+    }
+    .info {
+        text-align: center;
+    }
+    .info,
+    .icons {
+        margin: auto;
+        width: fit-content;
+    }
+    .media video {
+        width: 520px;
+        margin: 0 0 40px 0;
+    }
+    .media img {
+        width: 160px;
+        top: 37%;
+        left: 68%;
+    }
+    /*--newsletter--*/
+    .newsletter {
+        margin: 60px;
+    }
+    /*--form-container--*/
+    .form-container {
+        flex-direction: column-reverse;
+        background: none;
+        margin: 0;
+        padding: 0;
+    }
+    /*--contact-form--*/
+    .contact h1 {
+        margin: 40px 0 50px 0;
+    }
+    .contact-form {
+        margin: 0;
+        padding: 50px 150px;
+        background: rgba(196, 196, 196, 0.377);
     }
 }
 
@@ -625,58 +686,9 @@ h2 {
     .footer-3 {
         margin-top: 30px;
     }
-    /*--about--*/
-    .about-container {
-        flex-wrap: wrap;
-    }
-    .about {
-        order: 3;
-        width: 80%;
-        margin: 30px 80px;
-    }
-    .avatar {
-        margin: 0 40px;
-    }
-    /*--personal info--*/
-    .personalinfo {
-        flex-direction: column-reverse;
-    }
-    .info {
-        text-align: center;
-    }
-    .info,
-    .icons {
-        margin: auto;
-        width: fit-content;
-    }
-    .media video {
-        width: 520px;
-        margin: 0 0 40px 0;
-    }
-    .media img {
-        width: 160px;
-        top: 38%;
-        left: 72%;
-    }
-    /*--newsletter--*/
-    .newsletter {
-        margin: 60px auto;
-    }
-    /*--form-container--*/
-    .form-container {
-        flex-direction: column-reverse;
-        background: none;
-        margin: 0;
-        padding: 0;
-    }
     /*--contact-form--*/
-    .contact h1 {
-        margin: 40px 0 50px 0;
-    }
     .contact-form {
-        margin: 0;
-        padding: 50px 150px;
-        background: rgba(196, 196, 196, 0.377);
+        padding: 50px 100px;
     }
 }
 
@@ -685,8 +697,8 @@ h2 {
 
 @media (max-width: 600px) {
     .description h2 {
-        font-size: 40px;
-        line-height: 40px;
+        font-size: 28px;
+        line-height: 28px;
     }
     .nav-toggle {
         padding: 15px 30px;
@@ -694,38 +706,70 @@ h2 {
     .content {
         padding: 190px 0 0 30px;
     }
-    .description h2 {
-        font-size: 32px;
-        line-height: 30px;
-    }
     .description a {
         margin-top: 25px;
         padding: 10px 25px;
         font-size: 1.1em;
     }
-    /*--personal info--*/
-    h1 {
-        font-size: 60px;
-        margin: 0;
+    /* about */
+    .despre h1 {
+        font-size: 50px;
     }
+    .architecture-design {
+        gap: 50px;
+        margin-left: 20px;
+    }
+    .services {
+        max-width: 150px;
+    }
+    .question-services i {
+        margin-top: 16px;
+        font-size: 25px;
+    }
+    .question-services img {
+        width: 85%;
+    }
+    .question-services .arch {
+        width: 80%;
+    }
+    .answer-services {
+        font-size: 12px;
+    }
+    .avatar {
+        width: 100px;
+        margin: 0 50px;
+    }
+    /*--contact--*/
     .media video {
         width: 320px;
         margin: 0 0 40px 0;
     }
     .media img {
         width: 100px;
-        top: 36%;
-        left: 74%;
+        top: 37%;
+        left: 73%;
     }
     /*--contact-form--*/
+    .contact h1 {
+        margin: 10px 0 40px 0;
+        font-size: 50px;
+    }
     .contact-form {
         padding: 40px 50px;
     }
+    .checkbox {
+        align-items: baseline;
+        font-size: 11px;
+    }
     /*--newsletter--*/
     .newsletter {
-        margin: 40px 30px;
+        margin: 50px;
     }
     .newsletter h3 {
         font-size: 50px;
+    }
+    .newsletter button {
+        font-size: 12px;
+        padding: 6px 20px;
     }
 }
