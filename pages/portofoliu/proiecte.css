@@ -17,13 +17,9 @@ ul li {
 /*_________ proiecte ________*/
 
 .proiecte {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    position: relative;
 }
 
 .multiscroll {
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
 }
