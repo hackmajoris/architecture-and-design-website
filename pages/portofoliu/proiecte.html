@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+    <title>Arhitectura si design interior</title>
+    <link href="/style.css" rel="stylesheet">
+    <link href="./proiecte.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8e08c52e93.js" crossorigin="anonymous"></script>
+    <script src="/main.js"></script>
+
+    <!--multiscroll css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/multiscroll.js/0.2.2/jquery.multiscroll.min.css" />
+    <!--jquery CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!--jquery easing-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+</head>
+
+<body>
+
+    <!--___________________________________ navbar _____________________________________-->
+
+    <section class="home" id="home">
+        <header>
+            <!--navbar desktop-->
+            <nav class="navbar">
+                <a href="#home"><img src="/img/logo.svg" alt="logo" width="160px"></a>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="#despre">Despre</a></li>
+                    <li><a href="#portofoliu">Portofoliu</a></li>
+                    <li><a href="/pages/intrebari/intrebari.html">Întrebări</a></li>
+                </ul>
+                <a href="#contact" class="nav-contact">Contact</a>
+            </nav>
+            <!--navbar mobile-->
+            <div class="nav-toggle">
+                <a href="/index.html"><img src="/img/logo.svg" alt="logo" width="150px"></a>
+                <span onclick="openNav()"><img src="/img/open.svg" alt="" width="60px"></span>
+            </div>
+        </header>
+        <!--sidenav mobile|toggle-->
+        <div id="mySidenav" class="sidenav">
+            <ul>
+                <li>
+                    <a href="javascript:void(0);" class="closebtn" onclick="closeNav()"><img src="/img/close.svg" alt="" width="60px"></a>
+                </li>
+                <li> <a href="/index.html">Home</a> </li>
+                <li> <a href="#despre">Despre</a> </li>
+                <li> <a href="#portofoliu">Portofoliu</a> </li>
+                <li> <a href="/pages/intrebari/intrebari.html">Întrebări</a> </li>
+                <li> <a href="#contact">Contact</a> </li>
+            </ul>
+        </div>
+        <!--whatsapp-->
+        <div class="whatsapp">
+            <a href="https://wa.me/40749817422" target="_blank"><img src="/img/whatsapp.svg"></a>
+        </div>
+        </div>
+    </section>
+
+
+    <!--_________________________________ proiecte ___________________________________-->
+
+    <!--Project 1_Casa R-->
+    <div class="proiecte">
+        <div class="multiscroll">
+            <div class="ms-left">
+                <div class="ms">
+                    <h1>Casa R</h1>
+                    <hr>
+                    <ul>
+                        <i class="fa-sharp fa-solid fa-pen-ruler"></i>
+                        <li>Living room</li>
+                        <i class="fa-sharp fa-solid fa-ruler-triangle"></i>
+                        <li>200 mp</li>
+                        <i class="fa-sharp fa-solid fa-location-dot"></i>
+                        <li>Cluj-Napoca</li>
+                        <i class="fa-regular fa-calendar"></i>
+                        <li>2022</li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, facere itaque! Repellat ex commodi ea hic sit aperiam nobis, atque maxime voluptate consequatur velit accusamus. Ex magnam corporis doloremque earum?</p>
+                </div>
+            </div>
+
+            <div class="ms-right">
+                <div class="projects">
+                    <img src="./Casa R/img1.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--_________________________________ JavaScript ___________________________________-->
+    <script>
+        //multiscroll pages
+        $(function() {
+            $("#multiscroll").multiscroll({
+                easing: 'easeInOutExpo',
+                anchors: [],
+                navigation: true,
+                navigationTooltips: []
+            });
+        });
+    </script>
+
+</body>
+
+</html>
