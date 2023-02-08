@@ -248,7 +248,7 @@ ul li {
     font-size: 70px;
     text-align: center;
     letter-spacing: 0.1em;
-    margin: 50px 0 60px 0;
+    padding: 50px 0 60px 0;
 }
 
 .about-container {
@@ -341,7 +341,7 @@ hr {
     font-size: 70px;
     text-align: center;
     letter-spacing: 0.1em;
-    margin: 80px 0 10px 0;
+    padding: 80px 0 10px 0;
 }
 
 
@@ -353,7 +353,7 @@ hr {
     font-size: 70px;
     text-align: center;
     letter-spacing: 0.1em;
-    margin: 80px 0 10px 0;
+    padding: 80px 0 10px 0;
 }
 
 .contact-container {
@@ -446,8 +446,7 @@ hr {
     width: 100%;
     border: none;
     outline: none;
-    margin-left: 4px;
-    padding: 10px;
+    padding-left: 10px;
     background: none;
 }
 
@@ -625,6 +624,13 @@ h2 {
         right: 8px;
     }
     /*--about--*/
+    .despre,
+    .portfolio,
+    .contact,
+    .intrebari {
+        border-left: 15px solid #000;
+        border-right: 15px solid #000;
+    }
     .about-container {
         flex-wrap: wrap;
     }
@@ -634,10 +640,6 @@ h2 {
     .about {
         order: 3;
         width: 80%;
-        margin: 40px 40px;
-    }
-    .avatar {
-        margin: 0 40px;
     }
     /*--personal info--*/
     .personalinfo {
@@ -673,7 +675,7 @@ h2 {
     }
     /*--contact-form--*/
     .contact h1 {
-        margin: 40px 0 50px 0;
+        padding: 40px 0 50px 0;
     }
     .contact-form {
         margin: 0;
@@ -737,7 +739,7 @@ h2 {
     }
     .architecture-design {
         gap: 60px;
-        margin-left: 30px;
+        margin-left: 40px;
     }
     .services {
         max-width: 150px;
@@ -757,12 +759,20 @@ h2 {
     }
     .avatar {
         width: 110px;
-        margin: 0 50px;
+        margin: 30px auto;
+    }
+    .about {
+        margin: 0;
+    }
+    /* portfolio */
+    .portfolio-container h1 {
+        font-size: 50px;
+        padding: 80px 0 10px 0;
     }
     /*--contact--*/
     .media video {
         width: 320px;
-        margin: 0 0 40px 0;
+        padding: 0 0 40px 0;
     }
     .media img {
         width: 100px;
@@ -771,15 +781,15 @@ h2 {
     }
     /*--contact-form--*/
     .contact h1 {
-        margin: 10px 0 40px 0;
+        padding: 10px 0 40px 0;
         font-size: 50px;
     }
     .contact-form {
         padding: 40px 50px;
     }
     .checkbox {
-        align-items: baseline;
-        font-size: 11px;
+        align-items: flex-start;
+        font-size: 12px;
     }
     /*--newsletter--*/
     .newsletter {
