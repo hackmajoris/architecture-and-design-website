@@ -16,11 +16,5 @@ ul li {
 
 /*_________ proiecte ________*/
 
-.ms-left {
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 260px;
-    height: 100%;
-    background: #fff;
-}
+
+/* Slideshow container */

@@ -335,13 +335,58 @@ hr {
 
 /*________________________ portofoliu ________________________*/
 
-.portfolio-container h1 {
+.portfolio h1 {
     font-family: 'Italiana';
     font-weight: 400;
     font-size: 70px;
     text-align: center;
     letter-spacing: 0.1em;
-    padding: 80px 0 10px 0;
+    padding: 80px 0 50px 0;
+}
+
+.mySlides {
+    display: none;
+}
+
+.projects img {
+    width: 50%;
+    height: auto;
+    border-radius: 2px;
+    object-fit: cover;
+    margin: auto;
+}
+
+.prev-next {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    justify-content: space-between;
+}
+
+.prev-next button {
+    padding: 10px 5px;
+    font-size: 25px;
+    background: none;
+    border: none;
+}
+
+.display-left i {
+    padding-right: 20px;
+    font-size: 22px;
+    transition: 1s;
+}
+
+.display-right i {
+    padding-left: 20px;
+    font-size: 22px;
+    transition: 1s;
+}
+
+.display-left:hover,
+.display-right:hover {
+    font-weight: 700;
 }
 
 
@@ -353,7 +398,7 @@ hr {
     font-size: 70px;
     text-align: center;
     letter-spacing: 0.1em;
-    padding: 80px 0 10px 0;
+    padding: 120px 0 10px 0;
 }
 
 .contact-container {
@@ -402,7 +447,7 @@ hr {
 .media img {
     position: absolute;
     width: 150px;
-    top: 30%;
+    top: 33%;
     left: 47%;
 }
 
@@ -623,6 +668,17 @@ h2 {
         bottom: 0;
         right: 8px;
     }
+    /*--portfolio--*/
+    .portfolio h1 {
+        padding: 30px 0 60px 0;
+    }
+    .projects img {
+        width: 80%;
+    }
+    .prev-next {
+        width: 80%;
+        padding-top: 6px;
+    }
     /*--about--*/
     .despre,
     .portfolio,
@@ -675,7 +731,7 @@ h2 {
     }
     /*--contact-form--*/
     .contact h1 {
-        padding: 40px 0 50px 0;
+        padding: 60px 0 50px 0;
     }
     .contact-form {
         margin: 0;
@@ -692,6 +748,24 @@ h2 {
         font-size: 50px;
         line-height: 50px;
     }
+    /*--portfolio--*/
+    .portfolio h1 {
+        padding: 30px 0 50px 0;
+    }
+    .projects img {
+        width: 75%;
+    }
+    .prev-next {
+        width: 75%;
+        padding-top: 6px;
+    }
+    /*--contact--*/
+    .contact h1 {
+        padding: 90px 0 30px 0;
+    }
+    .contact-form {
+        padding: 50px 100px;
+    }
     /*--footer--*/
     .footer {
         flex-direction: column;
@@ -707,10 +781,6 @@ h2 {
     .footer-2,
     .footer-3 {
         margin-top: 30px;
-    }
-    /*--contact-form--*/
-    .contact-form {
-        padding: 50px 100px;
     }
 }
 
@@ -764,26 +834,49 @@ h2 {
     .about {
         margin: 0;
     }
-    /* portfolio */
-    .portfolio-container h1 {
-        font-size: 50px;
-        padding: 80px 0 10px 0;
+    /*--portfolio--*/
+    .portfolio h1 {
+        font-size: 48px;
+        padding: 35px 0 30px 0;
+    }
+    .projects img {
+        width: 85%;
+    }
+    .prev-next {
+        width: 85%;
+        padding-top: 6px;
+    }
+    .prev-next button {
+        padding: 4px 0;
+        font-size: 18px;
+    }
+    .display-left i {
+        padding-right: 15px;
+        font-size: 16px;
+    }
+    .display-right i {
+        padding-left: 15px;
+        font-size: 16px;
     }
     /*--contact--*/
+    .contact h1 {
+        padding: 60px 0 30px 0;
+        font-size: 50px;
+    }
     .media video {
         width: 320px;
-        padding: 0 0 40px 0;
+        padding: 10px 0 0 0;
     }
     .media img {
         width: 100px;
-        top: 37%;
-        left: 73%;
+        top: 38%;
+        left: 74%;
+    }
+    /*--personal info--*/
+    .info ul li {
+        font-size: 18px;
     }
     /*--contact-form--*/
-    .contact h1 {
-        padding: 10px 0 40px 0;
-        font-size: 50px;
-    }
     .contact-form {
         padding: 40px 50px;
     }

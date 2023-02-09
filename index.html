@@ -9,7 +9,7 @@
     <title>Arhitectura si design interior</title>
     <link href="./style.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8e08c52e93.js" crossorigin="anonymous"></script>
-    <script src="./main.js"></script>
+    <script src="./script.js"></script>
 </head>
 
 <body>
@@ -124,16 +124,51 @@
 
     <!--___________________________________ portofoliu __________________________________-->
 
-    <section class="portfolio" id="portofoliu">
-        <div class="portfolio-container">
-            <div class="container">
-
-
-
-
+    <div class="portfolio" id="portofoliu">
+        <h1>Portofoliu</h1>
+        <div class="slideshow">
+            <div class="projects">
+                <!--Proiect 1_Casa R-->
+                <img class="mySlides" src="./pages/portofoliu/Casa R/img1.png">
+                <!--Proiect 2_Kubix-->
+                <img class="mySlides" src="./pages/portofoliu/Kubix/img1.png">
+                <!--Proiect 3_Casa R-->
+                <img class="mySlides" src="./pages/portofoliu/Casa R/img5.png">
+                <!--Proiect 4_Casa R-->
+                <img class="mySlides" src="./pages/portofoliu/Casa R/img6.png">
+            </div>
+            <div class="prev-next">
+                <button class="display-left" onclick="plusDivs(-1)"><i class="fa-solid fa-angle-left"></i>Prev</button>
+                <button class="display-right" onclick="plusDivs(1)">Next <i class="fa-solid fa-angle-right"></i></button>
             </div>
         </div>
-    </section>
+    </div>
+
+    <!--JavaScript_manual slideshow portfolio section (projects)-->
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
 
     <!--___________________________________ contact _____________________________________-->
 
