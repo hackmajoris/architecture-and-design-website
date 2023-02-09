@@ -707,6 +707,10 @@
             width: 80%;
             padding-top: 6px;
         }
+        /* hover effect */
+        .overlay {
+            width: 80%;
+        }
         /*--about--*/
         .despre,
         .portfolio,
@@ -784,6 +788,10 @@
         .prev-next {
             width: 75%;
             padding-top: 6px;
+        }
+        /* hover effect */
+        .overlay {
+            width: 75%;
         }
         /*--contact--*/
         .contact h1 {
@@ -881,6 +889,24 @@
         .display-right i {
             padding-left: 15px;
             font-size: 16px;
+        }
+        /* hover effect */
+        .overlay {
+            width: 85%;
+        }
+        .text {
+            top: 30%;
+        }
+        .text h2 {
+            font-size: 30px;
+        }
+        .text p {
+            font-size: 11px;
+        }
+        .text button {
+            font-size: 12px;
+            margin-top: 15px;
+            padding-bottom: 3px;
         }
         /*--contact--*/
         .contact h1 {
