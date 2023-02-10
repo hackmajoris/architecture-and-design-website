@@ -367,6 +367,7 @@
         font-weight: 700;
     }
     /* hover effect */
+    /*p1*/
     
     .container-hover {
         position: relative;
@@ -901,7 +902,7 @@
             font-size: 30px;
         }
         .text p {
-            font-size: 11px;
+            font-size: 12px;
         }
         .text button {
             font-size: 12px;
