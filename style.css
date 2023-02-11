@@ -326,7 +326,7 @@
     .mySlides {
         display: none;
     }
-
+    
     .projects img {
         width: 50%;
         height: auto;
@@ -397,16 +397,7 @@
     .container-hover:hover .overlay {
         opacity: 0.5;
     }
-
-    .text {
-        width: 100%;
-        position: absolute;
-        top: 40%;
-        left: 0;
-        right: 0;
-        text-align: center;
-    }
-
+    
     .project-text {
         width: 100%;
         position: absolute;
@@ -415,22 +406,31 @@
         right: 0;
         text-align: center;
     }
-
-    .text h2 {
+    
+    .project-text {
+        width: 100%;
+        position: absolute;
+        top: 40%;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+    
+    .project-text h2 {
         font-family: 'Noto Serif';
         font-weight: 600;
         letter-spacing: 0.05em;
         font-size: 50px;
     }
     
-    .text p {
+    .project-text p {
         color: #fff;
         text-transform: uppercase;
         font-size: 14px;
         z-index: 100;
     }
     
-    .text button {
+    .project-text button {
         border: none;
         background: none;
         color: #fff;
@@ -443,7 +443,7 @@
         transition: 0.5s;
     }
     
-    .text button:hover {
+    .project-text button:hover {
         font-size: 16px;
     }
     /*_________________________ contact _________________________*/
@@ -904,16 +904,16 @@
         .overlay {
             width: 90%;
         }
-        .text {
+        .project-text {
             top: 30%;
         }
-        .text h2 {
+        .project-text h2 {
             font-size: 30px;
         }
-        .text p {
+        .project-text p {
             font-size: 11px;
         }
-        .text button {
+        .project-text button {
             font-size: 12px;
             margin-top: 15px;
             padding-bottom: 3px;
@@ -925,7 +925,7 @@
         }
         .media video {
             width: 320px;
-            padding: 10px 0 0 0;
+            padding: 30px 0 0 0;
         }
         .media img {
             width: 100px;
