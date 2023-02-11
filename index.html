@@ -132,7 +132,7 @@
             <div class="container-hover">
                 <img class="mySlides" src="./pages/portofoliu/Casa R/img1.png" alt="" id="project-1">
                 <div class="overlay">
-                    <div class="text">
+                    <div class="project-text">
                         <h2>Casa R</h2>
                         <p>Design interior</p>
                         <a href="./pages/portofoliu/proiecte.html"><button>Detalii</button></a>
@@ -141,7 +141,7 @@
                 <!--Proiect 2_Kubix-->
                 <img class="mySlides" src="./pages/portofoliu/Kubix/img1.png" alt="" id="project-2">
                 <div class="overlay">
-                    <div class="text">
+                    <div class="project-text">
                         <h2>Kubix</h2>
                         <p>Living room</p>
                         <a href="./pages/portofoliu/proiecte.html"><button>Detalii</button></a>
@@ -167,18 +167,21 @@
         }
 
         function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            if (n > x.length) {
+            let slides = document.getElementsByClassName("mySlides");
+            let projectText = document.getElementsByClassName("project-text");
+
+            if (n > slides.length) {
                 slideIndex = 1
             }
             if (n < 1) {
-                slideIndex = x.length
+                slideIndex = slides.length
             }
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                projectText[i].style.display = "none";
             }
-            x[slideIndex - 1].style.display = "block";
+            slides[slideIndex - 1].style.display = "block"
+            projectText[slideIndex - 1].style.display = "block"
         }
     </script>
 
