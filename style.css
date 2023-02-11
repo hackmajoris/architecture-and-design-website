@@ -454,7 +454,7 @@
         font-size: 70px;
         text-align: center;
         letter-spacing: 0.1em;
-        padding: 120px 0 10px 0;
+        padding: 110px 0 90px 0;
     }
     
     .contact-container {
@@ -920,7 +920,7 @@
         }
         /*--contact--*/
         .contact h1 {
-            padding: 80px 0 30px 0;
+            padding: 70px 0 30px 0;
             font-size: 50px;
         }
         .media video {
