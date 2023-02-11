@@ -326,7 +326,7 @@
     .mySlides {
         display: none;
     }
-    
+
     .projects img {
         width: 50%;
         height: auto;
@@ -397,7 +397,7 @@
     .container-hover:hover .overlay {
         opacity: 0.5;
     }
-    
+
     .text {
         width: 100%;
         position: absolute;
@@ -406,7 +406,16 @@
         right: 0;
         text-align: center;
     }
-    
+
+    .project-text {
+        width: 100%;
+        position: absolute;
+        top: 40%;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
     .text h2 {
         font-family: 'Noto Serif';
         font-weight: 600;
