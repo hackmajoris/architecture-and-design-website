@@ -124,63 +124,102 @@
 
     <!--___________________________________ portofoliu __________________________________-->
 
-    <div class="portfolio" id="portofoliu">
-        <h1>Portofoliu</h1>
-        <!--Proiect 1_Casa R-->
-        <div class="projects">
-            <div class="container-hover">
-                <img class="mySlides" src="./pages/portofoliu/Casa R/img1.png" alt="">
-                <div class="overlay">
-                    <div class="project-text">
-                        <h2>Casa R</h2>
-                        <p>Design interior</p>
-                        <a href="./pages/portofoliu/proiecte.html"><button>Detalii</button></a>
-                    </div>
-                </div>
-                <!--Proiect 2_Kubix-->
-                <img class="mySlides" src="./pages/portofoliu/Kubix/img1.png" alt="">
-                <div class="overlay">
-                    <div class="project-text">
-                        <h2>Kubix</h2>
-                        <p>Living room</p>
-                        <a href="./pages/portofoliu/proiecte.html"><button>Detalii</button></a>
-                    </div>
+    <section class="portfolio" id="portofoliu">
+        <div class="portfolio-container">
+            <h1>Portofoliu</h1>
+
+            <div class="row">
+                <div class="filter-buttons">
+                    <ul id="filter-btns">
+                        <li class="active" data-target="all">All</li>
+                        <li data-target="architecture">Arhitectură</li>
+                        <li data-target="design">Design interior</li>
+                    </ul>
                 </div>
             </div>
-        </div>
-        <!--prev-next button-->
-        <div class="prev-next">
-            <button class="display-left" onclick="plusDivs(-1)"><i class="fa-solid fa-angle-left"></i>Prev</button>
-            <button class="display-right" onclick="plusDivs(1)">Next <i class="fa-solid fa-angle-right"></i></button>
-        </div>
-    </div>
 
-    <!--JavaScript_manual slideshow portfolio section (projects)-->
+            <div class="row">
+                <div class="portfolio-gallery">
+                    <!--Proiect 1_Casa R-->
+                    <div class="item" data-id="design">
+                        <div class="inner">
+                            <img src="/pages/portofoliu/Casa R/img1.png" alt="portfolio">
+                        </div>
+                    </div>
+                    <!--Proiect 2_Casa C-->
+                    <div class="item" data-id="design">
+                        <div class="inner">
+                            <img src="/pages/portofoliu/Casa C/img1.png" alt="portfolio">
+                        </div>
+                    </div>
+
+                    <!--show more-->
+                    <span id="start"></span>
+                    <span id="more">
+                        <!--Proiect 3_Cabinet avocatura-->
+                        <div class="item" data-id="design">
+                            <div class="inner">
+                                <img src="/pages/portofoliu/Birou avocatura/img1.png" alt="portfolio">
+                            </div>
+                        </div>
+                        <!--Proiect 4_Kubix-->
+                        <div class="item" data-id="design">
+                            <div class="inner">
+                                <img src="/pages/portofoliu/Kubix/img1.png" alt="portfolio">
+                            </div>
+                        </div>
+                    </span>
+                </div>
+                <button onclick="myFunction()" id="myBtn">Mai multe proiecte</button>
+            </div>
+        </div>
+    </section>
+
+    <!--JavaScript_read more button-->
 
     <script>
-        var slideIndex = 1;
-        showDivs(slideIndex);
+        function myFunction() {
+            var start = document.getElementById("start");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
 
-        function plusDivs(n) {
-            showDivs(slideIndex += n);
+            if (start.style.display === "none") {
+                start.style.display = "inline";
+                btnText.innerHTML = "Mai multe proiecte";
+                moreText.style.display = "none";
+            } else {
+                start.style.display = "none";
+                btnText.innerHTML = "Mai putine proiecte";
+                moreText.style.display = "inline";
+            }
         }
+    </script>
 
-        function showDivs(n) {
-            let slides = document.getElementsByClassName("mySlides");
-            let projectText = document.getElementsByClassName("project-text");
 
-            if (n > slides.length) {
-                slideIndex = 1
-            }
-            if (n < 1) {
-                slideIndex = slides.length
-            }
-            for (let i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-                projectText[i].style.display = "none";
-            }
-            slides[slideIndex - 1].style.display = "block"
-            projectText[slideIndex - 1].style.display = "block"
+    <!--JavaScript_filter gallery for portfolio section-->
+
+    <script>
+        const filterButtons = document.querySelector("#filter-btns").children;
+        const items = document.querySelector(".portfolio-gallery").children;
+
+        for (let i = 0; i < filterButtons.length; i++) {
+            filterButtons[i].addEventListener("click", function() {
+                for (let j = 0; j < filterButtons.length; j++) {
+                    filterButtons[j].classList.remove("active")
+                }
+                this.classList.add("active");
+                const target = this.getAttribute("data-target")
+
+                for (let k = 0; k < items.length; k++) {
+                    items[k].style.display = "none";
+                    if (target == items[k].getAttribute("data-id")) {
+                        items[k].style.display = "block";
+                    }
+                    if (target == "all") {
+                        items[k].style.display = "block";
+                    }
+                }
+            })
         }
     </script>
 
@@ -201,7 +240,7 @@
                     <p>vhondesign@gmail.com</p>
                     <h4>Locații</h4>
                     <p><b>Cluj-Napoca</b><br>Str. Profesor Tudor Ciortea, nr.9</p><br>
-                    <p><b>Alba-Iulia</b><br>Sebeș, loc. Petrești, jud. Alba</p>
+                    <p><b>Sebeș</b><br>Loc. Petrești, jud. Alba</p>
                     <h4>Social media</h4>
                     <ul class="icons">
                         <li><a href="https://www.facebook.com/valentina.honceru" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
