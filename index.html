@@ -143,58 +143,36 @@
                     <!--Proiect 1_Casa R-->
                     <div class="item" data-id="design">
                         <div class="inner">
-                            <img src="/pages/portofoliu/Casa R/img1.png" alt="portfolio">
+                            <img src="/pages/portofoliu/Casa R/img1.png" alt="Casa R">
                         </div>
                     </div>
                     <!--Proiect 2_Casa C-->
                     <div class="item" data-id="design">
                         <div class="inner">
-                            <img src="/pages/portofoliu/Casa C/img1.png" alt="portfolio">
+                            <img src="/pages/portofoliu/Casa C/img1.png" alt="Casa C">
                         </div>
                     </div>
 
-                    <!--show more-->
+                    <!--show more projects-->
                     <span id="start"></span>
                     <span id="more">
                         <!--Proiect 3_Cabinet avocatura-->
                         <div class="item" data-id="design">
                             <div class="inner">
-                                <img src="/pages/portofoliu/Birou avocatura/img1.png" alt="portfolio">
+                                <img src="/pages/portofoliu/Birou avocatura/img1.png" alt="Birou avocatura">
                             </div>
                         </div>
                         <!--Proiect 4_Kubix-->
-                        <div class="item" data-id="design">
+                        <div class="item one" data-id="design">
                             <div class="inner">
-                                <img src="/pages/portofoliu/Kubix/img1.png" alt="portfolio">
+                                <img src="/pages/portofoliu/Kubix/img1.png" alt="Kubix">
                             </div>
-                        </div>
-                    </span>
-                </div>
-                <button onclick="myFunction()" id="myBtn">Mai multe proiecte</button>
+                        </span> </div>
             </div>
+            <button onclick="myFunction()" id="myBtn">Mai multe proiecte </button>
+        </div>
         </div>
     </section>
-
-    <!--JavaScript_read more button-->
-
-    <script>
-        function myFunction() {
-            var start = document.getElementById("start");
-            var moreText = document.getElementById("more");
-            var btnText = document.getElementById("myBtn");
-
-            if (start.style.display === "none") {
-                start.style.display = "inline";
-                btnText.innerHTML = "Mai multe proiecte";
-                moreText.style.display = "none";
-            } else {
-                start.style.display = "none";
-                btnText.innerHTML = "Mai putine proiecte";
-                moreText.style.display = "inline";
-            }
-        }
-    </script>
-
 
     <!--JavaScript_filter gallery for portfolio section-->
 
@@ -220,6 +198,26 @@
                     }
                 }
             })
+        }
+    </script>
+
+    <!--JavaScript_show more projects button-->
+
+    <script>
+        function myFunction() {
+            var start = document.getElementById("start");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (start.style.display === "none") {
+                start.style.display = "inline";
+                btnText.innerHTML = "Mai multe proiecte";
+                moreText.style.display = "none";
+            } else {
+                start.style.display = "none";
+                btnText.innerHTML = "Mai puține proiecte";
+                moreText.style.display = "inline";
+            }
         }
     </script>
 
