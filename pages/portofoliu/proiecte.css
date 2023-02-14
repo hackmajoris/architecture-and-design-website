@@ -1,133 +1,133 @@
-   @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat&family=Tenor+Sans&display=swap');
-   @import url('https://kit.fontawesome.com/8e08c52e93.js');
-   * {
-       box-sizing: border-box;
-       margin: 0;
-       padding: 0;
-       text-decoration: none;
-       font-family: 'Montserrat', sans-serif;
-       color: #000;
-   }
-   
-   ul li {
-       list-style-type: none;
-   }
-   /*___________________ sidebar _________________*/
-   
-   .sidebar h1 {
-       font-family: 'Italiana';
-       font-weight: 400;
-       font-size: 60px;
-       text-align: left;
-       letter-spacing: 0.1em;
-   }
-   
-   .sidebar {
-       position: fixed;
-       top: 80px;
-       width: 450px;
-       height: 100%;
-   }
-   
-   .sidebar-container {
-       position: absolute;
-       display: flex;
-       flex-direction: column;
-       padding: 100px 50px;
-       text-align: justify;
-       bottom: 30px;
-       font-size: 14px;
-   }
-   /* description */
-   
-   .info {
-       display: flex;
-       justify-content: space-between;
-       text-align: center;
-   }
-   
-   .icon i {
-       font-size: 20px;
-       padding-top: 10px;
-       opacity: 0.9;
-   }
-   
-   .icon p {
-       padding-top: 10px;
-       opacity: 0.7;
-   }
-   
-   .description {
-       padding-top: 30px;
-       font-weight: 300;
-       line-height: 20px;
-   }
-   
-   .footer-container {
-       visibility: hidden;
-   }
-   /*___________________ projects ________________*/
-   
-   .gallery {
-       position: absolute;
-       top: 80px;
-       right: 0;
-       left: 450px;
-   }
-   
-   .gallery img {
-       width: 100%;
-       height: auto;
-   }
-   /* @media_992px */
-   
-   @media(max-width:768px) {
-       /* sidebar */
-       .sidebar-container {
-           position: relative;
-           padding: 50px 70px;
-           bottom: 0;
-       }
-       .sidebar {
-           position: absolute;
-           top: 80px;
-           width: 100%;
-           height: 100%;
-       }
-       /* gallery */
-       .gallery {
-           position: absolute;
-           top: 430px;
-           right: 0;
-           left: 0;
-       }
-       .info {
-           gap: 110px;
-       }
-   }
-   
-   @media(max-width:600px) {
-       /* sidebar */
-       .sidebar h1 {
-           font-size: 50px;
-       }
-       .sidebar-container {
-           padding: 60px 30px;
-       }
-       /* gallery */
-       .gallery {
-           position: absolute;
-           top: 480px;
-           right: 0;
-           left: 0;
-       }
-       .info {
-           gap: 30px;
-       }
-       .icon i {
-           font-size: 16px;
-       }
-       .icon p {
-           font-size: 13px;
-       }
-   }
+           @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat&family=Tenor+Sans&display=swap');
+           @import url('https://kit.fontawesome.com/8e08c52e93.js');
+           * {
+               box-sizing: border-box;
+               margin: 0;
+               padding: 0;
+               text-decoration: none;
+               font-family: 'Montserrat', sans-serif;
+               color: #000;
+           }
+           
+           ul li {
+               list-style-type: none;
+           }
+           /*___________________ sidebar _________________*/
+           
+           .sidebar h1 {
+               font-family: 'Italiana';
+               font-weight: 400;
+               font-size: 60px;
+               text-align: left;
+               letter-spacing: 0.1em;
+           }
+           
+           .sidebar {
+               position: fixed;
+               top: 80px;
+               width: 450px;
+               height: 100%;
+           }
+           
+           .sidebar-container {
+               position: absolute;
+               display: flex;
+               flex-direction: column;
+               padding: 100px 50px;
+               text-align: justify;
+               bottom: 20px;
+               font-size: 14px;
+           }
+           /* description */
+           
+           .details {
+               display: flex;
+               flex-direction: column;
+               justify-content: space-between;
+               text-align: justify;
+               line-height: 30px;
+           }
+           
+           .details ul {
+               display: flex;
+               flex-direction: column;
+               text-align: left;
+           }
+           
+           .details ul li {
+               font-size: 14px;
+               opacity: 0.9;
+           }
+           
+           .details i {
+               margin-right: 20px;
+               font-size: 14px;
+           }
+           
+           .description {
+               padding-top: 30px;
+               font-weight: 300;
+               line-height: 20px;
+           }
+           /*___________________ projects ________________*/
+           
+           .gallery {
+               position: absolute;
+               top: 80px;
+               right: 0;
+               left: 450px;
+           }
+           
+           .gallery img {
+               width: 100%;
+               height: auto;
+           }
+           /* breakpoint_768px */
+           
+           @media(max-width:768px) {
+               /* sidebar */
+               .sidebar-container {
+                   position: relative;
+                   padding: 50px 70px;
+                   bottom: 0;
+               }
+               .sidebar {
+                   position: absolute;
+                   top: 80px;
+                   width: 100%;
+                   height: 100%;
+               }
+               /* gallery */
+               .gallery {
+                   position: absolute;
+                   top: 500px;
+                   right: 0;
+                   left: 0;
+               }
+           }
+           
+           @media(max-width:600px) {
+               /* sidebar */
+               .sidebar h1 {
+                   font-size: 50px;
+               }
+               .sidebar-container {
+                   padding: 60px 50px;
+               }
+               /* gallery */
+               .gallery {
+                   position: absolute;
+                   top: 540px;
+               }
+           }
+           
+           @media(max-width:450px) {
+               .sidebar-container {
+                   padding: 60px 40px;
+               }
+               /* gallery */
+               .gallery {
+                   position: absolute;
+                   top: 570px;
+               }
+           }

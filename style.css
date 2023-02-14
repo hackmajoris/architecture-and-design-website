@@ -439,10 +439,11 @@
         cursor: pointer;
         transition: 0.5s;
         letter-spacing: 0.1em;
+        background-color: none;
     }
     
     .overlay button:hover {
-        padding: 8px 20px;
+        font-size: 20px;
         font-weight: 700;
     }
     /*_________________________ contact _________________________*/
