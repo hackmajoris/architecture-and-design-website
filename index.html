@@ -71,7 +71,7 @@
         </div>
     </section>
 
-    <!--___________________________________ despre _____________________________________-->
+<!--___________________________________ despre _____________________________________-->
 
     <section class="despre" id="despre">
         <h1>Despre</h1>
@@ -110,90 +110,96 @@
         </div>
     </section>
 
-    <!--JavaScript_services section (architecture and design)-->
+<!--JavaScript_services section (architecture and design)-->
 
-    <script>
-        // accordion for architecture and design section
-        const faqs = document.querySelectorAll(".services");
-        faqs.forEach(services => {
-            services.addEventListener("click", () => {
-                services.classList.toggle("active");
-            })
-        })
-    </script>
+<script>
+	// accordion for architecture and design section
+	const faqs = document.querySelectorAll(".services");
+	faqs.forEach(services => {
+		services.addEventListener("click", () => {
+			services.classList.toggle("active");
+		})
+	})
+</script>
 
-    <!--___________________________________ portofoliu __________________________________-->
+<!--___________________________________ portofoliu __________________________________-->
 
-    <section class="portfolio" id="portofoliu">
-        <div class="portfolio-container">
-            <h1>Portofoliu</h1>
+<section class="portfolio" id="portofoliu">
+	<div class="portfolio-container">
+		<h1>Portofoliu</h1>
 
-            <div class="row">
-                <div class="filter-buttons">
-                    <ul id="filter-btns">
-                        <li class="active" data-target="all">All</li>
-                        <li data-target="architecture">Arhitectură</li>
-                        <li data-target="design">Design interior</li>
-                    </ul>
-                </div>
-            </div>
+		<div class="row">
+			<div class="filter-buttons">
+				<ul id="filter-btns">
+					<li class="active" data-target="all">All</li>
+					<li data-target="architecture">Arhitectură</li>
+					<li data-target="design">Design interior</li>
+				</ul>
+			</div>
+		</div>
 
-            <div class="row">
-                <div class="portfolio-gallery">
-                    <!--Proiect 1_Casa R-->
-                    <div class="item" data-id="design">
-                        <div class="inner">
-                            <div class="hover-container">
-                                <img src="/pages/portofoliu/Casa R/img1.png" alt="Casa R" class="image">
-                                <div class="overlay">Casa R<br><button><a href="/pages/portofoliu/casaR.html">Detalii</a></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Proiect 2_Casa C-->
-                    <div class="item" data-id="design">
-                        <div class="inner">
-                            <div class="hover-container">
-                                <img src="/pages/portofoliu/Casa C/img1.png" alt="Casa C" class="image">
-                                <div class="overlay">Casa C<br><button><a href="/pages/portofoliu/casaC.html">Detalii</a></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--show more projects-->
-                    <span id="start"></span>
-                    <span id="more">
-                        <!--Proiect 3_Cabinet avocatura-->
-                        <div class="item" data-id="design">
-                            <div class="inner">
-                                <div class="hover-container">
-                                    <img src="/pages/portofoliu/Birou avocatura/img1.png" alt="Birou avocatura" class="image">
-                                    <div class="overlay">Birou avocatură<br><button><a href="/pages/portofoliu/birou-avocatura.html">Detalii</a></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Proiect 4_Kubix-->
-                        <div class="item" data-id="design">
-                            <div class="inner">
-                                <div class="hover-container">
-                                    <img src="/pages/portofoliu/Kubix/img1.png" alt="Kubix" class="image">
-                                    <div class="overlay">Kubix<br><button><a href="/pages/portofoliu/kubix.html">Detalii</a></button>
-                                    </div>
-                                </div>
-                            </div>
-                      </span> </div>
-            </div>
-            <div class="mybtn"> <button onclick="myFunction()" id="myBtn">Mai multe proiecte </button></div>
-        </div>
-        </div>
-    </section>
+		<div class="row">
+			<div class="portfolio-gallery">
+				<!--Proiect 1_Casa R-->
+				<div class="item" data-id="design">
+					<div class="inner">
+						<div class="hover-container">
+							<img src="/pages/portofoliu/Casa R/img1.png" alt="Casa R" class="image">
+							<div class="overlay">Casa R<br>
+								<button><a href="/pages/portofoliu/casaR.html">Detalii</a></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--Proiect 2_Casa C-->
+				<div class="item" data-id="design">
+					<div class="inner">
+						<div class="hover-container">
+							<img src="/pages/portofoliu/Casa C/img1.png" alt="Casa C" class="image">
+							<div class="overlay">Casa C<br>
+								<button><a href="/pages/portofoliu/casaC.html">Detalii</a></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--Proiect 3_Cabinet avocatura-->
+				<div class="item item--more" data-id="design">
+					<div class="inner">
+						<div class="hover-container">
+							<img src="/pages/portofoliu/Birou avocatura/img1.png" alt="Birou avocatura"
+								 class="image">
+							<div class="overlay">Birou avocatură<br>
+								<button><a
+										href="/pages/portofoliu/birou-avocatura.html">Detalii</a></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--Proiect 4_Kubix-->
+				<div class="item item--more" data-id="design">
+					<div class="inner">
+						<div class="hover-container">
+							<img src="/pages/portofoliu/Kubix/img1.png" alt="Kubix" class="image">
+							<div class="overlay">Kubix<br>
+								<button><a
+										href="/pages/portofoliu/kubix.html">Detalii</a></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mybtn">
+				<button onclick="toggleItemsVisibility()" id="show-more-btn" data-enabled="false">Mai multe proiecte</button>
+			</div>
+		</div>
+	</div>
+</section>
 
-    <!--JavaScript_filter gallery for portfolio section-->
+<!--JavaScript_filter gallery for portfolio section-->
 
-    <script>
-        const filterButtons = document.querySelector("#filter-btns").children;
-        const items = document.querySelector(".portfolio-gallery").children;
+<script>
+	const filterButtons = document.querySelector("#filter-btns").children;
+	const items = document.querySelector(".portfolio-gallery").children;
 
         for (let i = 0; i < filterButtons.length; i++) {
             filterButtons[i].addEventListener("click", function() {
@@ -203,40 +209,43 @@
                 this.classList.add("active");
                 const target = this.getAttribute("data-target")
 
-                for (let k = 0; k < items.length; k++) {
-                    items[k].style.display = "none";
-                    if (target == items[k].getAttribute("data-id")) {
-                        items[k].style.display = "block";
-                    }
-                    if (target == "all") {
-                        items[k].style.display = "block";
-                    }
-                }
-            })
-        }
-    </script>
+			for (let k = 0; k < items.length; k++) {
+				items[k].style.display = "none";
+				if (target == items[k].getAttribute("data-id")) {
+					items[k].style.display = "block";
+				}
+				if (target == "all") {
+					items[k].style.display = "block";
+				}
+			}
+		})
+	}
+</script>
 
-    <!--JavaScript_show more projects button-->
+<!--JavaScript_show more projects button-->
 
-    <script>
-        function myFunction() {
-            var start = document.getElementById("start");
-            var moreText = document.getElementById("more");
-            var btnText = document.getElementById("myBtn");
+<script>
+	function toggleItemsVisibility() {
+		var showMoreBtn = document.getElementById("show-more-btn");
+		var moreItems = document.getElementsByClassName("item--more");
 
-            if (start.style.display === "none") {
-                start.style.display = "inline";
-                btnText.innerHTML = "Mai multe proiecte";
-                moreText.style.display = "none";
-            } else {
-                start.style.display = "none";
-                btnText.innerHTML = "Mai puține proiecte";
-                moreText.style.display = "inline";
-            }
-        }
-    </script>
+		if (showMoreBtn.getAttribute('data-enabled') === 'true') {
+			showMoreBtn.innerHTML = "Mai multe proiecte";
+			showMoreBtn.setAttribute('data-enabled', 'false')
+			for(let i=0; i< moreItems.length; i++) {
+				moreItems[i].style.display = 'none';
+			}
+		} else {
+			showMoreBtn.innerHTML = "Mai puține proiecte";
+			showMoreBtn.setAttribute('data-enabled', 'true')
+			for(let i=0; i< moreItems.length; i++) {
+				moreItems[i].style.display = 'block';
+			}
+		}
+	}
+</script>
 
-    <!--___________________________________ contact _____________________________________-->
+<!--___________________________________ contact _____________________________________-->
 
     <section class="contact" id="contact">
         <div class="contact-container">
@@ -297,7 +306,7 @@
             </div>
     </section>
 
-    <!--___________________________________ footer _____________________________________-->
+<!--___________________________________ footer _____________________________________-->
 
     <footer>
         <div class="footer-container">
