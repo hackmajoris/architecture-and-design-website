@@ -145,7 +145,8 @@
                         <div class="inner">
                             <div class="hover-container">
                                 <img src="/pages/portofoliu/Casa R/img1.png" alt="Casa R" class="image">
-                                <div class="overlay">Casa R<br><button><a href="/pages/portofoliu/casaR.html">Detalii</a></button>
+                                <div class="overlay">Casa R<br>
+                                    <button><a href="/pages/portofoliu/casaR.html">Detalii</a></button>
                                 </div>
                             </div>
                         </div>
@@ -155,37 +156,41 @@
                         <div class="inner">
                             <div class="hover-container">
                                 <img src="/pages/portofoliu/Casa C/img1.png" alt="Casa C" class="image">
-                                <div class="overlay">Casa C<br><button><a href="/pages/portofoliu/casaC.html">Detalii</a></button>
+                                <div class="overlay">Casa C<br>
+                                    <button><a href="/pages/portofoliu/casaC.html">Detalii</a></button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!--show more projects-->
-                    <span id="start"></span>
-                    <span id="more">
-                        <!--Proiect 3_Cabinet avocatura-->
-                        <div class="item" data-id="design">
-                            <div class="inner">
-                                <div class="hover-container">
-                                    <img src="/pages/portofoliu/Birou avocatura/img1.png" alt="Birou avocatura" class="image">
-                                    <div class="overlay">Birou avocatură<br><button><a href="/pages/portofoliu/birou-avocatura.html">Detalii</a></button>
-                                    </div>
+                    <!--Proiect 3_Cabinet avocatura-->
+                    <div class="item item--more" data-id="design">
+                        <div class="inner">
+                            <div class="hover-container">
+                                <img src="/pages/portofoliu/Birou avocatura/img1.png" alt="Birou avocatura" class="image">
+                                <div class="overlay">Birou avocatură<br>
+                                    <button><a
+										href="/pages/portofoliu/birou-avocatura.html">Detalii</a></button>
                                 </div>
                             </div>
                         </div>
-                        <!--Proiect 4_Kubix-->
-                        <div class="item" data-id="design">
-                            <div class="inner">
-                                <div class="hover-container">
-                                    <img src="/pages/portofoliu/Kubix/img1.png" alt="Kubix" class="image">
-                                    <div class="overlay">Kubix<br><button><a href="/pages/portofoliu/kubix.html">Detalii</a></button>
-                                    </div>
+                    </div>
+                    <!--Proiect 4_Kubix-->
+                    <div class="item item--more" data-id="design">
+                        <div class="inner">
+                            <div class="hover-container">
+                                <img src="/pages/portofoliu/Kubix/img1.png" alt="Kubix" class="image">
+                                <div class="overlay">Kubix<br>
+                                    <button><a
+										href="/pages/portofoliu/kubix.html">Detalii</a></button>
                                 </div>
                             </div>
-                      </span> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mybtn">
+                    <button onclick="toggleItemsVisibility()" id="show-more-btn" data-enabled="false">Mai multe proiecte</button>
+                </div>
             </div>
-            <div class="mybtn"> <button onclick="myFunction()" id="myBtn">Mai multe proiecte </button></div>
-        </div>
         </div>
     </section>
 
@@ -219,19 +224,22 @@
     <!--JavaScript_show more projects button-->
 
     <script>
-        function myFunction() {
-            var start = document.getElementById("start");
-            var moreText = document.getElementById("more");
-            var btnText = document.getElementById("myBtn");
+        function toggleItemsVisibility() {
+            var showMoreBtn = document.getElementById("show-more-btn");
+            var moreItems = document.getElementsByClassName("item--more");
 
-            if (start.style.display === "none") {
-                start.style.display = "inline";
-                btnText.innerHTML = "Mai multe proiecte";
-                moreText.style.display = "none";
+            if (showMoreBtn.getAttribute('data-enabled') === 'true') {
+                showMoreBtn.innerHTML = "Mai multe proiecte";
+                showMoreBtn.setAttribute('data-enabled', 'false')
+                for (let i = 0; i < moreItems.length; i++) {
+                    moreItems[i].style.display = 'none';
+                }
             } else {
-                start.style.display = "none";
-                btnText.innerHTML = "Mai puține proiecte";
-                moreText.style.display = "inline";
+                showMoreBtn.innerHTML = "Mai puține proiecte";
+                showMoreBtn.setAttribute('data-enabled', 'true')
+                for (let i = 0; i < moreItems.length; i++) {
+                    moreItems[i].style.display = 'block';
+                }
             }
         }
     </script>

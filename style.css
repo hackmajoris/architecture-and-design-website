@@ -380,7 +380,7 @@
         display: none;
     }
     
-    #myBtn {
+    #show-more-btn {
         font-size: 16px;
         padding: 15px 35px;
         border: 1px solid #000;
@@ -391,7 +391,7 @@
         transition: 0.5s;
     }
     
-    #myBtn:hover {
+    #show-more-btn:hover {
         font-size: 19px;
         background: #000;
         color: #fff;
