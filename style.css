@@ -393,7 +393,7 @@
         color: #fff;
     }
 
-    .item--more {
+    .hidden {
         display: none;
     }
     /* hover effect */
