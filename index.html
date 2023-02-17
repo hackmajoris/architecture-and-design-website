@@ -14,6 +14,18 @@
 
 <body>
 
+    <!--cookies-->
+    <div id="cookie">
+        <p>Acest site utilizează cookie`-uri pentru a vă îmbunătăți experiența de navigare. Navigând în continuare, vă exprimați acordul asupra folosirii cookie-urilor.</p>
+        <div class="cookie-btn">
+            <button id="accept">Accept</button>
+            <div class="right">
+                <button id="details">Detalii</button>
+                <button id="close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </div>
+    </div>
+
     <!--___________________________________ home _____________________________________-->
 
     <section class="home" id="home">
@@ -131,9 +143,9 @@
             <div class="row">
                 <div class="filter-buttons">
                     <ul id="filter-btns">
-                        <li class="active" data-target="all">All</li>
-                        <li data-target="architecture">Arhitectură</li>
-                        <li data-target="design">Design interior</li>
+                        <li class="active" data-target="all" onclick="filterProjects('all')">All</li>
+                        <li data-target="architecture" onclick="filterProjects('architecture')">Arhitectură</li>
+                        <li data-target="design" onclick="filterProjects('design')">Design interior</li>
                     </ul>
                 </div>
             </div>
@@ -141,7 +153,7 @@
             <div class="row">
                 <div class="portfolio-gallery">
                     <!--Proiect 1_Casa R-->
-                    <div class="item" data-id="design">
+                    <div class="item" data-target="design">
                         <div class="inner">
                             <div class="hover-container">
                                 <img src="/pages/portofoliu/Casa R/img1.png" alt="Casa R" class="image">
@@ -152,7 +164,7 @@
                         </div>
                     </div>
                     <!--Proiect 2_Casa C-->
-                    <div class="item" data-id="design">
+                    <div class="item" data-target="design">
                         <div class="inner">
                             <div class="hover-container">
                                 <img src="/pages/portofoliu/Casa C/img1.png" alt="Casa C" class="image">
@@ -163,25 +175,25 @@
                         </div>
                     </div>
                     <!--Proiect 3_Cabinet avocatura-->
-                    <div class="item item--more" data-id="design">
+                    <div class="item item--more hidden" data-target="design">
                         <div class="inner">
                             <div class="hover-container">
                                 <img src="/pages/portofoliu/Birou avocatura/img1.png" alt="Birou avocatura" class="image">
                                 <div class="overlay">Birou avocatură<br>
                                     <button><a
-										href="/pages/portofoliu/birou-avocatura.html">Detalii</a></button>
+                                            href="/pages/portofoliu/birou-avocatura.html">Detalii</a></button>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!--Proiect 4_Kubix-->
-                    <div class="item item--more" data-id="design">
+                    <div class="item item--more hidden" data-target="design">
                         <div class="inner">
                             <div class="hover-container">
                                 <img src="/pages/portofoliu/Kubix/img1.png" alt="Kubix" class="image">
                                 <div class="overlay">Kubix<br>
                                     <button><a
-										href="/pages/portofoliu/kubix.html">Detalii</a></button>
+                                            href="/pages/portofoliu/kubix.html">Detalii</a></button>
                                 </div>
                             </div>
                         </div>
@@ -198,32 +210,30 @@
 
     <script>
         const filterButtons = document.querySelector("#filter-btns").children;
-        const items = document.querySelector(".portfolio-gallery").children;
+        const projects = document.querySelector(".portfolio-gallery").children;
+        filterProjects('all');
 
-        for (let i = 0; i < filterButtons.length; i++) {
-            filterButtons[i].addEventListener("click", function() {
-                for (let j = 0; j < filterButtons.length; j++) {
-                    filterButtons[j].classList.remove("active")
-                }
-                this.classList.add("active");
-                const target = this.getAttribute("data-target")
+        function filterProjects(type) {
+            // updating active state on filter buttons
+            for (let i = 0; i < filterButtons.length; i++) {
+                filterButtons[i].classList.remove('active');
 
-                for (let k = 0; k < items.length; k++) {
-                    items[k].style.display = "none";
-                    if (target == items[k].getAttribute("data-id")) {
-                        items[k].style.display = "block";
-                    }
-                    if (target == "all") {
-                        items[k].style.display = "block";
-                    }
+                if (filterButtons[i].getAttribute('data-target') === type) {
+                    filterButtons[i].classList.add('active');
                 }
-            })
+            }
+
+            // projects filtering
+            for (let i = 0; i < projects.length; i++) {
+                projects[i].style.display = 'none';
+
+                if (type === 'all' || projects[i].getAttribute('data-target') === type) {
+                    projects[i].style.removeProperty('display');
+                }
+            }
         }
-    </script>
 
-    <!--JavaScript_show more projects button-->
-
-    <script>
+        <!--JavaScript_show more projects button-->
         function toggleItemsVisibility() {
             var showMoreBtn = document.getElementById("show-more-btn");
             var moreItems = document.getElementsByClassName("item--more");
@@ -232,13 +242,13 @@
                 showMoreBtn.innerHTML = "Mai multe proiecte";
                 showMoreBtn.setAttribute('data-enabled', 'false')
                 for (let i = 0; i < moreItems.length; i++) {
-                    moreItems[i].style.display = 'none';
+                    moreItems[i].classList.add('hidden');
                 }
             } else {
                 showMoreBtn.innerHTML = "Mai puține proiecte";
                 showMoreBtn.setAttribute('data-enabled', 'true')
                 for (let i = 0; i < moreItems.length; i++) {
-                    moreItems[i].style.display = 'block';
+                    moreItems[i].classList.remove('hidden');
                 }
             }
         }

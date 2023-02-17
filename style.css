@@ -8,13 +8,33 @@
         font-family: 'Montserrat', sans-serif;
         color: #000;
     }
-
+    
     ul li {
         list-style-type: none;
     }
     /*________________________ home ________________________*/
+    /* cookie */
+    
+    #cookie {
+        position: absolute;
+        text-align: justify;
+        background-color: red;
+        right: 0;
+        bottom: 0;
+        width: 400px;
+        height: 150px;
+        margin: 80px 90px;
+        padding: 20px 30px;
+        z-index: 100;
+    }
+    
+    .cookie-btn {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
     /* navbar desktop */
-
+    
     .navbar {
         overflow: hidden;
         position: fixed;
@@ -29,17 +49,17 @@
         padding: 20px 70px;
         z-index: 10;
     }
-
+    
     .navbar ul {
         display: flex;
     }
-
+    
     .navbar ul li {
         position: relative;
         margin-right: 40px;
         font-size: 16px;
     }
-
+    
     .navbar ul li::after {
         position: absolute;
         content: '';
@@ -50,24 +70,24 @@
         bottom: -4px;
         transition: 0.5s;
     }
-
+    
     .navbar ul li:hover::after {
         left: 0;
         width: 100%;
     }
-
+    
     .navbar .nav-contact {
         text-transform: uppercase;
         font-size: 20px;
         letter-spacing: 0.06em;
         transition: 0.5s;
     }
-
+    
     .nav-contact:hover {
         font-weight: 700;
     }
     /* navbar mobile */
-
+    
     .nav-toggle {
         visibility: hidden;
         overflow: hidden;
@@ -84,7 +104,7 @@
         z-index: 10;
     }
     /* sidenav mobile */
-
+    
     .sidenav {
         position: fixed;
         top: 0;
@@ -99,12 +119,12 @@
         backdrop-filter: blur(10px);
         z-index: 15;
     }
-
+    
     .sidenav ul li {
         padding: 15px 20px;
         text-align: right;
     }
-
+    
     .sidenav ul li a {
         font-size: 18px;
         font-weight: 400;
@@ -113,11 +133,11 @@
         color: #000;
         transition: 0.5s;
     }
-
+    
     .sidenav ul li a:hover {
         color: #fff;
     }
-
+    
     .sidenav .closebtn {
         position: absolute;
         color: #000;
@@ -126,11 +146,11 @@
         font-size: 36px;
     }
     /* video_home page */
-
+    
     .home {
         position: relative;
     }
-
+    
     .backgroundimg {
         position: absolute;
         top: 0;
@@ -140,7 +160,7 @@
         object-fit: cover;
         z-index: -2;
     }
-
+    
     .home video {
         position: absolute;
         top: 0;
@@ -150,7 +170,7 @@
         object-fit: cover;
         z-index: -1;
     }
-
+    
     .content {
         position: relative;
         right: 0;
@@ -162,7 +182,7 @@
         align-items: center;
     }
     /* description */
-
+    
     .description h2 {
         font-size: 60px;
         font-weight: 400;
@@ -170,7 +190,7 @@
         font-family: 'Tenor Sans', sans-serif;
         color: #fff;
     }
-
+    
     .description a {
         display: inline-block;
         margin-top: 30px;
@@ -181,38 +201,38 @@
         border-radius: 50px;
         transition: 0.5s;
     }
-
+    
     .description a:hover {
         background: none;
         border: 1px solid #fff;
         color: #fff;
     }
     /* social media */
-
+    
     .social {
         position: absolute;
         bottom: 30px;
     }
-
+    
     .social ul {
         display: flex;
     }
-
+    
     .social ul li {
         transform: scale(1.5);
         filter: invert(1);
         margin-right: 25px;
         transition: 0.5s;
     }
-
+    
     .social ul li:hover {
         transform: scale(1.6) translateY(-4px);
     }
-
+    
     .whatsapp img {
         width: 80px;
     }
-
+    
     .whatsapp a {
         position: fixed;
         bottom: 10px;
@@ -220,12 +240,12 @@
         transition: 0.5s;
         z-index: 1000;
     }
-
+    
     .whatsapp a:hover {
         transform: scale(1.2);
     }
     /*________________________ despre ________________________*/
-
+    
     .despre h1 {
         font-family: 'Italiana';
         font-weight: 400;
@@ -234,130 +254,130 @@
         letter-spacing: 0.1em;
         padding: 50px 0 60px 0;
     }
-
+    
     .about-container {
         display: flex;
         align-items: center;
         justify-content: center;
     }
     /* architecture-design */
-
+    
     .architecture-design {
         display: flex;
         flex-direction: column;
         gap: 60px;
         margin-left: 50px;
     }
-
+    
     .services {
         max-width: 300px;
         text-align: justify;
     }
-
+    
     .question-services {
         display: flex;
         align-items: center;
         gap: 30px;
     }
-
+    
     .question-services i {
         margin-top: 25px;
         font-size: 27px;
     }
-
+    
     .question-services img {
         width: 65%;
         cursor: pointer;
     }
-
+    
     .question-services .arch {
         width: 60%;
     }
-
+    
     .answer-services {
         max-height: 0;
         overflow: hidden;
         transition: max-height 1s ease;
         font-size: 16px;
     }
-
+    
     .answer-services p {
         max-width: 280px;
         margin-top: 1rem;
         color: #000;
     }
-
+    
     .services.active .answer-services {
         max-height: 400px;
     }
-
+    
     .services.active i {
         transform: rotate(90deg);
     }
     /* about */
-
+    
     hr {
         margin: 22px 0;
     }
-
+    
     .about {
         width: 28%;
         line-height: 20px;
         text-align: justify;
         margin: 0 60px;
     }
-
+    
     .avatar {
         width: 170px;
         margin: 0 60px;
     }
     /*________________________ portofoliu ________________________*/
-
+    
     .portfolio h1 {
         font-family: 'Italiana';
         font-weight: 400;
         font-size: 70px;
         text-align: center;
         letter-spacing: 0.1em;
-        padding: 80px 0 30px 0;
+        padding: 100px 0 30px 0;
     }
     /* filtering projects */
-
+    
     .portfolio-container {
         margin: 0 150px;
     }
-
+    
     .row {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-
+    
     .portfolio .filter-buttons {
         margin: auto;
         width: 100%;
         margin-bottom: 30px;
     }
-
+    
     .portfolio .filter-buttons ul {
         text-align: center;
     }
-
+    
     .portfolio .filter-buttons ul li {
         color: #000000bd;
-        font-size: 14px;
+        font-size: 16px;
         display: inline-block;
         margin: 0px 10px;
         cursor: pointer;
         padding-bottom: 2px;
     }
-
+    
     .portfolio .filter-buttons ul li.active {
         color: #000;
         border-bottom: 1.5px solid #000;
     }
-
+    
     .portfolio .portfolio-gallery {
         max-width: 100%;
         display: grid;
@@ -365,61 +385,53 @@
         gap: 20px;
         margin: auto;
     }
-
+    
     .portfolio .portfolio-gallery .item .inner {
         position: relative;
     }
-
+    
     .portfolio .portfolio-gallery .item img {
         width: 100%;
         display: block;
     }
-
     /* show more projects */
-<<<<<<< HEAD
     
     #more {
         display: none;
     }
     
-=======
->>>>>>> bc0b1150616e7cf0ca9adfb82d09dfd85a104d1b
     #show-more-btn {
         font-size: 16px;
         padding: 15px 35px;
         border: 1px solid #000;
         text-align: center;
-        margin: 20px auto;
+        margin: 40px auto;
         background: none;
         cursor: pointer;
         transition: 0.5s;
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> bc0b1150616e7cf0ca9adfb82d09dfd85a104d1b
     #show-more-btn:hover {
-        font-size: 19px;
+        font-size: 18px;
         background: #000;
         color: #fff;
     }
-
+    
     .hidden {
         display: none;
     }
     /* hover effect */
-
+    
     .hover-container {
         position: relative;
         width: 100%;
     }
-
+    
     .image {
         width: 100%;
         cursor: pointer;
     }
-
+    
     .overlay {
         position: absolute;
         font-family: 'Tenor Sans', sans-serif;
@@ -438,13 +450,13 @@
         opacity: 0;
         transition: 0.5s;
     }
-
+    
     .hover-container:hover .overlay {
         visibility: visible;
         opacity: 0.7;
         width: 100%;
     }
-
+    
     .overlay button {
         border: none;
         padding: 8px 15px;
@@ -455,27 +467,28 @@
         letter-spacing: 0.1em;
         background-color: none;
     }
-
+    
     .overlay button:hover {
         font-size: 19px;
         font-weight: 700;
+        letter-spacing: 0.06em;
     }
     /*_________________________ contact _________________________*/
-
+    
     .contact h1 {
         font-family: 'Italiana';
         font-weight: 400;
         font-size: 70px;
         text-align: center;
         letter-spacing: 0.1em;
-        padding: 80px 0 90px 0;
+        padding: 80px 0 70px 0;
     }
-
+    
     .contact-container {
         position: relative;
     }
     /*--personal info--*/
-
+    
     .personalinfo {
         display: flex;
         flex-wrap: wrap;
@@ -483,43 +496,43 @@
         justify-content: center;
         line-height: 22px;
     }
-
+    
     .info h4 {
         color: rgba(0, 0, 0, 0.473);
         font-weight: 400;
         margin-top: 20px;
     }
-
+    
     .info ul {
         display: flex;
     }
-
+    
     .info ul li {
         margin-right: 14px;
         margin-top: 6px;
         font-size: 20px;
         transition: 0.5s;
     }
-
+    
     .info ul li:hover {
         transform: scale(1.3);
     }
-
+    
     .media video {
         position: relative;
         width: 500px;
         height: auto;
         margin: 0 150px 0 0;
     }
-
+    
     .media img {
         position: absolute;
         width: 150px;
-        top: 38%;
+        top: 36%;
         left: 47%;
     }
     /*--form-container--*/
-
+    
     .form-container {
         display: flex;
         align-items: center;
@@ -529,14 +542,14 @@
         padding: 50px 80px;
     }
     /*--newsletter--*/
-
+    
     .newsletter h3 {
         font-family: 'Italiana';
         font-weight: 400;
         font-size: 60px;
         letter-spacing: 0.1em;
     }
-
+    
     .newsletter p {
         width: 100%;
         font-size: 14px;
@@ -544,13 +557,13 @@
         margin-top: 10px;
         margin-bottom: 120px;
     }
-
+    
     .newsletter-field {
         display: flex;
         align-items: center;
         border-bottom: 1px solid #000;
     }
-
+    
     .newsletter input[type=email] {
         width: 100%;
         border: none;
@@ -558,11 +571,11 @@
         padding-left: 10px;
         background: none;
     }
-
+    
     .newsletter input[type=email]:focus {
         border: none;
     }
-
+    
     .newsletter button {
         font-size: 14px;
         text-align: center;
@@ -574,16 +587,16 @@
         opacity: 0.9;
         transition: 0.5s;
     }
-
+    
     .newsletter button:hover {
         opacity: 1;
     }
     /*--contact-form--*/
-
+    
     .contact-form {
         margin: 0 0 0 30%;
     }
-
+    
     .field {
         width: 100%;
         padding: 8px;
@@ -592,23 +605,23 @@
         outline: none;
         border: none;
     }
-
+    
      ::placeholder {
         color: rgba(0, 0, 0, 0.61);
     }
-
+    
     input[type=text]:focus,
     input[type=email]:focus,
     input[type=number]:focus,
     textarea:focus {
         border: 1px solid rgba(0, 0, 0, 0.534);
     }
-
+    
     input::-webkit-outer-spin-button,
     input::-webkit-inner-spin-button {
         -webkit-appearance: none;
     }
-
+    
     .sendbtn button {
         width: 100%;
         font-size: 16px;
@@ -623,12 +636,12 @@
         opacity: 0.9;
         transition: 0.5s;
     }
-
+    
     .sendbtn button:hover {
         opacity: 1;
         border-radius: 4px;
     }
-
+    
     .checkbox {
         display: flex;
         align-items: center;
@@ -637,11 +650,11 @@
         gap: 10px;
     }
     /*________________________ footer ________________________*/
-
+    
     .footer-container {
         overflow: hidden;
     }
-
+    
     .footer {
         position: relative;
         width: 100%;
@@ -655,46 +668,46 @@
         padding: 30px 80px;
         line-height: 23px;
     }
-
+    
     .footer a,
     h2 {
         color: #fff;
         transition: 0.5s;
     }
-
+    
     .footer a:hover {
         color: rgba(255, 255, 255, 0.555);
     }
-
+    
     .footer-heading {
         display: flex;
         flex-direction: column;
     }
-
+    
     .footer-heading h2 {
         margin-bottom: 15px;
         font-size: 13px;
         letter-spacing: 2px;
     }
     /* footer-1 */
-
+    
     .footer-1 img {
         filter: invert(1);
         margin-bottom: 10px;
     }
     /* footer-3 */
-
+    
     .footer-icons {
         display: flex;
     }
-
+    
     .footer-3 ul li {
         transform: scale(1.3);
         margin-right: 16px;
         filter: invert(1);
     }
     /*_________ @media query_1080px _________*/
-
+    
     @media (max-width: 1080px) {
         .navbar {
             padding: 20px 50px;
@@ -705,7 +718,7 @@
         }
     }
     /*_________ @media query_992px _________*/
-
+    
     @media (max-width: 992px) {
         .navbar {
             display: none;
@@ -796,7 +809,7 @@
         }
     }
     /*________ @media query_768px _________*/
-
+    
     @media (max-width: 768px) {
         .description h2 {
             font-size: 50px;
@@ -832,7 +845,7 @@
         }
     }
     /*________ @media query_600px _________*/
-
+    
     @media (max-width: 600px) {
         .description h2 {
             font-size: 28px;
