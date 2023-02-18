@@ -9,7 +9,7 @@
     <title>Arhitectura si design interior</title>
     <link href="./style.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8e08c52e93.js" crossorigin="anonymous"></script>
-    <script src="/script.js"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -30,55 +30,9 @@
     <!--JavaScript cookie-->
 
     <script>
-        // function to accept the cookie //
-        function setCookie(name, value, days) {
-            var expires = "";
-            if (days) {
-                var date = new Date();
-                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-                expires = "; expires=" + date.toUTCString();
-            }
-            document.cookie = name + "=" + (value || "") + expires + "; path=/";
-        }
-
-        document.getElementById("accept").addEventListener("click", function() {
-            setCookie("cookies_accepted", true, 365);
-            document.getElementById("cookie").style.display = "none";
-        });
-        /*   // user has accepted cookies
-           function hasAcceptedCookies() {
-               var cookies = document.cookie.split(";");
-               for (var i = 0; i < cookies.length; i++) {
-                   var name = cookies[i].split("=")[0].trim();
-                   var value = cookies[i].split("=")[1];
-                   if (name === "cookies_accepted" && value === "true") {
-                       return true;
-                   }
-               }
-               return false;
-           }
-           // user has already accepted cookies
-           if (hasAcceptedCookies()) {
-               hideBanner();
-               hideButtons(); 
-           } */
-
-        // function to decline the cookie //
-        function eraseCookie(name) {
-            document.cookie = name + '=; Max-Age=-99999999;';
-        }
-
-        document.getElementById("decline").addEventListener("click", function() {
-            eraseCookie("cookies_accepted");
-            document.getElementById("cookie").style.display = "none";
-        });
-
-        // function to close the cookie //
-        function hideBanner() {
-            document.getElementById("cookie").style.display = "none";
-        }
-
-        document.getElementById("close").addEventListener("click", hideBanner);
+        acceptCookies()
+        declineCookies()
+        onCloseBannerClick()
     </script>
 
     <!--___________________________________ home _____________________________________-->
