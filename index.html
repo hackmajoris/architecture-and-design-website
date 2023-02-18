@@ -16,15 +16,53 @@
 
     <!--cookies-->
     <div id="cookie">
-        <p>Acest site utilizează cookie`-uri pentru a vă îmbunătăți experiența de navigare. Navigând în continuare, vă exprimați acordul asupra folosirii cookie-urilor.</p>
+        <p>Acest site utilizează cookie-uri pentru a vă îmbunătăți experiența de navigare. Navigând în continuare, vă exprimați acordul asupra folosirii cookie-urilor. <a href="./pages/legal/politica cookies.html"><b>Mai multe detalii...</b></a></p>
         <div class="cookie-btn">
             <button id="accept">Accept</button>
             <div class="right">
-                <button id="details">Detalii</button>
+                <button id="decline"> Refuz</button>
                 <button id="close"><i class="fa-solid fa-xmark"></i></button>
             </div>
         </div>
     </div>
+
+    <!--JavaScript cookie-->
+
+    <script>
+        // function to accept the cookie
+        function setCookie(name, value, days) {
+            var expires = "";
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "") + expires + "; path=/";
+        }
+
+        document.getElementById("accept").addEventListener("click", function() {
+            setCookie("cookies_accepted", true, 365);
+            document.getElementById("cookie").style.display = "none";
+        });
+
+        // function to decline the cookie
+        function eraseCookie(name) {
+            document.cookie = name + '=; Max-Age=-99999999;';
+        }
+
+        document.getElementById("decline").addEventListener("click", function() {
+            eraseCookie("cookies_accepted");
+            document.getElementById("cookie").style.display = "none";
+        });
+
+        // function to close the cookie
+        function hideBanner() {
+            document.getElementById("cookie").style.display = "none";
+        }
+
+        document.getElementById("close").addEventListener("click", hideBanner);
+    </script>
+
 
     <!--___________________________________ home _____________________________________-->
 
