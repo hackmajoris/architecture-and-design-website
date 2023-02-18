@@ -29,7 +29,7 @@
     <!--JavaScript cookie-->
 
     <script>
-        // function to accept the cookie
+        // function to accept the cookie //
         function setCookie(name, value, days) {
             var expires = "";
             if (days) {
@@ -44,8 +44,25 @@
             setCookie("cookies_accepted", true, 365);
             document.getElementById("cookie").style.display = "none";
         });
+        /*   // user has accepted cookies
+           function hasAcceptedCookies() {
+               var cookies = document.cookie.split(";");
+               for (var i = 0; i < cookies.length; i++) {
+                   var name = cookies[i].split("=")[0].trim();
+                   var value = cookies[i].split("=")[1];
+                   if (name === "cookies_accepted" && value === "true") {
+                       return true;
+                   }
+               }
+               return false;
+           }
+           // user has already accepted cookies
+           if (hasAcceptedCookies()) {
+               hideBanner();
+               hideButtons(); 
+           } */
 
-        // function to decline the cookie
+        // function to decline the cookie //
         function eraseCookie(name) {
             document.cookie = name + '=; Max-Age=-99999999;';
         }
@@ -55,14 +72,13 @@
             document.getElementById("cookie").style.display = "none";
         });
 
-        // function to close the cookie
+        // function to close the cookie //
         function hideBanner() {
             document.getElementById("cookie").style.display = "none";
         }
 
         document.getElementById("close").addEventListener("click", hideBanner);
     </script>
-
 
     <!--___________________________________ home _____________________________________-->
 
