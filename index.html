@@ -28,7 +28,6 @@
     </div>
 
     <!--JavaScript cookie-->
-
     <script>
         acceptCookies()
         declineCookies()
@@ -132,15 +131,8 @@
     </section>
 
     <!--JavaScript_services section (architecture and design)-->
-
     <script>
-        // accordion for architecture and design section
-        const faqs = document.querySelectorAll(".services");
-        faqs.forEach(services => {
-            services.addEventListener("click", () => {
-                services.classList.toggle("active");
-            })
-        })
+        services()
     </script>
 
     <!--___________________________________ portofoliu __________________________________-->
@@ -215,52 +207,11 @@
         </div>
     </section>
 
-    <!--JavaScript_filter gallery for portfolio section-->
-
+    <!--JavaScript_filter projects for portfolio section-->
     <script>
         const filterButtons = document.querySelector("#filter-btns").children;
         const projects = document.querySelector(".portfolio-gallery").children;
         filterProjects('all');
-
-        function filterProjects(type) {
-            // updating active state on filter buttons
-            for (let i = 0; i < filterButtons.length; i++) {
-                filterButtons[i].classList.remove('active');
-
-                if (filterButtons[i].getAttribute('data-target') === type) {
-                    filterButtons[i].classList.add('active');
-                }
-            }
-
-            // projects filtering
-            for (let i = 0; i < projects.length; i++) {
-                projects[i].style.display = 'none';
-
-                if (type === 'all' || projects[i].getAttribute('data-target') === type) {
-                    projects[i].style.removeProperty('display');
-                }
-            }
-        }
-
-        <!--JavaScript_show more projects button-->
-        function toggleItemsVisibility() {
-            var showMoreBtn = document.getElementById("show-more-btn");
-            var moreItems = document.getElementsByClassName("item--more");
-
-            if (showMoreBtn.getAttribute('data-enabled') === 'true') {
-                showMoreBtn.innerHTML = "Mai multe proiecte";
-                showMoreBtn.setAttribute('data-enabled', 'false')
-                for (let i = 0; i < moreItems.length; i++) {
-                    moreItems[i].classList.add('hidden');
-                }
-            } else {
-                showMoreBtn.innerHTML = "Mai puține proiecte";
-                showMoreBtn.setAttribute('data-enabled', 'true')
-                for (let i = 0; i < moreItems.length; i++) {
-                    moreItems[i].classList.remove('hidden');
-                }
-            }
-        }
     </script>
 
     <!--___________________________________ contact _____________________________________-->
