@@ -145,24 +145,40 @@
             width: 40%;
             margin: 30px 20px;
         }
+        .portfoliu-container {
+            margin: 0 80px;
+            padding-bottom: 6rem;
+        }
     }
     /*_________ @media query_992px _________*/
     
     @media (max-width: 992px) {
         /*--portfolio--*/
         .portfoliu h1 {
-            padding: 30px 0 60px 0;
+            padding: 150px 0 50px 0;
         }
         .projects img {
-            width: 80%;
+            width: 100%;
         }
     }
     /*________ @media query_768px _________*/
     
     @media (max-width: 768px) {
         /*--portfolio--*/
-        .portfoliu h1 {
-            padding: 30px 0 50px 0;
+        .portfoliu-container {
+            margin: 0 50px;
+        }
+        .overlay {
+            padding-top: 30%;
+            line-height: 20px;
+            font-size: 30px;
+        }
+        .overlay button {
+            padding: 4px 10px;
+            font-size: 16px;
+        }
+        .overlay button:hover {
+            font-size: 30px;
         }
     }
     /*________ @media query_600px _________*/
@@ -171,15 +187,20 @@
         /*--portfolio--*/
         .portfoliu h1 {
             font-size: 48px;
-            padding: 50px 0 50px 0;
+            padding: 150px 0 50px 0;
         }
         .portfoliu-container {
             margin: 0 30px;
+            padding-bottom: 2.5rem;
         }
         .portfoliu .portfolio-gallery {
             grid-template-columns: repeat(1, 1fr);
         }
         .portfoliu .filter-buttons ul li {
             font-size: 13px;
+        }
+        .portfoliu .filter-buttons {
+            margin-top: 0;
+            margin-bottom: 30px;
         }
     }
