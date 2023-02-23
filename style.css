@@ -1070,12 +1070,17 @@
         }
     }
     
-    @media(max-width: 400px) {
+    @media(max-width: 425px) {
         .services {
             max-width: 220px;
             margin-left: 10px;
         }
         .avatar {
             width: 80px;
+        }
+        .media img {
+            width: 90px;
+            top: 38%;
+            left: 78%;
         }
     }
