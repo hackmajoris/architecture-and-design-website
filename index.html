@@ -3,12 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Servicii de arhitectură și design interior.">
-    <meta name="keywords" content="arhitectura, design interior, interior design, design, Cluj-Napoca, Alba, h1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Liliana Platon">
-    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="Servicii de arhitectură și design interior." name="description">
+    <meta content="arhitectura, design interior, interior design, design, Cluj-Napoca, Alba, h1" name="keywords">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Liliana Platon" name="author">
+    <link href="./img/favicon.png" rel="icon" type="image/x-icon">
     <title>Arhitectura si design interior</title>
     <link href="./style.css" rel="stylesheet">
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/8e08c52e93.js"></script>
@@ -37,127 +37,115 @@
     acceptCookies()
     declineCookies()
     onCloseBannerClick()
-
-    getFormData = (selector) => Object.fromEntries(new FormData(document.querySelector(selector)))
-
-    sendEmail = () => {
-        const formData = getFormData('#email-form')
-
-        fetch('https://47r4gejn2ngqw4gqqwuwffqdi40yitzy.lambda-url.eu-central-1.on.aws/', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(formData)
-        })
-            .then(response => response.json())
-            .then(data => console.log(data))
-            .catch(error => console.error(error));
-    }
 </script>
 
 <!--___________________________________ home _____________________________________-->
 
-    <section class="home" id="home">
-        <header>
-            <!--navbar desktop-->
-            <nav class="navbar">
-                <a href="#home"><img src="./img/logo.svg" alt="logo" width="160px"></a>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#despre">Despre</a></li>
-                    <li><a href="/pages/portofoliu/portofoliu.html">Portofoliu</a></li>
-                    <li><a href="/pages/intrebari/intrebari.html">Întrebări</a></li>
-                </ul>
-                <a href="#contact" class="nav-contact">Contact</a>
-            </nav>
-            <!--navbar mobile-->
-            <div class="nav-toggle">
-                <a href="#home"><img src="./img/logo.svg" alt="logo" width="150px"></a>
-                <span onclick="openNav()"><img src="./img/open.svg" alt="open toggle" width="60px"></span>
-            </div>
-        </header>
-        <!--sidenav mobile|toggle-->
-        <div id="mySidenav" class="sidenav">
+<section class="home" id="home">
+    <header>
+        <!--navbar desktop-->
+        <nav class="navbar">
+            <a href="#home"><img alt="logo" src="./img/logo.svg" width="160px"></a>
             <ul>
-                <li>
-                    <a href="javascript:void(0);" class="closebtn" onclick="closeNav()"><img src="./img/close.svg" alt="close toggle" width="60px"></a>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#despre">Despre</a></li>
+                <li><a href="/pages/portofoliu/portofoliu.html">Portofoliu</a></li>
+                <li><a href="/pages/intrebari/intrebari.html">Întrebări</a></li>
+            </ul>
+            <a class="nav-contact" href="#contact">Contact</a>
+        </nav>
+        <!--navbar mobile-->
+        <div class="nav-toggle">
+            <a href="#home"><img alt="logo" src="./img/logo.svg" width="150px"></a>
+            <span onclick="openNav()"><img alt="open toggle" src="./img/open.svg" width="60px"></span>
+        </div>
+    </header>
+    <!--sidenav mobile|toggle-->
+    <div class="sidenav" id="mySidenav">
+        <ul>
+            <li>
+                <a class="closebtn" href="javascript:void(0);" onclick="closeNav()"><img alt="close toggle" src="./img/close.svg" width="60px"></a>
+            </li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#despre">Despre</a></li>
+            <li><a href="/pages/portofoliu/portofoliu.html">Portofoliu</a></li>
+            <li><a href="/pages/intrebari/intrebari.html">Întrebări</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+    <!--image background-->
+    <img class="backgroundimg" src="./img/homeimg.svg">
+    <!--video-->
+    <video autoplay loop muted src="./img/media/home.mp4"></video>
+    <div class="content">
+        <div class="description">
+            <h2>Servicii de arhitectură <br> și design interior</h2>
+            <a href="/pages/portofoliu/portofoliu.html">Portofoliu</a>
+        </div>
+        <div class="social">
+            <ul>
+                <li><a href="https://www.facebook.com/valentina.honceru" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/valentina-honceru-7b4740120/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
                 </li>
-                <li> <a href="#home">Home</a> </li>
-                <li> <a href="#despre">Despre</a> </li>
-                <li> <a href="/pages/portofoliu/portofoliu.html">Portofoliu</a> </li>
-                <li> <a href="/pages/intrebari/intrebari.html">Întrebări</a> </li>
-                <li> <a href="#contact">Contact</a> </li>
+                <li><a href="https://ro.pinterest.com/honceru/" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                <li><a href="https://www.instagram.com/valehonceru/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
             </ul>
         </div>
-        <!--image background-->
-        <img src="./img/homeimg.svg" class="backgroundimg">
-        <!--video-->
-        <video src="./img/media/home.mp4" muted loop autoplay></video>
-        <div class="content">
-            <div class="description">
-                <h2>Servicii de arhitectură <br> și design interior</h2>
-                <a href="/pages/portofoliu/portofoliu.html">Portofoliu</a>
-            </div>
-            <div class="social">
-                <ul>
-                    <li><a href="https://www.facebook.com/valentina.honceru" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/valentina-honceru-7b4740120/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                    <li><a href="https://ro.pinterest.com/honceru/" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a></li>
-                    <li><a href="https://www.instagram.com/valehonceru/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                </ul>
-            </div>
-            <!--whatsapp-->
-            <div class="whatsapp">
-                <a href="https://wa.me/40749817422" target="_blank"><img src="./img/whatsapp.svg" alt="whatsapp"></a>
-            </div>
+        <!--whatsapp-->
+        <div class="whatsapp">
+            <a href="https://wa.me/40749817422" target="_blank"><img alt="whatsapp" src="./img/whatsapp.svg"></a>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!--___________________________________ despre _____________________________________-->
+<!--___________________________________ despre _____________________________________-->
 
-    <section class="despre" id="despre">
-        <h1>Despre</h1>
-        <div class="about-container">
-            <div class="architecture-design">
-                <!--architecture-->
-                <div class="services">
-                    <div class="question-services">
-                        <img src="./img/arhitectura.svg" alt="servicii arhitectura" class="arch"><i class="fa-solid fa-chevron-right"></i>
-                    </div>
-                    <div class="answer-services">
-                        <p>Oferim servicii de arhitectură pentru toate fazele: CU, DTAC, SF, DALI, PTh, pentru funcțiuni rezidențiale, culturale, învățământ și spații publice.</p>
-                    </div>
+<section class="despre" id="despre">
+    <h1>Despre</h1>
+    <div class="about-container">
+        <div class="architecture-design">
+            <!--architecture-->
+            <div class="services">
+                <div class="question-services">
+                    <img alt="servicii arhitectura" class="arch" src="./img/arhitectura.svg"><i class="fa-solid fa-chevron-right"></i>
                 </div>
-                <!--design-->
-                <div class="services">
-                    <div class="question-services">
-                        <img src="./img/design.svg" alt="servicii design interior" class="design">
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </div>
-                    <div class="answer-services">
-                        <p>Concept și dezvoltarea proiectului tehnic pentru implementare, consultanță și asistență tehnică pe perioada implementării.</p>
-                    </div>
+                <div class="answer-services">
+                    <p>Oferim servicii de arhitectură pentru toate fazele: CU, DTAC, SF, DALI, PTh, pentru funcțiuni rezidențiale, culturale,
+                        învățământ și spații publice.</p>
                 </div>
             </div>
-            <!--about-->
-            <div class="about">
-                <p>
-                    <hr>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eligendi non, sit voluptatum nihil nemo, officiis maiores doloribus ducimus quas, totam esse consequuntur distinctio laudantium! Iste odit similique neque labore! Lorem
-                    ipsum dolor, sit amet consectetur adipisicing elit. Illum eligendi atque amet, molestias cum unde? Ipsa laborum, consequatur recusandae ea repudiandae magnam quos obcaecati dolorem sapiente reprehenderit. Dolor, esse aliquam? Lorem
-                    ipsum dolor sit amet consectetur adipisicing elit.
-                    <hr>
-                </p>
+            <!--design-->
+            <div class="services">
+                <div class="question-services">
+                    <img alt="servicii design interior" class="design" src="./img/design.svg">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+                <div class="answer-services">
+                    <p>Concept și dezvoltarea proiectului tehnic pentru implementare, consultanță și asistență tehnică pe perioada implementării.</p>
+                </div>
             </div>
-            <img src="./img/avatar.png" loading="lazy" alt="avatar" class="avatar">
         </div>
-    </section>
+        <!--about-->
+        <div class="about">
+            <p>
+            <hr>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eligendi non, sit voluptatum nihil nemo, officiis maiores doloribus
+            ducimus quas, totam esse consequuntur distinctio laudantium! Iste odit similique neque labore! Lorem
+            ipsum dolor, sit amet consectetur adipisicing elit. Illum eligendi atque amet, molestias cum unde? Ipsa laborum, consequatur recusandae ea
+            repudiandae magnam quos obcaecati dolorem sapiente reprehenderit. Dolor, esse aliquam? Lorem
+            ipsum dolor sit amet consectetur adipisicing elit.
+            <hr>
+            </p>
+        </div>
+        <img alt="avatar" class="avatar" loading="lazy" src="./img/avatar.png">
+    </div>
+</section>
 
 <!--JavaScript_services section (architecture and design)-->
 
 <script>
 
-        services()
+    services()
 </script>
 
 <!--___________________________________ portofoliu __________________________________-->
@@ -232,84 +220,113 @@
     </div>
 </section>
 
-    <!--JavaScript_filter projects for portfolio section-->
-    <script>
-        const filterButtons = document.querySelector("#filter-btns").children;
-        const projects = document.querySelector(".portfolio-gallery").children;
-        filterProjects('all');
-    </script>
+<!--JavaScript_filter projects for portfolio section-->
+<script>
+    const filterButtons = document.querySelector("#filter-btns").children;
+    const projects = document.querySelector(".portfolio-gallery").children;
+    filterProjects('all');
+</script>
 
 <!--___________________________________ contact _____________________________________-->
 
-    <section class="contact" id="contact">
-        <div class="contact-container">
-            <h1>Contact</h1>
-            <div class="personalinfo">
-                <div class="media">
-                    <video src="/img/media/desktop.mp4" loop autoplay muted></video>
-                    <img src="/img/mobile.svg" alt="mobile mockup" loading="lazy">
-                </div>
-                <div class="info">
-                    <h4>Telefon</h4>
-                    <p>(+40) 749 817 422</p>
-                    <h4>Email</h4>
-                    <p>vhondesign@gmail.com</p>
-                    <h4>Locații</h4>
-                    <p><b>Cluj-Napoca</b><br>Str. Profesor Tudor Ciortea, nr.9</p><br>
-                    <p><b>Sebeș</b><br>Loc. Petrești, jud. Alba</p>
-                    <h4>Social media</h4>
-                    <ul class="icons">
-                        <li><a href="https://www.facebook.com/valentina.honceru" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/valentina-honceru-7b4740120/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                        <li><a href="https://ro.pinterest.com/honceru/" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a></li>
-                        <li><a href="https://www.instagram.com/valehonceru/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href="mailto:vhondesign@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
-                    </ul>
-                </div>
+<section class="contact" id="contact">
+    <div class="contact-container">
+        <h1>Contact</h1>
+        <div class="personalinfo">
+            <div class="media">
+                <video autoplay loop muted src="/img/media/desktop.mp4"></video>
+                <img alt="mobile mockup" loading="lazy" src="/img/mobile.svg">
             </div>
-            <!--newsletter-->
-            <div class="form-container">
-                <form action="#">
-                    <div class="newsletter">
-                        <h3>Newsletter</h3>
-                        <p>Abonează-te pentru a primi cele mai recente noutăți.</p>
-                        <div class="newsletter-field">
-                            <i class="fa-solid fa-envelope"></i><input type="email" name="email" placeholder="Adresa ta de email" required>
-                            <button type="submit">Abonare</button>
-                        </div>
+            <div class="info">
+                <h4>Telefon</h4>
+                <p>(+40) 749 817 422</p>
+                <h4>Email</h4>
+                <p>vhondesign@gmail.com</p>
+                <h4>Locații</h4>
+                <p><b>Cluj-Napoca</b><br>Str. Profesor Tudor Ciortea, nr.9</p><br>
+                <p><b>Sebeș</b><br>Loc. Petrești, jud. Alba</p>
+                <h4>Social media</h4>
+                <ul class="icons">
+                    <li><a href="https://www.facebook.com/valentina.honceru" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/valentina-honceru-7b4740120/" target="_blank"><i
+                            class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href="https://ro.pinterest.com/honceru/" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                    <li><a href="https://www.instagram.com/valehonceru/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="mailto:vhondesign@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!--newsletter-->
+        <div class="form-container">
+            <form action="#">
+                <div class="newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Abonează-te pentru a primi cele mai recente noutăți.</p>
+                    <div class="newsletter-field">
+                        <i class="fa-solid fa-envelope"></i><input name="email" placeholder="Adresa ta de email" required type="email">
+                        <button type="submit">Abonare</button>
                     </div>
-                </form>
-                <!--contact-form-->
-                    <form id="email-form" onsubmit="sendEmail()">
-                        <div class="contact-form">
-                            <div class="field-box">
-                                <label for="email-form-name">
-                                    <input class="field" id="email-form-name" name="name" placeholder="Nume" required type="text">
-                                </label>
-                                <label for="email-form-email">
-                                    <input class="field" id="email-form-email" name="email" placeholder="Email" required type="email">
-                                </label>
-                                <label for="email-form-phone">
-                                    <input class="field" id="email-form-phone" name="phone" placeholder="Telefon" required type="number">
-                                </label>
-                                <label for="email-form-message">
+                </div>
+            </form>
+            <!--contact-form-->
+            <form id="email-form">
+                <div class="contact-form">
+                    <div class="field-box">
+                        <label for="email-form-name">
+                            <input class="field" id="email-form-name" name="name" placeholder="Nume" required type="text">
+                        </label>
+                        <label for="email-form-email">
+                            <input class="field" id="email-form-email" name="email" placeholder="Email" required type="email">
+                        </label>
+                        <label for="email-form-phone">
+                            <input class="field" id="email-form-phone" name="phone" placeholder="Telefon" required type="number">
+                        </label>
+                        <label for="email-form-message">
                                 <textarea class="field" id="email-form-message" name="message" placeholder="Mesaj" required
                                           style="height: 100px;"></textarea>
-                                </label>
-                            </div>
-                            <div class="sendbtn">
-                                <button type="submit">Trimite</button>
-                                <div class="checkbox">
-                                    <input id="check" type="checkbox">
-                                    <label for="check">Am citit și sunt de acord cu <a href="./pages/legal/politica de confidentialitate.html"
-                                                                                       target="_blank"> <b>Politica de confidențialitate</b> a site-ului.</a></label>
-                                </div>
-                            </div>
+                        </label>
+                    </div>
+                    <div class="sendbtn">
+                        <button type="submit">Trimite</button>
+                        <div class="checkbox">
+                            <input id="check" type="checkbox">
+                            <label for="check">Am citit și sunt de acord cu <a href="./pages/legal/politica de confidentialitate.html"
+                                                                               target="_blank"> <b>Politica de confidențialitate</b> a site-ului.</a></label>
                         </div>
-                    </form>
+                    </div>
                 </div>
-            </div>
-    </section>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        getFormData = (selector) => Object.fromEntries(new FormData(document.querySelector(selector)))
+
+        const form = document.querySelector('#email-form');
+
+
+        form.addEventListener('submit', async (event) => {            
+            event.preventDefault(); // prevent default form submission
+            const formData = getFormData('#email-form')
+
+            try {
+                const response = await fetch('https://47r4gejn2ngqw4gqqwuwffqdi40yitzy.lambda-url.eu-central-1.on.aws/', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(formData)
+                })
+
+                form.reset();
+                location.reload()
+            } catch (error) {
+                console.error(error);
+            }
+        });
+
+    </script>
+</section>
 
 <!--___________________________________ footer _____________________________________-->
 
