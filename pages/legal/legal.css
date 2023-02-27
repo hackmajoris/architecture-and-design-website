@@ -16,7 +16,6 @@ ul li {
 
 /*_________ politica cookies  |  politica de confidentialitate  |  termeni si conditii ________*/
 
-.cookies-container h1,
 .conf-container h1,
 .termeni-container h1 {
     font-family: 'Italiana';
@@ -24,7 +23,16 @@ ul li {
     font-size: 70px;
     text-align: center;
     letter-spacing: 0.1em;
-    margin: 10rem 0 4rem 0;
+    padding: 2.5rem 0 1.5rem 0;
+}
+
+.cookies-container h1 {
+    font-family: 'Italiana';
+    font-weight: 400;
+    font-size: 70px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    padding: 9rem 0 3rem 0;
 }
 
 .politica-cookies,
@@ -103,7 +111,7 @@ ul li {
 }
 
 .cookies.active i,
-.conf.acive i,
+.conf.active i,
 .termeni.active i {
     transform: rotate(90deg);
 }

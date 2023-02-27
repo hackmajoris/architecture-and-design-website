@@ -166,7 +166,7 @@
     }
     
     .sidenav ul li a:hover {
-        color: #fff;
+        color: #8b8787;
     }
     
     .sidenav .closebtn {
@@ -269,7 +269,7 @@
         bottom: 10px;
         right: 18px;
         transition: 0.5s;
-        z-index: 1000;
+        z-index: 80;
     }
     
     .whatsapp a:hover {
@@ -277,13 +277,17 @@
     }
     /*________________________ despre ________________________*/
     
+    .despre {
+        margin: 0 160px;
+    }
+    
     .despre h1 {
         font-family: 'Italiana';
         font-weight: 400;
         font-size: 70px;
         text-align: center;
         letter-spacing: 0.1em;
-        padding: 50px 0 60px 0;
+        padding: 90px 0 50px 0;
     }
     
     .about-container {
@@ -296,13 +300,16 @@
     .architecture-design {
         display: flex;
         flex-direction: column;
+        text-align: justify;
         gap: 60px;
-        margin-left: 50px;
     }
     
-    .services {
-        max-width: 300px;
-        text-align: justify;
+    .arch {
+        width: 50%;
+    }
+    
+    .design {
+        width: 60%;
     }
     
     .question-services {
@@ -312,28 +319,20 @@
     }
     
     .question-services i {
-        margin-top: 25px;
-        font-size: 27px;
-    }
-    
-    .question-services img {
-        width: 65%;
-        cursor: pointer;
-    }
-    
-    .question-services .arch {
-        width: 60%;
+        margin-top: 22px;
+        font-size: 23px;
     }
     
     .answer-services {
         max-height: 0;
         overflow: hidden;
         transition: max-height 1s ease;
-        font-size: 16px;
+        font-size: 14px;
     }
     
     .answer-services p {
-        max-width: 280px;
+        width: 250px;
+        margin-right: 50px;
         margin-top: 1rem;
         color: #000;
     }
@@ -352,15 +351,15 @@
     }
     
     .about {
-        width: 28%;
         line-height: 20px;
         text-align: justify;
-        margin: 0 60px;
+        max-width: 400px;
+        margin: 40px;
     }
     
     .avatar {
-        width: 170px;
-        margin: 0 60px;
+        width: 160px;
+        margin-left: 80px;
     }
     /*________________________ portofoliu ________________________*/
     
@@ -370,12 +369,13 @@
         font-size: 70px;
         text-align: center;
         letter-spacing: 0.1em;
-        padding: 90px 0 30px 0;
+        padding: 90px 0 60px 0;
     }
     /* filtering projects */
     
     .portfolio-container {
         margin: 0 150px;
+        margin-bottom: 30px;
     }
     
     .row {
@@ -410,7 +410,6 @@
     }
     
     .portfolio .portfolio-gallery {
-        max-width: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
@@ -501,7 +500,6 @@
     
     .overlay button:hover {
         font-size: 19px;
-        font-weight: 700;
         letter-spacing: 0.06em;
     }
     /*_________________________ contact _________________________*/
@@ -512,7 +510,7 @@
         font-size: 70px;
         text-align: center;
         letter-spacing: 0.1em;
-        padding: 80px 0 70px 0;
+        padding: 30px 0 70px 0;
     }
     
     .contact-container {
@@ -559,8 +557,8 @@
     .media img {
         position: absolute;
         width: 150px;
-        top: 35%;
-        left: 47%;
+        top: 30%;
+        left: 48%;
     }
     /*--form-container--*/
     
@@ -737,20 +735,66 @@
         margin-right: 16px;
         filter: invert(1);
     }
-    /*_________ @media query_1080px _________*/
+    /*________________________ breakpoints ________________________*/
+    /*-- 1080px --*/
     
     @media (max-width: 1080px) {
         .navbar {
             padding: 20px 50px;
         }
-        .about {
-            width: 40%;
-            margin: 30px 20px;
+        .despre {
+            margin: 0 100px;
+        }
+        /* contact */
+        .contact h1 {
+            padding: 90px 0 70px 0;
+        }
+        .media video {
+            margin: 0 120px 70px 0;
+        }
+        .media img {
+            top: 25%;
+            left: 50%;
+        }
+        .newsletter {
+            margin: 60px;
+        }
+        .form-container {
+            flex-direction: column-reverse;
+            background: none;
+            margin: 0;
+            padding: 0;
+            padding: 40px 0;
+        }
+        .contact-form {
+            margin: 0;
+            padding: 50px 150px;
+            background: rgba(196, 196, 196, 0.377);
         }
     }
-    /*_________ @media query_992px _________*/
+    /*-- 1024px --*/
+    
+    @media (max-width: 1024px) {
+        .despre {
+            margin: 0 70px;
+        }
+        .portfolio h1 {
+            padding: 100px 0 60px 0;
+        }
+        .portfolio-container {
+            margin: 0 80px;
+        }
+        .about {
+            margin: 0;
+        }
+    }
+    /*-- 992px --*/
     
     @media (max-width: 992px) {
+        html {
+            border-left: 15px solid #000;
+            border-right: 15px solid #000;
+        }
         .navbar {
             display: none;
         }
@@ -764,28 +808,9 @@
             bottom: 0;
             right: 8px;
         }
-        /*--portfolio--*/
-        .portfolio h1 {
-            padding: 30px 0 60px 0;
-        }
-        .projects img {
-            width: 80%;
-        }
-        .prev-next {
-            width: 80%;
-            padding-top: 6px;
-        }
-        /* hover effect */
-        .overlay {
-            width: 80%;
-        }
-        /*--about--*/
-        .despre,
-        .portfolio,
-        .contact,
-        .intrebari {
-            border-left: 15px solid #000;
-            border-right: 15px solid #000;
+        /* about */
+        .despre h1 {
+            padding: 70px 0 110px 0;
         }
         .about-container {
             flex-wrap: wrap;
@@ -795,9 +820,20 @@
         }
         .about {
             order: 3;
-            width: 80%;
+            max-width: 90%;
+            margin: 50px 0;
         }
-        /*--personal info--*/
+        /* portfolio */
+        .portfolio h1 {
+            padding: 40px 0 60px 0;
+        }
+        .portfolio-container {
+            margin: 0 80px;
+        }
+        /* contact */
+        .contact h1 {
+            padding: 60px 0 30px 0;
+        }
         .personalinfo {
             flex-direction: column-reverse;
         }
@@ -811,54 +847,49 @@
         }
         .media video {
             width: 520px;
-            margin: 0 0 40px 0;
+            margin: 60px 0 40px 0;
         }
         .media img {
             width: 160px;
-            top: 37%;
+            top: 38%;
             left: 68%;
         }
-        /*--newsletter--*/
-        .newsletter {
-            margin: 60px;
-        }
-        /*--form-container--*/
-        .form-container {
-            flex-direction: column-reverse;
-            background: none;
-            margin: 0;
-            padding: 0;
-        }
-        /*--contact-form--*/
-        .contact h1 {
-            padding: 60px 0 50px 0;
-        }
-        .contact-form {
-            margin: 0;
-            padding: 50px 150px;
-            background: rgba(196, 196, 196, 0.377);
-        }
     }
-    /*________ @media query_768px _________*/
+    /*-- 768px --*/
     
     @media (max-width: 768px) {
         .description h2 {
             font-size: 50px;
             line-height: 50px;
         }
-        /*--portfolio--*/
+        .about {
+            max-width: 100%;
+        }
+        /* portfolio */
         .portfolio h1 {
             padding: 30px 0 50px 0;
         }
-        /* hover effect */
-        /*--contact--*/
+        .portfolio-container {
+            margin: 0 70px;
+        }
+        .portfolio .portfolio-gallery {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .portfolio .filter-buttons ul li {
+            font-size: 16px;
+        }
+        /* contact */
         .contact h1 {
-            padding: 90px 0 30px 0;
+            padding: 80px 0 50px 0;
+        }
+        .media img {
+            top: 39%;
+            left: 74%;
         }
         .contact-form {
             padding: 50px 100px;
         }
-        /*--footer--*/
+        /* footer */
         .footer {
             flex-direction: column;
             text-align: center;
@@ -875,15 +906,33 @@
             margin-top: 30px;
         }
     }
-    /*________ @media query_600px _________*/
     
-    @media (max-width: 600px) {
+    @media(max-width: 735px) {
+        .about {
+            max-width: 90%;
+            margin: 50px 0;
+        }
+        .avatar {
+            margin-left: 0;
+        }
+        .portfolio-container {
+            margin: 0 90px;
+        }
+    }
+    /*-- 650px --*/
+    
+    @media (max-width:650px) {
         #cookie {
             left: 0;
-            bottom: 100px;
-            width: 340px;
-            height: 170px;
+            width: 100%;
+            height: 15%;
             margin: auto;
+            padding: 30px 50px;
+            border-radius: 2px;
+            z-index: 100;
+        }
+        .cookie-btn button {
+            font-size: 18px;
         }
         .description h2 {
             font-size: 28px;
@@ -901,83 +950,38 @@
             font-size: 1.1em;
         }
         /* about */
-        .despre h1 {
-            font-size: 50px;
-        }
-        .architecture-design {
-            gap: 60px;
-            margin-left: 40px;
+        .despre {
+            margin: 0 40px;
         }
         .services {
-            max-width: 150px;
-        }
-        .question-services i {
-            margin-top: 16px;
-            font-size: 25px;
-        }
-        .question-services img {
-            width: 85%;
-        }
-        .question-services .arch {
-            width: 80%;
-        }
-        .answer-services {
-            font-size: 12px;
+            max-width: 300px;
+            margin-left: 30px;
         }
         .avatar {
-            width: 110px;
+            width: 130px;
             margin: 30px auto;
         }
-        .about {
-            margin: 0;
-        }
-        /*--portfolio--*/
-        .portfolio h1 {
-            font-size: 48px;
-            padding: 50px 0 50px 0;
-        }
         .portfolio-container {
-            margin: 0 30px;
+            margin: 0 60px;
         }
-        .portfolio .portfolio-gallery {
-            grid-template-columns: repeat(1, 1fr);
-        }
-        .portfolio .filter-buttons ul li {
-            font-size: 13px;
-        }
-        #myBtn {
-            font-size: 16px;
-            padding: 10px 30px;
-            margin: 20px auto;
-        }
-        /* hover effect */
-        .overlay {
-            padding-top: 18%;
-            line-height: 40px;
-            font-size: 35px;
-        }
-        .overlay button {
-            font-size: 14px;
-        }
-        /*--contact--*/
+        /* contact */
         .contact h1 {
-            padding: 40px 0 30px 0;
+            padding: 50px 0 30px 0;
             font-size: 50px;
         }
         .media video {
-            width: 320px;
-            padding: 40px 0 0 0;
+            width: 390px;
         }
         .media img {
-            width: 90px;
+            width: 120px;
             top: 38%;
-            left: 78%;
+            left: 70%;
         }
-        /*--personal info--*/
+        /* personal info */
         .info ul li {
             font-size: 18px;
         }
-        /*--contact-form--*/
+        /* contact-form */
         .contact-form {
             padding: 40px 50px;
         }
@@ -985,7 +989,7 @@
             align-items: flex-start;
             font-size: 12px;
         }
-        /*--newsletter--*/
+        /* newsletter */
         .newsletter {
             margin: 50px;
         }
@@ -995,5 +999,88 @@
         .newsletter button {
             font-size: 12px;
             padding: 6px 20px;
+        }
+    }
+    
+    @media (max-width: 580px) {
+        #cookie {
+            height: 19%;
+        }
+        .despre h1,
+        .portfolio h1,
+        .contact h1 {
+            font-size: 40px;
+        }
+        /* about */
+        .despre h1 {
+            padding: 50px 0 60px 0;
+        }
+        .despre {
+            margin: 15px;
+        }
+        .about {
+            margin: 0;
+        }
+        .services {
+            max-width: 250px;
+            margin-left: 15px;
+        }
+        .architecture-design {
+            gap: 40px;
+        }
+        .answer-services p {
+            width: 170px;
+            margin-right: 50px;
+        }
+        .question-services {
+            gap: 20px;
+        }
+        .question-services i {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        .avatar {
+            width: 100px;
+        }
+        /* portfolio */
+        .overlay {
+            padding-top: 16%;
+            line-height: 40px;
+            font-size: 30px;
+        }
+        .overlay button {
+            padding: 8px 15px;
+            font-size: 16px;
+        }
+        .overlay button:hover {
+            font-size: 19px;
+            letter-spacing: 0.06em;
+        }
+        /* contact */
+        .media video {
+            width: 310px;
+        }
+        .media img {
+            width: 90px;
+            top: 37%;
+            left: 80%;
+        }
+        .portfolio-container {
+            margin: 0 30px;
+        }
+    }
+    
+    @media(max-width: 425px) {
+        .services {
+            max-width: 220px;
+            margin-left: 10px;
+        }
+        .avatar {
+            width: 80px;
+        }
+        .media img {
+            width: 90px;
+            top: 38%;
+            left: 78%;
         }
     }
