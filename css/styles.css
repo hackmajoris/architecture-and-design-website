@@ -958,8 +958,7 @@
             margin-left: 30px;
         }
         .avatar {
-            width: 130px;
-            margin: 30px auto;
+            display: none;
         }
         .portfolio-container {
             margin: 0 60px;
@@ -1013,34 +1012,25 @@
         }
         /* about */
         .despre h1 {
-            padding: 50px 0 60px 0;
+            padding: 50px 0 80px 0;
         }
         .despre {
-            margin: 15px;
+            margin: 20px;
         }
-        .about {
-            margin: 0;
-        }
-        .services {
-            max-width: 250px;
-            margin-left: 15px;
-        }
-        .architecture-design {
-            gap: 40px;
+        .question-services i {
+            margin-top: 22px;
+            font-size: 25px;
+            margin-left: 0;
+            margin-right: 0;
         }
         .answer-services p {
-            width: 170px;
-            margin-right: 50px;
+            margin-right: 0;
         }
         .question-services {
             gap: 20px;
         }
-        .question-services i {
-            margin-top: 20px;
-            font-size: 20px;
-        }
         .avatar {
-            width: 100px;
+            display: none;
         }
         /* portfolio */
         .overlay {
@@ -1070,17 +1060,4 @@
         }
     }
     
-    @media(max-width: 425px) {
-        .services {
-            max-width: 220px;
-            margin-left: 10px;
-        }
-        .avatar {
-            width: 80px;
-        }
-        .media img {
-            width: 90px;
-            top: 38%;
-            left: 78%;
-        }
-    }
+    @media(max-width: 425px) {}
