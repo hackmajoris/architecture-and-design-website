@@ -200,10 +200,35 @@
         }
         .overlay {
             padding-top: 15%;
-            line-height: 40px;
+            line-height: 45px;
         }
         .overlay button {
             padding: 8px 15px;
             font-size: 16px;
+        }
+        .overlay button:hover {
+            font-size: 17.5px;
+            letter-spacing: 0.06em;
+        }
+    }
+    
+    @media (max-width: 390px) {
+        .portfoliu h1 {
+            font-size: 40px;
+        }
+        .portfoliu-container {
+            margin: 0 20px;
+        }
+        .portfoliu .filter-buttons ul li {
+            font-size: 13px;
+            margin: 0px 6px;
+        }
+        .overlay {
+            padding-top: 15%;
+            line-height: 40px;
+        }
+        .overlay button {
+            padding: 8px 15px;
+            font-size: 12px;
         }
     }

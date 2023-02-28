@@ -1008,7 +1008,7 @@
         .despre h1,
         .portfolio h1,
         .contact h1 {
-            font-size: 40px;
+            font-size: 50px;
         }
         /* about */
         .despre h1 {
@@ -1017,13 +1017,13 @@
         .despre {
             margin: 20px;
         }
+        .services {
+            margin-left: 70px;
+        }
         .question-services i {
             margin-top: 22px;
             font-size: 25px;
             margin-left: 0;
-            margin-right: 0;
-        }
-        .answer-services p {
             margin-right: 0;
         }
         .question-services {
@@ -1032,7 +1032,13 @@
         .avatar {
             display: none;
         }
+        .about {
+            margin: 40px 0;
+        }
         /* portfolio */
+        .portfolio h1 {
+            padding: 10px 0 50px 0;
+        }
         .overlay {
             padding-top: 16%;
             line-height: 40px;
@@ -1052,12 +1058,46 @@
         }
         .media img {
             width: 90px;
-            top: 37%;
-            left: 80%;
+            top: 38%;
+            left: 78%;
         }
         .portfolio-container {
             margin: 0 30px;
         }
     }
     
-    @media(max-width: 425px) {}
+    @media(max-width: 390px) {
+        #cookie {
+            height: 16%;
+            padding: 30px 30px;
+        }
+        .despre h1,
+        .portfolio h1,
+        .contact h1 {
+            font-size: 40px;
+        }
+        .answer-services p {
+            margin-right: 60px;
+        }
+        .portfolio .filter-buttons ul li {
+            font-size: 13px;
+            margin: 6px;
+        }
+        /* portfolio */
+        .portfolio-container {
+            margin: 0 20px;
+        }
+        /* contact */
+        .media video {
+            width: 270px;
+        }
+        .media img {
+            width: 80px;
+            top: 38%;
+            left: 78%;
+        }
+        /* newsletter */
+        .newsletter h3 {
+            font-size: 40px;
+        }
+    }

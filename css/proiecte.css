@@ -124,8 +124,8 @@
            
            @media(max-width:450px) {
                .sidebar-container {
-                   padding-left: 25px;
-                   padding-right: 55px;
+                   padding-left: 20px;
+                   padding-right: 50px;
                }
                /* gallery */
                .gallery {
