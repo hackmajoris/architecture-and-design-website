@@ -1,1103 +1,1101 @@
-    @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat&family=Tenor+Sans&display=swap');
-    @import url('https://kit.fontawesome.com/8e08c52e93.js');
-    * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-        text-decoration: none;
-        font-family: 'Montserrat', sans-serif;
-        color: #000;
-    }
-    
-    ul li {
-        list-style-type: none;
-    }
-    /*________________________ home ________________________*/
-    /* cookies */
-    
-    #cookie {
-        position: fixed;
-        text-align: justify;
-        background-color: #fff;
-        right: 0;
-        bottom: 0;
-        font-size: 14px;
-        width: 380px;
-        height: 152px;
-        margin: 80px 100px;
-        padding: 20px 30px;
-        border-radius: 5px;
-        filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4));
-        z-index: 8;
-    }
-    
-    .cookie-btn {
-        display: flex;
-        justify-content: space-between;
-        padding-top: 20px;
-    }
-    
-    .cookie-btn button {
-        border: none;
-        background: none;
-        text-transform: uppercase;
-        cursor: pointer;
-        padding-bottom: 2px;
-        font-size: 16px;
-        transition: 0.5s;
-    }
-    
-    .cookie-btn button:hover {
-        border-bottom: 0.5px solid #000;
-    }
-    
-    #cookie a:hover {
-        border-bottom: 0.5px solid #000;
-    }
-    
-    .right {
-        display: flex;
-        align-items: center;
-    }
-    
-    #close {
-        font-size: 20px;
-        margin-left: 20px;
-    }
-    /* navbar desktop */
-    
-    .navbar {
-        overflow: hidden;
-        position: fixed;
-        top: 0;
-        left: 0;
-        background: #fff;
-        filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.1));
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 20px 70px;
-        z-index: 10;
-    }
-    
-    .navbar ul {
-        display: flex;
-    }
-    
-    .navbar ul li {
-        position: relative;
-        margin-right: 40px;
-        font-size: 16px;
-    }
-    
-    .navbar ul li::after {
-        position: absolute;
-        content: '';
-        height: 1px;
-        width: 0;
-        background: #000;
-        left: 50%;
-        bottom: -4px;
-        transition: 0.5s;
-    }
-    
-    .navbar ul li:hover::after {
-        left: 0;
-        width: 100%;
-    }
-    
-    .navbar .nav-contact {
-        text-transform: uppercase;
-        font-size: 20px;
-        letter-spacing: 0.06em;
-        transition: 0.5s;
-    }
-    
-    .nav-contact:hover {
-        font-weight: 700;
-    }
-    /* navbar mobile */
-    
-    .nav-toggle {
-        visibility: hidden;
-        overflow: hidden;
-        position: fixed;
-        top: 0;
-        left: 0;
-        background: #fff;
-        filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.1));
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 15px 40px;
-        z-index: 10;
-    }
-    /* sidenav mobile */
-    
-    .sidenav {
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 0;
-        height: 100%;
-        overflow-x: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: rgba(255, 255, 255, 0.136);
-        backdrop-filter: blur(10px);
-        z-index: 15;
-    }
-    
-    .sidenav ul li {
-        padding: 15px 20px;
-        text-align: right;
-    }
-    
-    .sidenav ul li a {
-        font-size: 18px;
-        font-weight: 400;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-        color: #000;
-        transition: 0.5s;
-    }
-    
-    .sidenav ul li a:hover {
-        color: #8b8787;
-    }
-    
-    .sidenav .closebtn {
-        position: absolute;
-        color: #000;
-        top: 18px;
-        right: 30px;
-        font-size: 36px;
-    }
-    /* video_home page */
-    
-    .home {
-        position: relative;
-    }
-    
-    .backgroundimg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: -2;
-    }
-    
-    .home video {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: -1;
-    }
-    
-    .content {
-        position: relative;
-        right: 0;
-        width: 100%;
-        min-height: 100vh;
-        padding: 190px 0 0 70px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    /* description */
-    
-    .description h2 {
-        font-size: 60px;
-        font-weight: 400;
-        line-height: 55px;
-        font-family: 'Tenor Sans', sans-serif;
-        color: #fff;
-    }
-    
-    .description a {
-        display: inline-block;
-        margin-top: 30px;
-        font-size: 1.5em;
-        padding: 10px 30px;
-        letter-spacing: 2px;
-        background: #fff;
-        border-radius: 50px;
-        transition: 0.5s;
-    }
-    
-    .description a:hover {
-        background: none;
-        border: 1px solid #fff;
-        color: #fff;
-    }
-    /* social media */
-    
-    .social {
-        position: absolute;
-        bottom: 30px;
-    }
-    
-    .social ul {
-        display: flex;
-    }
-    
-    .social ul li {
-        transform: scale(1.5);
-        filter: invert(1);
-        margin-right: 25px;
-        transition: 0.5s;
-    }
-    
-    .social ul li:hover {
-        transform: scale(1.6) translateY(-4px);
-    }
-    
-    .whatsapp img {
-        width: 80px;
-    }
-    
-    .whatsapp a {
-        position: fixed;
-        bottom: 10px;
-        right: 18px;
-        transition: 0.5s;
-        z-index: 80;
-    }
-    
-    .whatsapp a:hover {
-        transform: scale(1.2);
-    }
-    /*________________________ despre ________________________*/
-    
-    .despre {
-        margin: 0 160px;
-    }
-    
-    .despre h1 {
-        font-family: 'Italiana';
-        font-weight: 400;
-        font-size: 70px;
-        text-align: center;
-        letter-spacing: 0.1em;
-        padding: 90px 0 50px 0;
-    }
-    
-    .about-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    /* architecture-design */
-    
-    .architecture-design {
-        display: flex;
-        flex-direction: column;
-        text-align: justify;
-        gap: 60px;
-    }
-    
-    .arch {
-        width: 50%;
-    }
-    
-    .design {
-        width: 60%;
-    }
-    
-    .question-services {
-        display: flex;
-        align-items: center;
-        gap: 30px;
-    }
-    
-    .question-services i {
-        margin-top: 22px;
-        font-size: 23px;
-    }
-    
-    .answer-services {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 1s ease;
-        font-size: 14px;
-    }
-    
-    .answer-services p {
-        width: 250px;
-        margin-right: 50px;
-        margin-top: 1rem;
-        color: #000;
-    }
-    
-    .services.active .answer-services {
-        max-height: 400px;
-    }
-    
-    .services.active i {
-        transform: rotate(90deg);
-    }
-    /* about */
-    
-    hr {
-        margin: 22px 0;
-    }
-    
-    .about {
-        line-height: 20px;
-        text-align: justify;
-        max-width: 400px;
-        margin: 40px;
-    }
-    
-    .avatar {
-        width: 160px;
-        margin-left: 80px;
-    }
-    /*________________________ portofoliu ________________________*/
-    
-    .portfolio h1 {
-        font-family: 'Italiana';
-        font-weight: 400;
-        font-size: 70px;
-        text-align: center;
-        letter-spacing: 0.1em;
-        padding: 90px 0 60px 0;
-    }
-    /* filtering projects */
-    
-    .portfolio-container {
-        margin: 0 150px;
-        margin-bottom: 30px;
-    }
-    
-    .row {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .portfolio .filter-buttons {
-        margin: auto;
-        width: 100%;
-        margin-bottom: 30px;
-    }
-    
-    .portfolio .filter-buttons ul {
-        text-align: center;
-    }
-    
-    .portfolio .filter-buttons ul li {
-        color: #000000bd;
-        font-size: 16px;
-        display: inline-block;
-        margin: 0px 10px;
-        cursor: pointer;
-        padding-bottom: 2px;
-    }
-    
-    .portfolio .filter-buttons ul li.active {
-        color: #000;
-        border-bottom: 1.5px solid #000;
-    }
-    
-    .portfolio .portfolio-gallery {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        margin: auto;
-    }
-    
-    .portfolio .portfolio-gallery .item .inner {
-        position: relative;
-    }
-    
-    .portfolio .portfolio-gallery .item img {
-        width: 100%;
-        display: block;
-    }
-    /* show more projects */
-    
-    #more {
-        display: none;
-    }
-    
-    #show-more-btn {
-        font-size: 16px;
-        padding: 15px 35px;
-        border: 1px solid #000;
-        text-align: center;
-        margin: 40px auto;
-        background: none;
-        cursor: pointer;
-        transition: 0.5s;
-    }
-    
-    #show-more-btn:hover {
-        font-size: 18px;
-        background: #000;
-        color: #fff;
-    }
-    
-    .hidden {
-        display: none;
-    }
-    /* hover effect */
-    
-    .hover-container {
-        position: relative;
-        width: 100%;
-    }
-    
-    .image {
-        width: 100%;
-        cursor: pointer;
-    }
-    
-    .overlay {
-        position: absolute;
-        font-family: 'Tenor Sans', sans-serif;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        padding-top: 20%;
-        line-height: 50px;
-        font-size: 40px;
-        text-align: center;
-        background-color: #000;
-        color: #fff;
-        visibility: hidden;
-        opacity: 0;
-        transition: 0.5s;
-    }
-    
-    .hover-container:hover .overlay {
-        visibility: visible;
-        opacity: 0.7;
-        width: 100%;
-    }
-    
-    .overlay button {
-        border: none;
-        padding: 8px 15px;
-        font-size: 16px;
-        color: #000;
-        cursor: pointer;
-        transition: 0.5s;
-        letter-spacing: 0.1em;
-        background-color: none;
-    }
-    
-    .overlay button:hover {
-        font-size: 19px;
-        letter-spacing: 0.06em;
-    }
-    /*_________________________ contact _________________________*/
-    
-    .contact h1 {
-        font-family: 'Italiana';
-        font-weight: 400;
-        font-size: 70px;
-        text-align: center;
-        letter-spacing: 0.1em;
-        padding: 30px 0 70px 0;
-    }
-    
-    .contact-container {
-        position: relative;
-    }
-    /*--personal info--*/
-    
-    .personalinfo {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        line-height: 22px;
-    }
-    
-    .info h4 {
-        color: rgba(0, 0, 0, 0.473);
-        font-weight: 400;
-        margin-top: 20px;
-    }
-    
-    .info ul {
-        display: flex;
-    }
-    
-    .info ul li {
-        margin-right: 14px;
-        margin-top: 6px;
-        font-size: 20px;
-        transition: 0.5s;
-    }
-    
-    .info ul li:hover {
-        transform: scale(1.3);
-    }
-    
-    .media video {
-        position: relative;
-        width: 500px;
-        height: auto;
-        margin: 0 150px 0 0;
-    }
-    
-    .media img {
-        position: absolute;
-        width: 150px;
-        top: 30%;
-        left: 48%;
-    }
-    /*--form-container--*/
-    
-    .form-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: rgba(196, 196, 196, 0.377);
-        margin: 60px;
-        padding: 50px 80px;
-    }
-    /*--newsletter--*/
-    
-    .newsletter h3 {
-        font-family: 'Italiana';
-        font-weight: 400;
-        font-size: 60px;
-        letter-spacing: 0.1em;
-    }
-    
-    .newsletter p {
-        width: 100%;
-        font-size: 14px;
-        text-align: left;
-        margin-top: 10px;
-        margin-bottom: 120px;
-    }
-    
-    .newsletter-field {
-        display: flex;
-        align-items: center;
-        border-bottom: 1px solid #000;
-    }
-    
-    .newsletter input[type=email] {
-        width: 100%;
-        border: none;
-        outline: none;
-        padding-left: 10px;
-        background: none;
-    }
-    
-    .newsletter input[type=email]:focus {
-        border: none;
-    }
-    
-    .newsletter button {
-        font-size: 14px;
-        text-align: center;
-        padding: 8px 30px;
-        background-color: #000;
-        color: #fff;
-        letter-spacing: 0.1em;
-        cursor: pointer;
-        opacity: 0.9;
-        transition: 0.5s;
-    }
-    
-    .newsletter button:hover {
-        opacity: 1;
-    }
-    /*--contact-form--*/
-    
-    .contact-form {
-        margin: 0 0 0 30%;
-    }
-    
-    .field {
-        width: 100%;
-        padding: 8px;
-        margin-top: 12px;
-        resize: vertical;
-        outline: none;
-        border: none;
-    }
-    
-     ::placeholder {
-        color: rgba(0, 0, 0, 0.61);
-    }
-    
-    input[type=text]:focus,
-    input[type=email]:focus,
-    input[type=number]:focus,
-    textarea:focus {
-        border: 1px solid rgba(0, 0, 0, 0.534);
-    }
-    
-    input::-webkit-outer-spin-button,
-    input::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-    }
-    
-    .sendbtn button {
-        width: 100%;
-        font-size: 16px;
-        text-transform: uppercase;
-        text-align: center;
-        cursor: pointer;
-        letter-spacing: 0.13em;
-        padding: 8px;
-        background-color: #000;
-        margin-top: 8px;
-        color: #fff;
-        opacity: 0.9;
-        transition: 0.5s;
-    }
-    
-    .sendbtn button:hover {
-        opacity: 1;
-        border-radius: 4px;
-    }
-    
-    .checkbox {
-        display: flex;
-        align-items: center;
-        margin-top: 15px;
-        font-size: 13px;
-        gap: 10px;
-    }
-    /*________________________ footer ________________________*/
-    
-    .footer-container {
-        overflow: hidden;
-    }
-    
-    .footer {
-        position: relative;
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        background-color: #000;
-        font-size: 14px;
-        text-align: left;
-        padding: 30px 80px;
-        line-height: 23px;
-    }
-    
-    .footer a,
-    h2 {
-        color: #fff;
-        transition: 0.5s;
-    }
-    
-    .footer a:hover {
-        color: rgba(255, 255, 255, 0.555);
-    }
-    
-    .footer-heading {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .footer-heading h2 {
-        margin-bottom: 15px;
-        font-size: 13px;
-        letter-spacing: 2px;
-    }
-    /* footer-1 */
-    
-    .footer-1 img {
-        filter: invert(1);
-        margin-bottom: 10px;
-    }
-    /* footer-3 */
-    
-    .footer-icons {
-        display: flex;
-    }
-    
-    .footer-3 ul li {
-        transform: scale(1.3);
-        margin-right: 16px;
-        filter: invert(1);
-    }
-    /*________________________ breakpoints ________________________*/
-    /*-- 1080px --*/
-    
-    @media (max-width: 1080px) {
-        .navbar {
-            padding: 20px 50px;
-        }
-        .despre {
-            margin: 0 100px;
-        }
-        /* contact */
-        .contact h1 {
-            padding: 90px 0 70px 0;
-        }
-        .media video {
-            margin: 0 120px 70px 0;
-        }
-        .media img {
-            top: 25%;
-            left: 50%;
-        }
-        .newsletter {
-            margin: 60px;
-        }
-        .form-container {
-            flex-direction: column-reverse;
-            background: none;
+        @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat&family=Tenor+Sans&display=swap');
+        @import url('https://kit.fontawesome.com/8e08c52e93.js');
+        * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            padding: 40px 0;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            color: #000;
         }
-        .contact-form {
-            margin: 0;
-            padding: 50px 150px;
-            background: rgba(196, 196, 196, 0.377);
+        
+        ul li {
+            list-style-type: none;
         }
-    }
-    /*-- 1024px --*/
-    
-    @media (max-width: 1024px) {
-        .despre {
-            margin: 0 70px;
-        }
-        .portfolio h1 {
-            padding: 100px 0 60px 0;
-        }
-        .portfolio-container {
-            margin: 0 80px;
-        }
-        .about {
-            margin: 0;
-        }
-    }
-    /*-- 992px --*/
-    
-    @media (max-width: 992px) {
-        html {
-            border-left: 15px solid #000;
-            border-right: 15px solid #000;
-        }
-        .navbar {
-            display: none;
-        }
-        .nav-toggle {
-            visibility: visible;
-        }
-        .content {
-            padding: 190px 0 0 50px;
-        }
-        .whatsapp a {
+        /*________________________ home ________________________*/
+        /* cookies */
+        
+        #cookie {
+            position: fixed;
+            text-align: justify;
+            background-color: #fff;
+            right: 0;
             bottom: 0;
-            right: 20px;
+            font-size: 14px;
+            width: 380px;
+            height: 152px;
+            margin: 80px 100px;
+            padding: 20px 30px;
+            border-radius: 5px;
+            filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.4));
+            z-index: 8;
         }
-        /* about */
-        .despre h1 {
-            padding: 70px 0 110px 0;
+        
+        .cookie-btn {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
         }
-        .about-container {
-            flex-wrap: wrap;
+        
+        .cookie-btn button {
+            border: none;
+            background: none;
+            text-transform: uppercase;
+            cursor: pointer;
+            padding-bottom: 2px;
+            font-size: 16px;
+            transition: 0.5s;
         }
-        .architecture-design {
-            gap: 70px;
+        
+        .cookie-btn button:hover {
+            border-bottom: 0.5px solid #000;
         }
-        .about {
-            order: 3;
-            max-width: 90%;
-            margin: 50px 0;
+        
+        #cookie a:hover {
+            border-bottom: 0.5px solid #000;
         }
-        /* portfolio */
-        .portfolio h1 {
-            padding: 40px 0 60px 0;
+        
+        .right {
+            display: flex;
+            align-items: center;
         }
-        .portfolio-container {
-            margin: 0 80px;
+        
+        #close {
+            font-size: 20px;
+            margin-left: 20px;
         }
-        /* contact */
-        .contact h1 {
-            padding: 60px 0 30px 0;
+        /* navbar desktop */
+        
+        .navbar {
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: #fff;
+            filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.1));
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 70px;
+            z-index: 10;
         }
-        .personalinfo {
-            flex-direction: column-reverse;
+        
+        .navbar ul {
+            display: flex;
         }
-        .info {
-            text-align: center;
-        }
-        .info,
-        .icons {
-            margin: auto;
-            width: fit-content;
-        }
-        .media video {
-            width: 520px;
-            margin: 60px 0 40px 0;
-        }
-        .media img {
-            width: 160px;
-            top: 38%;
-            left: 68%;
-        }
-    }
-    /*-- 768px --*/
-    
-    @media (max-width: 768px) {
-        .description h2 {
-            font-size: 50px;
-            line-height: 50px;
-        }
-        .about {
-            max-width: 100%;
-        }
-        /* portfolio */
-        .portfolio h1 {
-            padding: 30px 0 50px 0;
-        }
-        .portfolio-container {
-            margin: 0 70px;
-        }
-        .portfolio .portfolio-gallery {
-            grid-template-columns: repeat(1, 1fr);
-        }
-        .portfolio .filter-buttons ul li {
+        
+        .navbar ul li {
+            position: relative;
+            margin-right: 40px;
             font-size: 16px;
         }
-        /* contact */
-        .contact h1 {
-            padding: 80px 0 50px 0;
+        
+        .navbar ul li::after {
+            position: absolute;
+            content: '';
+            height: 1px;
+            width: 0;
+            background: #000;
+            left: 50%;
+            bottom: -4px;
+            transition: 0.5s;
         }
-        .media img {
-            top: 39%;
-            left: 74%;
-        }
-        .contact-form {
-            padding: 50px 100px;
-        }
-        /* footer */
-        .footer {
-            flex-direction: column;
-            text-align: center;
-            padding: 40px 0 15px 0;
-        }
-        .footer h2 {
-            font-size: 15px;
-        }
-        .footer-icons {
-            margin: auto;
-        }
-        .footer-2,
-        .footer-3 {
-            margin-top: 30px;
-        }
-    }
-    
-    @media(max-width: 735px) {
-        .about {
-            max-width: 90%;
-            margin: 50px 0;
-        }
-        .avatar {
-            margin-left: 0;
-        }
-        .portfolio-container {
-            margin: 0 90px;
-        }
-    }
-    /*-- 650px --*/
-    
-    @media (max-width:650px) {
-        #cookie {
+        
+        .navbar ul li:hover::after {
             left: 0;
             width: 100%;
-            height: 15%;
-            margin: auto;
-            padding: 30px 50px;
-            border-radius: 2px;
-            z-index: 100;
         }
-        .cookie-btn button {
-            font-size: 18px;
+        
+        .navbar .nav-contact {
+            text-transform: uppercase;
+            font-size: 20px;
+            letter-spacing: 0.06em;
+            transition: 0.5s;
         }
-        .description h2 {
-            font-size: 28px;
-            line-height: 28px;
+        
+        .nav-contact:hover {
+            font-weight: 700;
         }
+        /* navbar mobile */
+        
         .nav-toggle {
-            padding: 15px 30px;
+            visibility: hidden;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: #fff;
+            filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.1));
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 40px;
+            z-index: 10;
         }
-        .content {
-            padding: 190px 0 0 30px;
+        /* sidenav mobile */
+        
+        .sidenav {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 0;
+            height: 100%;
+            overflow-x: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.136);
+            backdrop-filter: blur(10px);
+            z-index: 15;
         }
-        .description a {
-            margin-top: 25px;
-            padding: 10px 25px;
-            font-size: 1.1em;
+        
+        .sidenav ul li {
+            padding: 15px 20px;
+            text-align: right;
         }
-        /* about */
-        .despre {
-            margin: 0 40px;
-        }
-        .services {
-            max-width: 300px;
-            margin-left: 30px;
-        }
-        .avatar {
-            display: none;
-        }
-        .portfolio-container {
-            margin: 0 60px;
-        }
-        /* contact */
-        .contact h1 {
-            padding: 50px 0 30px 0;
-            font-size: 50px;
-        }
-        .media video {
-            width: 390px;
-        }
-        .media img {
-            width: 120px;
-            top: 38%;
-            left: 70%;
-        }
-        /* personal info */
-        .info ul li {
+        
+        .sidenav ul li a {
             font-size: 18px;
+            font-weight: 400;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: #000;
+            transition: 0.5s;
         }
-        /* contact-form */
-        .contact-form {
-            padding: 40px 50px;
+        
+        .sidenav ul li a:hover {
+            color: #8b8787;
         }
-        .checkbox {
-            align-items: flex-start;
-            font-size: 12px;
+        
+        .sidenav .closebtn {
+            position: absolute;
+            color: #000;
+            top: 18px;
+            right: 30px;
+            font-size: 36px;
         }
-        /* newsletter */
-        .newsletter {
-            margin: 50px;
+        /* video_home page */
+        
+        .home {
+            position: relative;
         }
-        .newsletter h3 {
-            font-size: 50px;
+        
+        .backgroundimg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
         }
-        .newsletter button {
-            font-size: 12px;
-            padding: 6px 20px;
+        
+        .home video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
         }
-    }
-    
-    @media (max-width: 580px) {
-        #cookie {
-            height: 19%;
+        
+        .content {
+            position: relative;
+            right: 0;
+            width: 100%;
+            min-height: 100vh;
+            padding: 190px 0 0 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
-        .despre h1,
-        .portfolio h1,
-        .contact h1 {
-            font-size: 50px;
+        /* description */
+        
+        .description h2 {
+            font-size: 60px;
+            font-weight: 400;
+            line-height: 55px;
+            font-family: 'Tenor Sans', sans-serif;
+            color: #fff;
         }
-        /* about */
-        .despre h1 {
-            padding: 50px 0 80px 0;
+        
+        .description a {
+            display: inline-block;
+            margin-top: 30px;
+            font-size: 1.5em;
+            padding: 10px 30px;
+            letter-spacing: 2px;
+            background: #fff;
+            border-radius: 50px;
+            transition: 0.5s;
         }
+        
+        .description a:hover {
+            background: none;
+            border: 1px solid #fff;
+            color: #fff;
+        }
+        /* social media */
+        
+        .social {
+            position: absolute;
+            bottom: 30px;
+        }
+        
+        .social ul {
+            display: flex;
+        }
+        
+        .social ul li {
+            transform: scale(1.5);
+            filter: invert(1);
+            margin-right: 25px;
+            transition: 0.5s;
+        }
+        
+        .social ul li:hover {
+            transform: scale(1.6) translateY(-4px);
+        }
+        
+        .whatsapp img {
+            width: 80px;
+        }
+        
+        .whatsapp a {
+            position: fixed;
+            bottom: 10px;
+            right: 18px;
+            transition: 0.5s;
+            z-index: 80;
+        }
+        
+        .whatsapp a:hover {
+            transform: scale(1.2);
+        }
+        /*________________________ despre ________________________*/
+        
         .despre {
-            margin: 20px;
+            margin: 0 160px;
         }
-        .services {
-            margin-left: 70px;
+        
+        .despre h1 {
+            font-family: 'Italiana';
+            font-weight: 400;
+            font-size: 70px;
+            text-align: center;
+            letter-spacing: 0.1em;
+            padding: 90px 0 50px 0;
         }
+        
+        .about-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* architecture-design */
+        
+        .architecture-design {
+            display: flex;
+            flex-direction: column;
+            text-align: justify;
+            gap: 60px;
+        }
+        
+        .arch {
+            width: 50%;
+        }
+        
+        .design {
+            width: 60%;
+        }
+        
+        .question-services {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        
         .question-services i {
             margin-top: 22px;
-            font-size: 25px;
-            margin-left: 0;
-            margin-right: 0;
+            font-size: 23px;
         }
-        .question-services {
-            gap: 20px;
+        
+        .answer-services {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 1s ease;
+            font-size: 14px;
         }
+        
+        .answer-services p {
+            width: 250px;
+            margin-right: 50px;
+            margin-top: 1rem;
+            color: #000;
+        }
+        
+        .services.active .answer-services {
+            max-height: 400px;
+        }
+        
+        .services.active i {
+            transform: rotate(90deg);
+        }
+        /* about */
+        
+        hr {
+            margin: 22px 0;
+        }
+        
+        .about {
+            line-height: 20px;
+            text-align: justify;
+            max-width: 400px;
+            margin: 40px;
+        }
+        
         .avatar {
+            width: 160px;
+            margin-left: 80px;
+        }
+        /*________________________ portofoliu ________________________*/
+        
+        .portfolio h1 {
+            font-family: 'Italiana';
+            font-weight: 400;
+            font-size: 70px;
+            text-align: center;
+            letter-spacing: 0.1em;
+            padding: 90px 0 60px 0;
+        }
+        /* filtering projects */
+        
+        .portfolio-container {
+            margin: 0 150px;
+            margin-bottom: 30px;
+        }
+        
+        .row {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .portfolio .filter-buttons {
+            margin: auto;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        
+        .portfolio .filter-buttons ul {
+            text-align: center;
+        }
+        
+        .portfolio .filter-buttons ul li {
+            color: #000000bd;
+            font-size: 16px;
+            display: inline-block;
+            margin: 0px 10px;
+            cursor: pointer;
+            padding-bottom: 2px;
+        }
+        
+        .portfolio .filter-buttons ul li.active {
+            color: #000;
+            border-bottom: 1.5px solid #000;
+        }
+        
+        .portfolio .portfolio-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin: auto;
+        }
+        
+        .portfolio .portfolio-gallery .item .inner {
+            position: relative;
+        }
+        
+        .portfolio .portfolio-gallery .item img {
+            width: 100%;
+            display: block;
+        }
+        /* show more projects */
+        
+        #more {
             display: none;
         }
-        .about {
-            margin: 40px 0;
+        
+        #show-more-btn {
+            font-size: 16px;
+            padding: 15px 35px;
+            border: 1px solid #000;
+            text-align: center;
+            margin: 40px auto;
+            background: none;
+            cursor: pointer;
+            transition: 0.5s;
         }
-        /* portfolio */
-        .portfolio h1 {
-            padding: 10px 0 50px 0;
+        
+        #show-more-btn:hover {
+            font-size: 18px;
+            background: #000;
+            color: #fff;
         }
+        
+        .hidden {
+            display: none;
+        }
+        /* hover effect */
+        
+        .hover-container {
+            position: relative;
+            width: 100%;
+        }
+        
+        .image {
+            width: 100%;
+            cursor: pointer;
+        }
+        
         .overlay {
-            padding-top: 16%;
-            line-height: 40px;
-            font-size: 30px;
+            position: absolute;
+            font-family: 'Tenor Sans', sans-serif;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding-top: 20%;
+            line-height: 50px;
+            font-size: 40px;
+            text-align: center;
+            background-color: #000;
+            color: #fff;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.5s;
         }
+        
+        .hover-container:hover .overlay {
+            visibility: visible;
+            opacity: 0.7;
+            width: 100%;
+        }
+        
         .overlay button {
+            border: none;
             padding: 8px 15px;
             font-size: 16px;
+            color: #000;
+            cursor: pointer;
+            transition: 0.5s;
+            letter-spacing: 0.1em;
+            background-color: none;
         }
+        
         .overlay button:hover {
             font-size: 19px;
             letter-spacing: 0.06em;
         }
-        /* contact */
-        .media video {
-            width: 310px;
-        }
-        .media img {
-            width: 90px;
-            top: 38%;
-            left: 78%;
-        }
-        .portfolio-container {
-            margin: 0 30px;
-        }
-    }
-    
-    @media(max-width: 390px) {
-        #cookie {
-            height: 16%;
-            padding: 30px 30px;
-        }
-        .despre h1,
-        .portfolio h1,
+        /*_________________________ contact _________________________*/
+        
         .contact h1 {
-            font-size: 40px;
+            font-family: 'Italiana';
+            font-weight: 400;
+            font-size: 70px;
+            text-align: center;
+            letter-spacing: 0.1em;
+            padding: 30px 0 70px 0;
         }
-        .answer-services p {
-            margin-right: 60px;
+        
+        .contact-container {
+            position: relative;
         }
-        .portfolio .filter-buttons ul li {
-            font-size: 13px;
-            margin: 6px;
+        /*--personal info--*/
+        
+        .personalinfo {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            line-height: 22px;
         }
-        /* portfolio */
-        .portfolio-container {
-            margin: 0 20px;
+        
+        .info h4 {
+            color: rgba(0, 0, 0, 0.473);
+            font-weight: 400;
+            margin-top: 20px;
         }
-        /* contact */
+        
+        .info ul {
+            display: flex;
+        }
+        
+        .info ul li {
+            margin-right: 14px;
+            margin-top: 6px;
+            font-size: 20px;
+            transition: 0.5s;
+        }
+        
+        .info ul li:hover {
+            transform: scale(1.3);
+        }
+        
         .media video {
-            width: 270px;
+            position: relative;
+            width: 500px;
+            height: auto;
+            margin: 0 150px 0 0;
         }
+        
         .media img {
-            width: 80px;
-            top: 38%;
-            left: 78%;
+            position: absolute;
+            width: 150px;
+            top: 30%;
+            left: 48%;
         }
-        /* newsletter */
+        /*--form-container--*/
+        
+        .form-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(196, 196, 196, 0.377);
+            margin: 60px;
+            padding: 50px 80px;
+        }
+        /*--newsletter--*/
+        
         .newsletter h3 {
-            font-size: 40px;
+            font-family: 'Italiana';
+            font-weight: 400;
+            font-size: 60px;
+            letter-spacing: 0.1em;
         }
-    }
+        
+        .newsletter p {
+            width: 100%;
+            font-size: 14px;
+            text-align: left;
+            margin-top: 10px;
+            margin-bottom: 120px;
+        }
+        
+        .newsletter-field {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #000;
+        }
+        
+        .newsletter input[type=email] {
+            width: 100%;
+            border: none;
+            outline: none;
+            padding-left: 10px;
+            background: none;
+        }
+        
+        .newsletter input[type=email]:focus {
+            border: none;
+        }
+        
+        .newsletter button {
+            font-size: 14px;
+            text-align: center;
+            padding: 8px 30px;
+            background-color: #000;
+            color: #fff;
+            letter-spacing: 0.1em;
+            cursor: pointer;
+            opacity: 0.9;
+            transition: 0.5s;
+        }
+        
+        .newsletter button:hover {
+            opacity: 1;
+        }
+        /*--contact-form--*/
+        
+        .contact-form {
+            margin: 0 0 0 30%;
+        }
+        
+        .field {
+            width: 100%;
+            padding: 8px;
+            margin-top: 12px;
+            resize: vertical;
+            outline: none;
+            border: none;
+        }
+        
+         ::placeholder {
+            color: rgba(0, 0, 0, 0.61);
+        }
+        
+        input[type=text]:focus,
+        input[type=email]:focus,
+        input[type=number]:focus,
+        textarea:focus {
+            border: 1px solid rgba(0, 0, 0, 0.534);
+        }
+        
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+        
+        .sendbtn button {
+            width: 100%;
+            font-size: 16px;
+            text-transform: uppercase;
+            text-align: center;
+            cursor: pointer;
+            letter-spacing: 0.13em;
+            padding: 8px;
+            background-color: #000;
+            margin-top: 8px;
+            color: #fff;
+            opacity: 0.9;
+            transition: 0.5s;
+        }
+        
+        .sendbtn button:hover {
+            opacity: 1;
+            border-radius: 4px;
+        }
+        
+        .checkbox {
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+            font-size: 13px;
+            gap: 10px;
+        }
+        /*________________________ footer ________________________*/
+        
+        .footer-container {
+            overflow: hidden;
+        }
+        
+        .footer {
+            position: relative;
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            background-color: #000;
+            font-size: 14px;
+            text-align: left;
+            padding: 30px 80px;
+            line-height: 23px;
+        }
+        
+        .footer a,
+        h2 {
+            color: #fff;
+            transition: 0.5s;
+        }
+        
+        .footer a:hover {
+            color: rgba(255, 255, 255, 0.555);
+        }
+        
+        .footer-heading {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .footer-heading h2 {
+            margin-bottom: 15px;
+            font-size: 13px;
+            letter-spacing: 2px;
+        }
+        /* footer-1 */
+        
+        .footer-1 img {
+            filter: invert(1);
+            margin-bottom: 10px;
+        }
+        /* footer-3 */
+        
+        .footer-icons {
+            display: flex;
+        }
+        
+        .footer-3 ul li {
+            transform: scale(1.3);
+            margin-right: 16px;
+            filter: invert(1);
+        }
+        /*________________________ breakpoints ________________________*/
+        /*-- 1080px --*/
+        
+        @media (max-width: 1080px) {
+            .navbar {
+                padding: 20px 50px;
+            }
+            .despre {
+                margin: 0 100px;
+            }
+            /* contact */
+            .contact h1 {
+                padding: 90px 0 70px 0;
+            }
+            .media video {
+                margin: 0 120px 70px 0;
+            }
+            .media img {
+                top: 25%;
+                left: 50%;
+            }
+            .newsletter {
+                margin: 60px;
+            }
+            .form-container {
+                flex-direction: column-reverse;
+                background: none;
+                margin: 0;
+                padding: 0;
+                padding: 40px 0;
+            }
+            .contact-form {
+                margin: 0;
+                padding: 50px 150px;
+                background: rgba(196, 196, 196, 0.377);
+            }
+        }
+        /*-- 1024px --*/
+        
+        @media (max-width: 1024px) {
+            .despre {
+                margin: 0 70px;
+            }
+            .portfolio h1 {
+                padding: 100px 0 60px 0;
+            }
+            .portfolio-container {
+                margin: 0 80px;
+            }
+            .about {
+                margin: 0;
+            }
+        }
+        /*-- 992px --*/
+        
+        @media (max-width: 992px) {
+            html {
+                border-left: 15px solid #000;
+                border-right: 15px solid #000;
+            }
+            .navbar {
+                display: none;
+            }
+            .nav-toggle {
+                visibility: visible;
+            }
+            .content {
+                padding: 190px 0 0 50px;
+            }
+            .whatsapp a {
+                bottom: 0;
+                right: 22px;
+            }
+            /* despre */
+            .despre h1 {
+                padding: 70px 0 110px 0;
+            }
+            .about-container {
+                flex-wrap: wrap;
+            }
+            .architecture-design {
+                gap: 70px;
+            }
+            .about {
+                order: 3;
+                max-width: 90%;
+                margin: 50px 0;
+            }
+            /* portfolio */
+            .portfolio h1 {
+                padding: 40px 0 60px 0;
+            }
+            .portfolio-container {
+                margin: 0 80px;
+            }
+            /* contact */
+            .contact h1 {
+                padding: 60px 0 30px 0;
+            }
+            .personalinfo {
+                flex-direction: column-reverse;
+            }
+            .info {
+                text-align: center;
+            }
+            .info,
+            .icons {
+                margin: auto;
+                width: fit-content;
+            }
+            .media video {
+                width: 520px;
+                margin: 60px 0 40px 0;
+            }
+            .media img {
+                width: 160px;
+                top: 38%;
+                left: 68%;
+            }
+        }
+        /*-- 768px --*/
+        
+        @media (max-width: 768px) {
+            .description h2 {
+                font-size: 50px;
+                line-height: 50px;
+            }
+            .about {
+                max-width: 100%;
+            }
+            /* portfolio */
+            .portfolio h1 {
+                padding: 30px 0 50px 0;
+            }
+            .portfolio-container {
+                margin: 0 70px;
+            }
+            .portfolio .portfolio-gallery {
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .portfolio .filter-buttons ul li {
+                font-size: 16px;
+            }
+            /* contact */
+            .contact h1 {
+                padding: 80px 0 50px 0;
+            }
+            .media img {
+                top: 39%;
+                left: 74%;
+            }
+            .contact-form {
+                padding: 50px 100px;
+            }
+            /* footer */
+            .footer {
+                flex-direction: column;
+                text-align: center;
+                padding: 40px 0 15px 0;
+            }
+            .footer h2 {
+                font-size: 15px;
+            }
+            .footer-icons {
+                margin: auto;
+            }
+            .footer-2,
+            .footer-3 {
+                margin-top: 30px;
+            }
+        }
+        
+        @media(max-width: 735px) {
+            .about {
+                max-width: 90%;
+                margin: 50px 0;
+            }
+            .avatar {
+                margin-left: 0;
+            }
+            .portfolio-container {
+                margin: 0 90px;
+            }
+        }
+        /*-- 650px --*/
+        
+        @media (max-width:650px) {
+            #cookie {
+                left: 0;
+                width: 100%;
+                height: 15%;
+                margin: auto;
+                padding: 30px 50px;
+                border-radius: 2px;
+                z-index: 100;
+            }
+            .cookie-btn button {
+                font-size: 18px;
+            }
+            .description h2 {
+                font-size: 28px;
+                line-height: 28px;
+            }
+            .nav-toggle {
+                padding: 15px 30px;
+            }
+            .content {
+                padding: 190px 0 0 30px;
+            }
+            .description a {
+                margin-top: 25px;
+                padding: 10px 25px;
+                font-size: 1.1em;
+            }
+            /* despre */
+            .despre {
+                margin: 0 40px;
+            }
+            .services {
+                max-width: 300px;
+                margin-left: 30px;
+            }
+            .avatar {
+                display: none;
+            }
+            .portfolio-container {
+                margin: 0 60px;
+            }
+            /* contact */
+            .contact h1 {
+                padding: 50px 0 30px 0;
+                font-size: 50px;
+            }
+            .media video {
+                width: 390px;
+            }
+            .media img {
+                width: 120px;
+                top: 38%;
+                left: 70%;
+            }
+            /* personal info */
+            .info ul li {
+                font-size: 18px;
+            }
+            /* contact-form */
+            .contact-form {
+                padding: 40px 50px;
+            }
+            .checkbox {
+                align-items: flex-start;
+                font-size: 12px;
+            }
+            /* newsletter */
+            .newsletter {
+                margin: 50px;
+            }
+            .newsletter h3 {
+                font-size: 50px;
+            }
+            .newsletter button {
+                font-size: 12px;
+                padding: 6px 20px;
+            }
+        }
+        /*-- 580px --*/
+        
+        @media (max-width: 580px) {
+            #cookie {
+                height: 19%;
+            }
+            .despre h1,
+            .portfolio h1,
+            .contact h1 {
+                font-size: 50px;
+            }
+            /* despre */
+            .despre h1 {
+                padding: 50px 0 80px 0;
+            }
+            .despre {
+                margin: 20px;
+            }
+            .services {
+                margin-left: 70px;
+            }
+            .question-services i {
+                margin-top: 22px;
+                font-size: 25px;
+                margin-left: 0;
+                margin-right: 0;
+            }
+            .question-services {
+                gap: 20px;
+            }
+            .avatar {
+                display: none;
+            }
+            .about {
+                margin: 40px 0;
+            }
+            /* portfolio */
+            .portfolio h1 {
+                padding: 10px 0 50px 0;
+            }
+            .portfolio-container {
+                margin: 0 30px;
+            }
+            .overlay {
+                padding-top: 16%;
+                line-height: 40px;
+                font-size: 30px;
+            }
+            .overlay button {
+                padding: 8px 15px;
+                font-size: 16px;
+            }
+            .overlay button:hover {
+                font-size: 19px;
+                letter-spacing: 0.06em;
+            }
+            /* contact */
+            .media video {
+                width: 310px;
+            }
+            .media img {
+                width: 90px;
+                top: 38%;
+                left: 78%;
+            }
+        }
+        /*-- 390px --*/
+        
+        @media(max-width: 390px) {
+            #cookie {
+                height: 16%;
+                padding: 30px 30px;
+            }
+            /* despre */
+            .answer-services p {
+                margin-right: 60px;
+            }
+            .portfolio .filter-buttons ul li {
+                font-size: 14px;
+                margin: 6px;
+            }
+            /* portfolio */
+            .portfolio-container {
+                margin: 0 20px;
+            }
+            /* contact */
+            .media video {
+                width: 270px;
+            }
+            .media img {
+                width: 80px;
+                top: 38%;
+                left: 78%;
+            }
+            /* newsletter */
+            .newsletter h3 {
+                font-size: 40px;
+            }
+        }
