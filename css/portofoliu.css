@@ -191,9 +191,6 @@
         .portfoliu .portfolio-gallery {
             grid-template-columns: repeat(1, 1fr);
         }
-        .portfoliu .filter-buttons ul li {
-            font-size: 13px;
-        }
         .portfoliu .filter-buttons {
             margin-top: 0;
             margin-bottom: 30px;
