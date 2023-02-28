@@ -16,11 +16,6 @@ ul li {
 
 /*_________ intrebari ________*/
 
-.intrebari {
-    border-left: 20px solid #000;
-    border-right: 20px solid #000;
-}
-
 .faq-container {
     min-height: 100vh;
     margin: 0 50px;

@@ -14,11 +14,6 @@
     }
     /*________________________ portofoliu ________________________*/
     
-    #portofoliu {
-        border-left: 20px solid #000;
-        border-right: 20px solid #000;
-    }
-    
     .portfoliu h1 {
         font-family: 'Italiana';
         font-weight: 400;
@@ -202,5 +197,13 @@
         .portfoliu .filter-buttons {
             margin-top: 0;
             margin-bottom: 30px;
+        }
+        .overlay {
+            padding-top: 15%;
+            line-height: 40px;
+        }
+        .overlay button {
+            padding: 8px 15px;
+            font-size: 16px;
         }
     }
