@@ -17,7 +17,7 @@
 
 <body>
 
-    <!--___________________________________ cookie _____________________________________-->
+    <!--___________________________________ cookiee _____________________________________-->
 
     <div id="cookie">
         <p>Acest site utilizează cookie-uri pentru a vă îmbunătăți experiența de navigare. Navigând în continuare, vă exprimați acordul asupra folosirii cookie-urilor. <a href="./pages/legal/politica cookies.html"><b>Mai multe detalii...</b></a></p>
@@ -31,6 +31,7 @@
     </div>
 
     <!--JavaScript cookie-->
+
     <script>
         acceptCookies()
         declineCookies()
@@ -38,6 +39,189 @@
     </script>
 
     <!--___________________________________ home _____________________________________-->
+
+    <section class="home" id="home">
+        <header>
+            <!--navbar desktop-->
+            <nav class="navbar">
+                <a href="#home"><img alt="logo" src="./img/logo.svg" width="160px"></a>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#despre">Despre</a></li>
+                    <li><a href="/pages/portofoliu/portofoliu.html">Portofoliu</a></li>
+                    <li><a href="/pages/intrebari/intrebari.html">Întrebări</a></li>
+                </ul>
+                <a class="nav-contact" href="#contact">Contact</a>
+            </nav>
+            <!--navbar mobile-->
+            <div class="nav-toggle">
+                <a href="#home"><img alt="logo" src="./img/logo.svg" width="150px"></a>
+                <span onclick="openNav()"><img alt="open toggle" src="./img/open.svg" width="60px"></span>
+            </div>
+        </header>
+        <!--sidenav mobile|toggle-->
+        <div class="sidenav" id="mySidenav">
+            <ul>
+                <li>
+                    <a class="closebtn" href="javascript:void(0);" onclick="closeNav()"><img alt="close toggle" src="./img/close.svg" width="60px"></a>
+                </li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#despre">Despre</a></li>
+                <li><a href="/pages/portofoliu/portofoliu.html">Portofoliu</a></li>
+                <li><a href="/pages/intrebari/intrebari.html">Întrebări</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <!--image background-->
+        <img class="backgroundimg" src="./img/homeimg.svg">
+        <!--video-->
+        <video autoplay loop muted src="./img/media/home.mp4"></video>
+        <div class="content">
+            <div class="description">
+                <h2>Servicii de arhitectură <br> și design interior</h2>
+                <a href="/pages/portofoliu/portofoliu.html">Portofoliu</a>
+            </div>
+            <div class="social">
+                <ul>
+                    <li><a href="https://www.facebook.com/valentina.honceru" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/valentina-honceru-7b4740120/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                    <li><a href="https://ro.pinterest.com/honceru/" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                    <li><a href="https://www.instagram.com/valehonceru/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <!--whatsapp-->
+            <div class="whatsapp">
+                <a href="https://wa.me/40749817422" target="_blank"><img alt="whatsapp" src="./img/whatsapp.svg"></a>
+            </div>
+        </div>
+    </section>
+
+    <!--___________________________________ despre _____________________________________-->
+
+    <section class="despre" id="despre">
+        <h1>Despre</h1>
+        <div class="about-container">
+            <div class="architecture-design">
+                <!--architecture-->
+                <div class="services">
+                    <div class="question-services">
+                        <img alt="servicii arhitectura" class="arch" src="./img/arhitectura.svg"><i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="answer-services">
+                        <p>Oferim servicii de arhitectură pentru toate fazele: CU, DTAC, SF, DALI, PTh, pentru funcțiuni rezidențiale, culturale, învățământ și spații publice.</p>
+                    </div>
+                </div>
+                <!--design-->
+                <div class="services">
+                    <div class="question-services">
+                        <img alt="servicii design interior" class="design" src="./img/design.svg">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="answer-services">
+                        <p>Concept și dezvoltarea proiectului tehnic pentru implementare, consultanță și asistență tehnică pe perioada implementării.</p>
+                    </div>
+                </div>
+            </div>
+            <!--about-->
+            <div class="about">
+                <p>
+                    <hr> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eligendi non, sit voluptatum nihil nemo, officiis maiores doloribus ducimus quas, totam esse consequuntur distinctio laudantium! Iste odit similique neque labore! Lorem
+                    ipsum dolor, sit amet consectetur adipisicing elit. Illum eligendi atque amet, molestias cum unde? Ipsa laborum, consequatur recusandae ea repudiandae magnam quos obcaecati dolorem sapiente reprehenderit. Dolor, esse aliquam? Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit.
+                    <hr>
+                </p>
+            </div>
+            <img alt="avatar" class="avatar" loading="lazy" src="./img/avatar.png">
+        </div>
+    </section>
+
+    <!--JavaScript_services section (architecture and design)-->
+
+    <script>
+        services()
+    </script>
+
+    <!--___________________________________ portofoliu __________________________________-->
+
+    <section class="portfolio" id="portofoliu">
+        <div class="portfolio-container">
+            <h1>Portofoliu</h1>
+
+            <div class="row">
+                <div class="filter-buttons">
+                    <ul id="filter-btns">
+                        <li class="active" data-target="all" onclick="filterProjects('all')">All</li>
+                        <li data-target="architecture" onclick="filterProjects('architecture')">Arhitectură</li>
+                        <li data-target="design" onclick="filterProjects('design')">Design interior</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="portfolio-gallery">
+                    <!--Proiect 1_Casa R-->
+                    <div class="item" data-target="design">
+                        <div class="inner">
+                            <div class="hover-container">
+                                <img alt="Casa R" class="image" src="/pages/portofoliu/img/Casa R/img1.png">
+                                <div class="overlay">Casa R<br>
+                                    <button><a href="/pages/proiecte/casaR.html">Detalii</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Proiect 2_Casa C-->
+                    <div class="item" data-target="design">
+                        <div class="inner">
+                            <div class="hover-container">
+                                <img alt="Casa C" class="image" src="/pages/portofoliu/img/Casa C/img1.png">
+                                <div class="overlay">Casa C<br>
+                                    <button><a href="/pages/proiecte/casaC.html">Detalii</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Proiect 3_Cabinet avocatura-->
+                    <div class="item item--more hidden" data-target="design">
+                        <div class="inner">
+                            <div class="hover-container">
+                                <img alt="Birou avocatura" class="image" src="/pages/portofoliu/img/Birou avocatura/img1.png">
+                                <div class="overlay">Birou avocatură<br>
+                                    <button><a
+                                        href="/pages/proiecte/birou-avocatura.html">Detalii</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Proiect 4_Kubix-->
+                    <div class="item item--more hidden" data-target="design">
+                        <div class="inner">
+                            <div class="hover-container">
+                                <img alt="Kubix" class="image" src="/pages/portofoliu/img/Kubix/img1.png">
+                                <div class="overlay">Kubix<br>
+                                    <button><a
+                                        href="/pages/proiecte/kubix.html">Detalii</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mybtn">
+                    <button data-enabled="false" id="show-more-btn" onclick="toggleItemsVisibility()">Mai multe proiecte</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--JavaScript_filter projects for portfolio section-->
+    <script>
+        const filterButtons = document.querySelector("#filter-btns").children;
+        const projects = document.querySelector(".portfolio-gallery").children;
+        filterProjects('all');
+    </script>
+
+    <!--___________________________________ contact _____________________________________-->
 
     <section class="home" id="home">
         <header>
@@ -83,200 +267,83 @@
             <div class="social">
                 <ul>
                     <li><a href="https://www.facebook.com/valentina.honceru" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/valentina-honceru-7b4740120/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/valentina-honceru-7b4740120/" target="_blank"><i
+                            class="fa-brands fa-linkedin-in"></i></a></li>
                     <li><a href="https://ro.pinterest.com/honceru/" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a></li>
                     <li><a href="https://www.instagram.com/valehonceru/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="mailto:vhondesign@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
                 </ul>
             </div>
-            <!--whatsapp-->
-            <div class="whatsapp">
-                <a href="https://wa.me/40749817422" target="_blank"><img src="./img/whatsapp.svg" alt="whatsapp"></a>
-            </div>
         </div>
-    </section>
-
-    <!--___________________________________ despre _____________________________________-->
-
-    <section class="despre" id="despre">
-        <h1>Despre</h1>
-        <div class="about-container">
-            <div class="architecture-design">
-                <!--architecture-->
-                <div class="services">
-                    <div class="question-services">
-                        <img src="./img/arhitectura.svg" alt="servicii arhitectura" class="arch"><i class="fa-solid fa-chevron-right"></i>
-                    </div>
-                    <div class="answer-services">
-                        <p>Oferim servicii de arhitectură pentru toate fazele: CU, DTAC, SF, DALI, PTh, pentru funcțiuni rezidențiale, culturale, învățământ și spații publice.</p>
+        <!--newsletter-->
+        <div class="form-container">
+            <form action="#">
+                <div class="newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Abonează-te pentru a primi cele mai recente noutăți.</p>
+                    <div class="newsletter-field">
+                        <i class="fa-solid fa-envelope"></i><input name="email" placeholder="Adresa ta de email" required type="email">
+                        <button type="submit">Abonare</button>
                     </div>
                 </div>
-                <!--design-->
-                <div class="services">
-                    <div class="question-services">
-                        <img src="./img/design.svg" alt="servicii design interior" class="design">
-                        <i class="fa-solid fa-chevron-right"></i>
+            </form>
+            <!--contact-form-->
+            <form id="email-form">
+                <div class="contact-form">
+                    <div class="field-box">
+                        <label for="email-form-name">
+                            <input class="field" id="email-form-name" name="name" placeholder="Nume" required type="text">
+                        </label>
+                        <label for="email-form-email">
+                            <input class="field" id="email-form-email" name="email" placeholder="Email" required type="email">
+                        </label>
+                        <label for="email-form-phone">
+                            <input class="field" id="email-form-phone" name="phone" placeholder="Telefon" required type="number">
+                        </label>
+                        <label for="email-form-message">
+                                <textarea class="field" id="email-form-message" name="message" placeholder="Mesaj" required
+                                          style="height: 100px;"></textarea>
+                        </label>
                     </div>
-                    <div class="answer-services">
-                        <p>Concept și dezvoltarea proiectului tehnic pentru implementare, consultanță și asistență tehnică pe perioada implementării.</p>
+                    <div class="sendbtn">
+                        <button type="submit">Trimite</button>
+                        <div class="checkbox">
+                            <input id="check" type="checkbox">
+                            <label for="check">Am citit și sunt de acord cu <a href="./pages/legal/politica de confidentialitate.html"
+                                                                               target="_blank"> <b>Politica de confidențialitate</b> a site-ului.</a></label>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!--about-->
-            <div class="about">
-                <p>
-                    <hr>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eligendi non, sit voluptatum nihil nemo, officiis maiores doloribus ducimus quas, totam esse consequuntur distinctio laudantium! Iste odit similique neque labore! Lorem
-                    ipsum dolor, sit amet consectetur adipisicing elit. Illum eligendi atque amet, molestias cum unde? Ipsa laborum, consequatur recusandae ea repudiandae magnam quos obcaecati dolorem sapiente reprehenderit. Dolor, esse aliquam? Lorem
-                    ipsum dolor sit amet consectetur adipisicing elit.
-                    <hr>
-                </p>
-            </div>
-            <img src="./img/avatar.png" loading="lazy" alt="avatar" class="avatar">
+            </form>
         </div>
-    </section>
-
-    <!--JavaScript_services section (architecture and design)-->
-    <script>
-        services()
-    </script>
-
-    <!--___________________________________ portofoliu __________________________________-->
-
-    <section class="portfolio" id="portofoliu">
-        <div class="portfolio-container">
-            <h1>Portofoliu</h1>
-
-            <div class="row">
-                <div class="filter-buttons">
-                    <ul id="filter-btns">
-                        <li class="active" data-target="all" onclick="filterProjects('all')">All</li>
-                        <li data-target="architecture" onclick="filterProjects('architecture')">Arhitectură</li>
-                        <li data-target="design" onclick="filterProjects('design')">Design interior</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="portfolio-gallery">
-                    <!--Proiect 1_Casa R-->
-                    <div class="item" data-target="design">
-                        <div class="inner">
-                            <div class="hover-container">
-                                <img src="/pages/portofoliu/img/Casa R/img1.png" alt="Casa R" class="image">
-                                <div class="overlay">Casa R<br>
-                                    <button><a href="/pages/proiecte/casaR.html">Detalii</a></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Proiect 2_Casa C-->
-                    <div class="item" data-target="design">
-                        <div class="inner">
-                            <div class="hover-container">
-                                <img src="/pages/portofoliu/img/Casa C/img1.png" alt="Casa C" class="image">
-                                <div class="overlay">Casa C<br>
-                                    <button><a href="/pages/proiecte/casaC.html">Detalii</a></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Proiect 3_Cabinet avocatura-->
-                    <div class="item item--more hidden" data-target="design">
-                        <div class="inner">
-                            <div class="hover-container">
-                                <img src="/pages/portofoliu/img/Birou avocatura/img1.png" alt="Birou avocatura" class="image">
-                                <div class="overlay">Birou avocatură<br>
-                                    <button><a
-                                            href="/pages/proiecte/birou-avocatura.html">Detalii</a></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Proiect 4_Kubix-->
-                    <div class="item item--more hidden" data-target="design">
-                        <div class="inner">
-                            <div class="hover-container">
-                                <img src="/pages/portofoliu/img/Kubix/img1.png" alt="Kubix" class="image">
-                                <div class="overlay">Kubix<br>
-                                    <button><a
-                                            href="/pages/proiecte/kubix.html">Detalii</a></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mybtn">
-                    <button onclick="toggleItemsVisibility()" id="show-more-btn" data-enabled="false">Mai multe proiecte</button>
-                </div>
-            </div>
         </div>
-    </section>
 
-    <!--JavaScript_filter projects for portfolio section-->
-    <script>
-        const filterButtons = document.querySelector("#filter-btns").children;
-        const projects = document.querySelector(".portfolio-gallery").children;
-        filterProjects('all');
-    </script>
+        <script>
+            getFormData = (selector) => Object.fromEntries(new FormData(document.querySelector(selector)))
 
-    <!--___________________________________ contact _____________________________________-->
+            const form = document.querySelector('#email-form');
 
-    <section class="contact" id="contact">
-        <div class="contact-container">
-            <h1>Contact</h1>
-            <div class="personalinfo">
-                <div class="media">
-                    <video src="/img/media/desktop.mp4" loop autoplay muted></video>
-                    <img src="/img/mobile.svg" alt="mobile mockup" loading="lazy">
-                </div>
-                <div class="info">
-                    <h4>Telefon</h4>
-                    <p>(+40) 749 817 422</p>
-                    <h4>Email</h4>
-                    <p>vhondesign@gmail.com</p>
-                    <h4>Locații</h4>
-                    <p><b>Cluj-Napoca</b><br>Str. Profesor Tudor Ciortea, nr.9</p><br>
-                    <p><b>Sebeș</b><br>Loc. Petrești, jud. Alba</p>
-                    <h4>Social media</h4>
-                    <ul class="icons">
-                        <li><a href="https://www.facebook.com/valentina.honceru" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/valentina-honceru-7b4740120/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                        <li><a href="https://ro.pinterest.com/honceru/" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a></li>
-                        <li><a href="https://www.instagram.com/valehonceru/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href="mailto:vhondesign@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <!--newsletter-->
-            <div class="form-container">
-                <form action="mailto:vhondesign@gmail.com" method="post" enctype="text/plain">
-                    <div class="newsletter">
-                        <h3>Newsletter</h3>
-                        <p>Abonează-te pentru a primi cele mai recente noutăți.</p>
-                        <div class="newsletter-field">
-                            <i class="fa-solid fa-envelope"></i><input type="email" name="email" placeholder="Adresa ta de email" required>
-                            <button type="submit">Abonare</button>
-                        </div>
-                    </div>
-                </form>
-                <!--contact-form-->
-                <form action="mailto:vhondesign@gmail.com" method="post" enctype="text/plain">
-                    <div class="contact-form">
-                        <div class="field-box">
-                            <input class="field" type="text" name="name" placeholder="Nume" required>
-                            <input class="field" type="email" name="email" placeholder="Email" required>
-                            <input class="field" type="number" name="phone" placeholder="Telefon" required>
-                            <textarea class="field" name="message" placeholder="Mesaj" required style="height: 100px;"></textarea>
-                        </div>
-                        <div class="sendbtn">
-                            <button type="submit">Trimite</button>
-                            <div class="checkbox">
-                                <input type="checkbox" id="check">
-                                <label for="check">Am citit și sunt de acord cu <a href="./pages/legal/politica de confidentialitate.html" target="_blank"> <b>Politica de confidențialitate</b> a site-ului.</a></label>
-                            </div>
-                        </div>
-                </form>
-                </div>
-            </div>
+
+            form.addEventListener('submit', async(event) => {
+                event.preventDefault(); // prevent default form submission
+                const formData = getFormData('#email-form')
+
+                try {
+                    const response = await fetch('https://47r4gejn2ngqw4gqqwuwffqdi40yitzy.lambda-url.eu-central-1.on.aws/', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(formData)
+                    })
+
+                    form.reset();
+                    location.reload()
+                } catch (error) {
+                    console.error(error);
+                }
+            });
+        </script>
     </section>
 
     <!--___________________________________ footer _____________________________________-->
@@ -286,9 +353,9 @@
             <div class="footer">
                 <!--footer-1-->
                 <div class="footer-heading footer-1">
-                    <a href="#home"><img src="./img/logo.svg" alt="logo" width="120px"></a>
+                    <a href="#home"><img alt="logo" src="./img/logo.svg" width="120px"></a>
                     <a href="tel:40749817422">(+40) 749 817 422</a>
-                    <a href="https://www.vhon.ro/">www.vhon.ro</a>
+                    <a href="#home">www.vhondesign.ro</a>
                     <a href="mailto:vhondesign@gmail.com">vhondesign@gmail.com</a>
                 </div>
                 <!--footer-2-->
@@ -303,7 +370,8 @@
                     <h2>Social media</h2>
                     <ul class="footer-icons">
                         <li><a href="https://www.facebook.com/valentina.honceru" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/valentina-honceru-7b4740120/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/valentina-honceru-7b4740120/" target="_blank"><i
+                            class="fa-brands fa-linkedin-in"></i></a></li>
                         <li><a href="https://ro.pinterest.com/honceru/" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a></li>
                         <li><a href="https://www.instagram.com/valehonceru/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
                         <li><a href="mailto:vhondesign@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
@@ -312,8 +380,111 @@
                     <a href="https://portfoliolilianaplaton.netlify.app/" target="_blank">Dezvoltat de Liliana Platon</a>
                 </div>
             </div>
-        </div>
-    </footer>
+            </section>
+
+            <!--JavaScript_filter projects for portfolio section-->
+            <script>
+                const filterButtons = document.querySelector("#filter-btns").children;
+                const projects = document.querySelector(".portfolio-gallery").children;
+                filterProjects('all');
+            </script>
+
+            <!--___________________________________ contact _____________________________________-->
+
+            <section class="contact" id="contact">
+                <div class="contact-container">
+                    <h1>Contact</h1>
+                    <div class="personalinfo">
+                        <div class="media">
+                            <video src="/img/media/desktop.mp4" loop autoplay muted></video>
+                            <img src="/img/mobile.svg" alt="mobile mockup" loading="lazy">
+                        </div>
+                        <div class="info">
+                            <h4>Telefon</h4>
+                            <p>(+40) 749 817 422</p>
+                            <h4>Email</h4>
+                            <p>vhondesign@gmail.com</p>
+                            <h4>Locații</h4>
+                            <p><b>Cluj-Napoca</b><br>Str. Profesor Tudor Ciortea, nr.9</p><br>
+                            <p><b>Sebeș</b><br>Loc. Petrești, jud. Alba</p>
+                            <h4>Social media</h4>
+                            <ul class="icons">
+                                <li><a href="https://www.facebook.com/valentina.honceru" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/valentina-honceru-7b4740120/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a href="https://ro.pinterest.com/honceru/" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                                <li><a href="https://www.instagram.com/valehonceru/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="mailto:vhondesign@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--newsletter-->
+                    <div class="form-container">
+                        <form action="mailto:vhondesign@gmail.com" method="post" enctype="text/plain">
+                            <div class="newsletter">
+                                <h3>Newsletter</h3>
+                                <p>Abonează-te pentru a primi cele mai recente noutăți.</p>
+                                <div class="newsletter-field">
+                                    <i class="fa-solid fa-envelope"></i><input type="email" name="email" placeholder="Adresa ta de email" required>
+                                    <button type="submit">Abonare</button>
+                                </div>
+                            </div>
+                        </form>
+                        <!--contact-form-->
+                        <form action="mailto:vhondesign@gmail.com" method="post" enctype="text/plain">
+                            <div class="contact-form">
+                                <div class="field-box">
+                                    <input class="field" type="text" name="name" placeholder="Nume" required>
+                                    <input class="field" type="email" name="email" placeholder="Email" required>
+                                    <input class="field" type="number" name="phone" placeholder="Telefon" required>
+                                    <textarea class="field" name="message" placeholder="Mesaj" required style="height: 100px;"></textarea>
+                                </div>
+                                <div class="sendbtn">
+                                    <button type="submit">Trimite</button>
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="check">
+                                        <label for="check">Am citit și sunt de acord cu <a href="./pages/legal/politica de confidentialitate.html" target="_blank"> <b>Politica de confidențialitate</b> a site-ului.</a></label>
+                                    </div>
+                                </div>
+                        </form>
+                        </div>
+                    </div>
+            </section>
+
+            <!--___________________________________ footer _____________________________________-->
+
+            <footer>
+                <div class="footer-container">
+                    <div class="footer">
+                        <!--footer-1-->
+                        <div class="footer-heading footer-1">
+                            <a href="#home"><img src="./img/logo.svg" alt="logo" width="120px"></a>
+                            <a href="tel:40749817422">(+40) 749 817 422</a>
+                            <a href="https://www.vhon.ro/">www.vhon.ro</a>
+                            <a href="mailto:vhondesign@gmail.com">vhondesign@gmail.com</a>
+                        </div>
+                        <!--footer-2-->
+                        <div class="footer-heading footer-2">
+                            <h2>Legal</h2>
+                            <a href="./pages/legal/politica cookies.html" target="_blank">Politica cookies</a>
+                            <a href="./pages/legal/termeni si conditii.html" target="_blank">Termeni și condiții</a>
+                            <a href="./pages/legal/politica de confidentialitate.html" target="_blank">Politica de confidențialitate</a>
+                        </div>
+                        <!--footer-3-->
+                        <div class="footer-heading footer-3">
+                            <h2>Social media</h2>
+                            <ul class="footer-icons">
+                                <li><a href="https://www.facebook.com/valentina.honceru" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/valentina-honceru-7b4740120/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a href="https://ro.pinterest.com/honceru/" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                                <li><a href="https://www.instagram.com/valehonceru/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="mailto:vhondesign@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
+                            </ul>
+                            <a href="#">Copyright &copy VHON, 2023</a>
+                            <a href="https://portfoliolilianaplaton.netlify.app/" target="_blank">Dezvoltat de Liliana Platon</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
 
 </body>
 
