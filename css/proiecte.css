@@ -124,11 +124,12 @@
            
            @media(max-width:450px) {
                .sidebar-container {
-                   padding: 60px 40px;
+                   padding-left: 20px;
+                   padding-right: 50px;
                }
                /* gallery */
                .gallery {
                    position: absolute;
-                   top: 570px;
+                   top: 560px;
                }
            }
