@@ -248,7 +248,7 @@
             </div>
             <!--newsletter-->
             <div class="form-container">
-                <form action="mailto:platonliliana1409@gmail.com" name="Newsletter" target="_blank">
+                <form action="mailto:platonliliana1409@gmail.com" name="Newsletter" value="Newsletter" target="_blank">
                     <div class="newsletter">
                         <h3>Newsletter</h3>
                         <p>Abonează-te pentru a primi cele mai recente noutăți.</p>
@@ -267,17 +267,27 @@
                             <input class="field" type="number" name="phone" placeholder="Telefon" required>
                             <textarea class="field" name="message" placeholder="Mesaj" required style="height: 100px;"></textarea>
                         </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="check" onclick="enable()">
+                            <label for="check">Sunt de acord cu <a href="pages/legal/politica de confidentialitate.html" target="_blank"> <b>Politica de confidențialitate</b> a site-ului.</a></label>
+                        </div>
                         <div class="sendbtn">
-                            <button type="submit">Trimite</button>
-                            <div class="checkbox">
-                                <input type="checkbox" id="check">
-                                <label for="check">Am citit și sunt de acord cu <a href="pages/legal/politica de confidentialitate.html" target="_blank"> <b>Politica de confidențialitate</b> a site-ului.</a></label>
-                            </div>
+                            <button disabled="true" id="btn">Trimite</button>
                         </div>
                 </form>
                 </div>
             </div>
     </section>
+
+    <script>
+        function enable() {
+            var check = document.getElementById("check");
+            var btn = document.getElementById("btn");
+            if (check.checked) {
+                btn.removeAttribute("disabled");
+            }
+        }
+    </script>
 
     <!--___________________________________ footer _____________________________________-->
 

@@ -164,8 +164,8 @@
             margin: 0 50px;
         }
         .overlay {
-            padding-top: 30%;
-            line-height: 20px;
+            padding-top: 20%;
+            line-height: 35px;
             font-size: 30px;
         }
         .overlay button {
@@ -173,7 +173,7 @@
             font-size: 16px;
         }
         .overlay button:hover {
-            font-size: 30px;
+            font-size: 20px;
         }
     }
     /*________ @media query_600px _________*/

@@ -89,8 +89,9 @@
                /* sidebar */
                .sidebar-container {
                    position: relative;
-                   padding: 50px 70px;
-                   bottom: 0;
+                   padding-left: 40px;
+                   padding-right: 80px;
+                   bottom: 40px;
                }
                .sidebar {
                    position: absolute;

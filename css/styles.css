@@ -660,7 +660,7 @@
             letter-spacing: 0.13em;
             padding: 8px;
             background-color: #000;
-            margin-top: 8px;
+            margin-top: 20px;
             color: #fff;
             opacity: 0.9;
             transition: 0.5s;
@@ -674,7 +674,7 @@
         .checkbox {
             display: flex;
             align-items: center;
-            margin-top: 15px;
+            margin-top: 10px;
             font-size: 13px;
             gap: 10px;
         }
