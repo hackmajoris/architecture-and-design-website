@@ -259,7 +259,7 @@
                     </div>
                 </form>
                 <!--contact-form-->
-                <form action="mailto:vhondesign@gmail.com">
+                <form action="#">
                     <div class="contact-form">
                         <div class="field-box">
                             <input class="field" type="text" name="name" placeholder="Nume" required>
@@ -268,26 +268,16 @@
                             <textarea class="field" name="message" placeholder="Mesaj" required style="height: 100px;"></textarea>
                         </div>
                         <div class="checkbox">
-                            <input type="checkbox" id="check" onclick="enable()">
+                            <input type="checkbox" id="check" required>
                             <label for="check">Sunt de acord cu <a href="pages/legal/politica de confidentialitate.html" target="_blank"> <b>Politica de confidențialitate</b> a site-ului.</a></label>
                         </div>
                         <div class="sendbtn">
-                            <button disabled="true" id="btn">Trimite</button>
+                            <button type="submit">Trimite</button>
                         </div>
                 </form>
                 </div>
             </div>
     </section>
-
-    <script>
-        function enable() {
-            var check = document.getElementById("check");
-            var btn = document.getElementById("btn");
-            if (check.checked) {
-                btn.removeAttribute("disabled");
-            }
-        }
-    </script>
 
     <!--___________________________________ footer _____________________________________-->
 
