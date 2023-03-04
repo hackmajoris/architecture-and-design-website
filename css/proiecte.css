@@ -114,7 +114,11 @@
                    font-size: 50px;
                }
                .sidebar-container {
-                   padding: 60px 50px;
+                   padding: 110px 50px;
+               }
+               .sidebar-container {
+                   padding-left: 40px;
+                   padding-right: 70px;
                }
                /* gallery */
                .gallery {
